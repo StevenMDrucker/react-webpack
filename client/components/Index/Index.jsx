@@ -28,7 +28,7 @@ class IndexComponent extends Component {
         springConfig={{ stiffness: 170, damping: 26 }}
       >
       {dataList}
-    </Grid>);
+    </Grid>); 
   }    
 }
 

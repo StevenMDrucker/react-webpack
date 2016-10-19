@@ -10,9 +10,10 @@ import * as D3 from "d3";
 D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
     render(<div>
 
-    <Index items={data} />
+    <Index items={data } />
     </div>,
  document.getElementById('js-main'));
          
 });
 
+ 
