@@ -43,6 +43,7 @@
     "express": "4.13.4",
     "express-ejs-layouts": "2.0.0",
     "react": "^15.3.2",
+    "react-bootstrap": "0.30.5",
     "react-dom": "^15.3.2",
     "react-stonecutter": "0.3.3",
     "webpack": "1.12.12"

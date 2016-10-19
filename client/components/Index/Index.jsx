@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import * as D3 from "d3";
 import { CSSGrid, SpringGrid, measureItems, makeResponsive } from 'react-stonecutter';
 class IndexComponent extends Component {   
-   componentDidMount() {
-     /*
-      D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
-          this.setState({"researchData":data});
-      });
-      */
-  }
   render() {
     if (this.props.items.length === 0) {
       return (
@@ -17,7 +10,7 @@ class IndexComponent extends Component {
     }
   var dataList =  this.props.items.map( (val,i) => {return (<li className="grid-item" key={i}> <p className="research-item"> {i}: {val.caption}</p></li>);});
                 
-  const Grid = makeResponsive(CSSGrid, {maxWidth: 1910});
+  const Grid = makeResponsive(measureItems(CSSGrid), {maxWidth: 1920, minPadding:100});
   return(<Grid
         component="ul"
         columns={6}
