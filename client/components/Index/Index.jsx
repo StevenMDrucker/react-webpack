@@ -24,7 +24,7 @@ class IndexComponent extends Component {
         columnWidth={100}
         gutterWidth={25}
         gutterHeight={5}
-        duration={800}                      
+        duration={800}                       
         springConfig={{ stiffness: 170, damping: 26 }}
       >
       {dataList}
