@@ -17,7 +17,7 @@ class IndexComponent extends Component {
     }
   var dataList =  this.props.items.map( (val,i) => {return (<li className="grid-item" key={i}> <p className="research-item"> {i}: {val.caption}</p></li>);});
                 
-  const Grid = makeResponsive(CSSGrid, {maxWidth: 1920});
+  const Grid = makeResponsive(CSSGrid, {maxWidth: 1910});
   return(<Grid
         component="ul"
         columns={6}

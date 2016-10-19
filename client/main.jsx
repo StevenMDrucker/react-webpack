@@ -11,7 +11,8 @@ D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
     render(<div>
 
     <Index items={data } />
-    </div>,
+    </div>
+    ,
  document.getElementById('js-main'));
           
 });
