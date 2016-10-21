@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as D3 from "d3";
-import { CSSGrid, SpringGrid, measureItems, makeResponsive } from 'react-stonecutter';
+import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle } from 'react-stonecutter';
+const enterExitStyles = ['Simple', 'Skew', 'Newspaper',  'Fold Up', 'From Center', 'From Left to Right', 'From Top', 'From Bottom'];
 class IndexComponent extends Component {   
   render() {
     if (this.props.items.length === 0) {
@@ -8,17 +9,22 @@ class IndexComponent extends Component {
         <p ref="empty">Index is empty. </p>        
       );
     }
-  var dataList =  this.props.items.map( (val,i) => {return (<li className="grid-item" key={i}> <p className="research-item"> {i}: {val.caption}</p></li>);});
-                
+
+ 
+            
   const Grid = makeResponsive(measureItems(CSSGrid), {maxWidth: 1920, minPadding:100});
   return(<Grid
-        component="ul"
+      component="ul"
+      itemHeight={190}   
         columns={6}
         columnWidth={100}
         gutterWidth={25}
         gutterHeight={5}
         duration={800}                       
         springConfig={{ stiffness: 170, damping: 26 }}
+        enter={enterExitStyle.simple.enter}
+        entered={enterExitStyle.simple.entered}
+        exit={enterExitStyle.simple.exit}      
       >
       {dataList}
     </Grid>); 
