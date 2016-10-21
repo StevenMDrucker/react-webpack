@@ -8,7 +8,7 @@ import { render } from 'react-dom';
 import Index from 'components/Index/Index';
 import * as D3 from "d3";
 import { Button,ButtonToolbar } from 'react-bootstrap';
-import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle } from 'react-stonecutter';
+import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle,layout } from 'react-stonecutter';
 
 var App = React.createClass({
   globalState: [],    
@@ -29,8 +29,8 @@ var App = React.createClass({
   render: function() {
     var dataList =  this.state.researchData.map( (val,i) => {    
         return(<li className="grid-item"  style={{
-                width: 150,
-                height: 160,
+                width: 120,
+                height: 100,
             }} key={"i"+val.uniqueId}> 
         <p className="research-item" key={"K"+val.uniqueId} > 
             {val.caption}
@@ -45,7 +45,7 @@ var App = React.createClass({
     </ButtonToolbar>
     <SpringGrid
       component="ul"
-      itemHeight={190}   
+      itemHeight={100}
         columns={6}
         columnWidth={100}
         gutterWidth={25}
