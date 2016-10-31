@@ -54,10 +54,13 @@ var App = React.createClass({
     var years = [];
     var collaborators = [];
     if (this.state.researchData) {
-        subjects = _.uniq(_.flatten(_.map(this.state.researchData, function(val) {return val.tags['subject']}))) 
-        years = _.uniq(_.flatten(_.map(this.state.researchData, function(val) {return val.tags['year']}))) 
-        collaborators = _.uniq(_.flatten(_.map(this.state.researchData, function(val) {return val.tags['collaborators']})))
-    } 
+      //  subjects = _.uniq(_.flatten(_.map(this.state.researchData, function(val) {return val.tags['subject']}))) 
+      //  years = _.uniq(_.flatten(_.map(this.state.researchData, function(val) {return val.tags['year']}))) 
+      //  collaborators = _.uniq(_.flatten(_.map(this.state.researchData, function(val) {return val.tags['collaborators']})))
+      subjects = _.countBy(_.flatMap(this.state.researchData, val=>val.tags.subject))
+      years = _.countBy(_.flatMap(this.state.researchData, val=>val.tags.year))
+      collaborators = _.countBy(_.flatMap(this.state.researchData, val=>val.tags.collaborators))
+} 
     return(<div> 
         <ButtonToolbar>
             <Button bsStyle="primary" onClick={self.resetData} >Primary</Button>
