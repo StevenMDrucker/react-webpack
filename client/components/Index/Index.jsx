@@ -16,8 +16,12 @@ class IndexComponent extends Component {
         <p ref="empty">Index is empty. </p>        
       );
     }
-    var highlightTitle = this.props.highlight[0];
-    var highlightVariable = this.props.highlight[1];
+    var highlightTitle = '';
+    var highlightVariable = '';
+    if (this.props.highlight) { 
+      highlightTitle = this.props.highlight[0];
+      highlightVariable = this.props.highlight[1];
+    } 
     var dataList =  this.props.items.map( (val,i) => {
       var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "grid-item selected" : "grid-item";
       return(<li className={theClass}

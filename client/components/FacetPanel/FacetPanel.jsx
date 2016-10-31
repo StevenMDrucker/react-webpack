@@ -24,10 +24,13 @@ class FacetPanelComponent extends Component {
     if (this.props.selected) {
         itemHoveredTags = this.props.selected.tags[panelSubject];
     }
-
-    var dataList =  _.keys(this.props.items).map( (val,i) => {
-        var itemName = val;
-        var itemCount = this.props.items[val]; 
+    var mylist = _.orderBy(_.map(_.keys(this.props.items), (val) =>  {return {"name": val, "count": this.props.items[val]}}),"count","desc");
+    var dataList = [];
+//    var dataList =  _.keys(this.props.items).map( (val,i) => {
+    dataList = mylist.map( (val,i) => {
+        var itemName = val["name"];
+        var itemCount = val["count"];
+        // var itemCount = this.props.items[val]; 
         var theClass = _.includes(itemHoveredTags, itemName) ? 'selected' : '';
           return(<tr  className={theClass} key={"i"+i} onMouseOut= {(e)=>this.handleBrushOut(itemName)}  onMouseOver= {(e)=>this.handleOver(panelSubject, itemName)}  onClick={(e) => this.handleClick(panelSubject,itemName)}> 
           <td> {itemName} </td>
