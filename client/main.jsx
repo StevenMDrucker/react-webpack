@@ -11,7 +11,7 @@ import FacetPanel from 'components/FacetPanel/FacetPanel';
 import * as D3 from "d3";
 import * as _ from "lodash";
 
-import { Button,ButtonToolbar,Grid, Row, Col } from 'react-bootstrap';
+import { Button,ButtonToolbar,Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
 import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle,layout } from 'react-stonecutter';
 
 var App = React.createClass({
@@ -66,21 +66,26 @@ var App = React.createClass({
             <Button bsStyle="primary" onClick={self.resetData} >Primary</Button>
         </ButtonToolbar>
 
+
         <Grid className="show-grid">
             <Row>
-                <Col lg={2}>
+                <Col lg={3}>
+                <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                    <Tab eventKey={1} title="Subject">
                         <FacetPanel items={subjects} itemTitle="subject" selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
                         </FacetPanel>
+                    </Tab>
+                    <Tab eventKey={2} title="Year"> 
+                        <FacetPanel items={years} itemTitle="year" selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
+                        </FacetPanel>
+                    </Tab>
+                    <Tab eventKey={3} title="Collabs">
+                        <FacetPanel items={collaborators} itemTitle="collaborators" selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
+                        </FacetPanel>
+                    </Tab>    
+                </Tabs>
                 </Col>
-                <Col lg={2}>
-                    <FacetPanel items={years} itemTitle="year" selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
-                    </FacetPanel>
-                </Col>
-                <Col lg={2}> 
-                    <FacetPanel items={collaborators} itemTitle="collaborators" selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
-                    </FacetPanel>
-                </Col>
-                <Col lg={6}>
+                <Col lg={9}>
                     <Index items={this.state.researchData} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
                 </Col>           
             </Row>
