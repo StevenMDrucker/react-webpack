@@ -24,6 +24,7 @@ var env = {
   production: process.env.NODE_ENV === 'production'
 };
 
+
 if (env.production) {
   Object.assign(env, {
     assets: JSON.parse(fs.readFileSync(path.join(process.cwd(), 'assets.json')))

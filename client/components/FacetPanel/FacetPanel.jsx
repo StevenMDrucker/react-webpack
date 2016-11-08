@@ -42,7 +42,7 @@ class FacetPanelComponent extends Component {
         <thead>
         <tr>
             <th> {panelSubject} </th>
-            <th> Count </th>
+            <th> count </th>
         </tr>
         </thead>
         <tbody>

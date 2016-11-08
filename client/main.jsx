@@ -1,7 +1,8 @@
 'use strict';
 
 import 'styles/main.scss';
-
+import 'styles/bootstrap.min.css';
+import 'styles/bootstrap-theme.css';
 import React from 'react';
 import { render } from 'react-dom';
 
@@ -62,15 +63,13 @@ var App = React.createClass({
       collaborators =_.countBy(_.flatMap(this.state.researchData, val=>val.tags.collaborators))
     } 
     return(<div> 
-        <ButtonToolbar>
-            <Button bsStyle="primary" onClick={self.resetData} >Primary</Button>
-        </ButtonToolbar>
-
-
-        <Grid className="show-grid">
+        <Grid className="show-grid">           
             <Row>
                 <Col lg={3}>
-                <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
+                 <Row>
+                    <Button bsStyle="primary" onClick={self.resetData} >Reset Filter</Button>
+                </Row>
+                <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
                     <Tab eventKey={1} title="Subject">
                         <FacetPanel items={subjects} itemTitle="subject" selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
                         </FacetPanel>
@@ -85,8 +84,10 @@ var App = React.createClass({
                     </Tab>    
                 </Tabs>
                 </Col>
-                <Col lg={9}>
+                <Col lg={3}>
                     <Index items={this.state.researchData} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
+                </Col>
+                <Col lg={3}>
                 </Col>           
             </Row>
         </Grid>
