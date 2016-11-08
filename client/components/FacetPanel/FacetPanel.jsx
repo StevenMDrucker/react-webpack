@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import {Table, Accordion, Panel} from 'react-bootstrap';
 import * as _ from "lodash";
-class FacetPanelComponent extends Component {   
+class FacetPanelComponent extends Component {
+ componentWillMount() {
+      this.setState({"over":null});
+  };
   handleClick(title, val) {
       this.props.filter(title, val);
   };
   handleOver(title, val) {
       this.props.brush(title, val);
+      this.setState({"over":val});
   };
 
   handleBrushOut(val) {
       this.props.clearFilter();
+      this.setState({"over":null});
   };
 
   render() {
@@ -24,6 +29,7 @@ class FacetPanelComponent extends Component {
     if (this.props.selected) {
         itemHoveredTags = this.props.selected.tags[panelSubject];
     }
+    var overItem = this.state.over;    
     var mylist = _.orderBy(_.map(_.keys(this.props.items), (val) =>  {return {"name": val, "count": this.props.items[val]}}),"count","desc");
     var dataList = [];
 //    var dataList =  _.keys(this.props.items).map( (val,i) => {
@@ -32,13 +38,14 @@ class FacetPanelComponent extends Component {
         var itemCount = val["count"];
         // var itemCount = this.props.items[val]; 
         var theClass = _.includes(itemHoveredTags, itemName) ? 'selected' : '';
+        theClass = (val == overItem) ? "myOver" : theClass;
           return(<tr  className={theClass} key={"i"+i} onMouseOut= {(e)=>this.handleBrushOut(itemName)}  onMouseOver= {(e)=>this.handleOver(panelSubject, itemName)}  onClick={(e) => this.handleClick(panelSubject,itemName)}> 
           <td> {itemName} </td>
           <td> {itemCount}</td>
           </tr>);
       });
 
-    return(<Table bordered condensed hover>
+    return(<Table bordered condensed hover className="myFacet">
         <thead>
         <tr>
             <th> {panelSubject} </th>

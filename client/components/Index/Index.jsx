@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
 import * as D3 from "d3";
 import * as _ from "lodash";
-import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle } from 'react-stonecutter';
+//import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle } from 'react-stonecutter';
+import Masonry from 'react-masonry-component';
+var masonryOptions = {
+  transitionDuration: 500,  
+  itemSelector: ".grid-item",
+  gutter: 20,
+  resize: true
+};
 const enterExitStyles = ['Simple', 'Skew', 'Newspaper',  'Fold Up', 'From Center', 'From Left to Right', 'From Top', 'From Bottom'];
 class IndexComponent extends Component {   
   componentWillMount() {
  //   let Grid = makeResponsive(measureItems(CSSGrid), {maxWidth: 1920, minPadding:100});
-    let Grid = measureItems(CSSGrid);
-    this.setState({ Grid });
+//    let Grid = measureItems(CSSGrid);
+//    this.setState({ Grid });
+  this.setState({"over":null});
   };
   handleOver(val) {
-      this.props.brushOut(val);
+    this.setState({"over":val});
+    this.props.brushOut(val);
   };
   handleOut(val) {
+    this.setState({"over":null});
       this.props.brushReset(val);
   };
   render() {
@@ -27,34 +37,34 @@ class IndexComponent extends Component {
       highlightTitle = this.props.highlight[0];
       highlightVariable = this.props.highlight[1];
     } 
+    var overItem = this.state.over;    
     var dataList =  this.props.items.map( (val,i) => {
       var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "grid-item selected research-item" : "grid-item research-item";
-      /*           <p className="research-item" key={"K"+val.uniqueId} > 
-              {val.caption}
-              <img src={"client/" + val.img} width={180} height={120}></img>
-          <span className="research-item" key={"K"+val.uniqueId} >   
-              
-              
-          </span>      
-          </p>
-*/
+      theClass = (val == overItem) ? "grid-item myOver research-item" : theClass;
+
       return(<div className={theClass}
         onMouseOver= {(e)=>this.handleOver(val)}
         onMouseOut= {(e)=>this.handleOut(val)}  
   
             style={{
-                  width: 190,
-                  height: 180,
               }} key={"i"+val.uniqueId}> 
-        <img src={"client/" + val.img} width={180} height={120}></img>
-        
+        <img src={"client/" + val.img} width="180" height="120"></img>
+          {val.caption}
           </div>);
     });
- 
-            
- // const Grid = makeResponsive(measureItems(CSSGrid), {maxWidth: 1920, minPadding:100});
- const { Grid } = this.state;
-
+           
+ //const { Grid } = this.state;
+ return (
+   <Masonry
+      className={'index-class'}
+      elementType={'div'}  
+      options={masonryOptions}
+      disableImagesLoaded={false}
+      updateOnEachImageLoad={false}
+      >
+      {dataList}
+      </Masonry>);
+/*
   return(<Grid
       component="div"
       itemHeight={180}
@@ -69,7 +79,8 @@ class IndexComponent extends Component {
         exit={enterExitStyle.simple.exit}      
       >
       {dataList}
-    </Grid>); 
+    </Grid>);
+    */ 
   }    
 }
 

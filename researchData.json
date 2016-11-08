@@ -243,7 +243,7 @@
                 "Tan"
             ]
         },
-        "img": "content/prospect.png",
+        "img": "researchImages/prospect.png",
         "caption": "Prospect",
         "reference": "Patel, K, S.M.Drucker, J. Fogarty, A. Kapoor, D.S.Tan, Prospect: Using Multiple Models to Understand Data, Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI 2011)",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/ijcai11.pdf",
@@ -298,7 +298,7 @@
                 "Basu"
             ]
         },
-        "img": "content/iclustering1.png",
+        "img": "researchImages/iclustering1.png",
         "caption": "iCluster",
         "reference": "Steven M. Drucker, Danyel Fisher, and Sumit Basu, Helping Users Sort Faster with Adaptive Machine Learning Recommendations, in Proceedings of Interact 2011, Springer, September 2011",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/icluster_nonanonymous_sdrucker_cameraready.pdf",
@@ -324,7 +324,7 @@
                 "Ruble"
             ]
         },
-        "img": "content/webcharts.png",
+        "img": "researchImages/webcharts.png",
         "caption": "WebCharts",
         "reference": "Danyel Fisher, Steven Drucker, Roland Fernandez, and Scott Ruble, Visualizations Everywhere: A Multiplatform Infrastructure for Linked Visualizations, in Transactions on Visualization and Computer Graphics, IEEE, Salt Lake City, UT, November 2010",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/webcharts.pdf",
@@ -350,7 +350,7 @@
                 "Lu"
             ]
         },
-        "img": "content/iclustering2.png",
+        "img": "researchImages/iclustering2.png",
         "caption": "iClusterTheory",
         "reference": "Sumit Basu, Danyel Fisher, Steven M. Drucker, and Hao Lu, Assisting Users with Clustering Tasks by Combining Metric Learning and Classification, in Proceedings of the Twenty-Fourth Conference on Artificial Intelligence (AAAI 2010), American Association for Artificial Intelligence , July 2010",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/iclustering-aaai-2010.pdf",
@@ -657,7 +657,7 @@
                 "Agrawala"
             ]
         },
-        "img": "content/vizpptdiff.jpg",
+        "img": "researchImages/vizpptdiff.jpg",
         "caption": "Comparing and Managing Multiple Versions of Slide Presentations",
         "reference": "Drucker, S. M., Petschnigg, G., and Agrawala, M. 2006. Comparing and managing multiple versions of slide presentations. In Proceedings of the 19th Annual ACM Symposium on User interface Software and Technology (Montreux, Switzerland, October 15 - 18, 2006). UIST '06. ACM Press, New York, NY, 47-56.",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/fp214-DruckerFinalSmall.pdf",

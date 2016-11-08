@@ -13,7 +13,6 @@ import * as D3 from "d3";
 import * as _ from "lodash";
 
 import { Button,ButtonToolbar,Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
-import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle,layout } from 'react-stonecutter';
 
 var App = React.createClass({
   globalState: [],    
@@ -63,9 +62,9 @@ var App = React.createClass({
       collaborators =_.countBy(_.flatMap(this.state.researchData, val=>val.tags.collaborators))
     } 
     return(<div> 
-        <Grid className="show-grid">           
+        <Grid className="show-grid" fluid={true}>           
             <Row>
-                <Col lg={3}>
+                <Col lg={3} sm={3} md={3}>
                  <Row>
                     <Button bsStyle="primary" onClick={self.resetData} >Reset Filter</Button>
                 </Row>
@@ -84,11 +83,9 @@ var App = React.createClass({
                     </Tab>    
                 </Tabs>
                 </Col>
-                <Col lg={3}>
+                <Col lg={9} sm={3} md={3}>
                     <Index items={this.state.researchData} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
-                </Col>
-                <Col lg={3}>
-                </Col>           
+                </Col>                   
             </Row>
         </Grid>
     </div>);
