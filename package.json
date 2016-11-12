@@ -49,6 +49,7 @@
     "react": "^15.3.2",
     "react-bootstrap": "0.30.5",
     "react-dom": "^15.3.2",
+    "react-imagebox": "1.0.0-beta",
     "react-masonry-component": "4.3.1",
     "react-stonecutter": "0.3.3",
     "webpack": "1.12.12"

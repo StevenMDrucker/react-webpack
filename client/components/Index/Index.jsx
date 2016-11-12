@@ -25,6 +25,10 @@ class IndexComponent extends Component {
     this.setState({"over":null});
       this.props.brushReset(val);
   };
+  localHandleClick(val) {
+    this.props.handleClick(val);
+  };
+
   render() {
     if (this.props.items.length === 0) {
       return (
@@ -44,7 +48,8 @@ class IndexComponent extends Component {
 
       return(<div className={theClass}
         onMouseOver= {(e)=>this.handleOver(val)}
-        onMouseOut= {(e)=>this.handleOut(val)}  
+        onMouseOut= {(e)=>this.handleOut(val)}
+        onClick=  {(e)=>this.localHandleClick(val)}
   
             style={{
               }} key={"i"+val.uniqueId}> 

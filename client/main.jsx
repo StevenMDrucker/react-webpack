@@ -5,10 +5,9 @@ import 'styles/bootstrap.min.css';
 import 'styles/bootstrap-theme.css';
 import React from 'react';
 import { render } from 'react-dom';
-
 import Index from 'components/Index/Index';
 import FacetPanel from 'components/FacetPanel/FacetPanel';
-
+import MyPopop from 'components/ImageBox/ImageBox';
 import * as D3 from "d3";
 import * as _ from "lodash";
 
@@ -48,6 +47,9 @@ var App = React.createClass({
   resetData: function() {
       this.setState({"researchData":this.researchData});
   },
+  openModal: function(val) {
+      this.refs.myPopup.setState({ showModal: true, item: val });
+  },
   render: function() {
     var self = this;
     var subjects = [];
@@ -67,6 +69,7 @@ var App = React.createClass({
                 <Col lg={3} sm={3} md={3}>
                  <Row>
                     <Button bsStyle="primary" onClick={self.resetData} >Reset Filter</Button>
+                    <MyPopop ref="myPopup"> </MyPopop>                                      
                 </Row>
                 <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
                     <Tab eventKey={1} title="Subject">
@@ -84,7 +87,7 @@ var App = React.createClass({
                 </Tabs>
                 </Col>
                 <Col lg={9} sm={3} md={3}>
-                    <Index items={this.state.researchData} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
+                    <Index items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
                 </Col>                   
             </Row>
         </Grid>
