@@ -52,7 +52,7 @@ class IndexComponent extends Component {
         onClick=  {(e)=>this.localHandleClick(val)}
   
             style={{
-              }} key={"i"+val.uniqueId}> 
+              }} key={"i"+val.id}> 
         <img src={"client/" + val.img} width="180" height="120"></img>
           {val.caption}
           </div>);

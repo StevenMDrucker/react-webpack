@@ -32,6 +32,7 @@ class FacetPanelComponent extends Component {
     var overItem = this.state.over;    
     var mylist = _.orderBy(_.map(_.keys(this.props.items), (val) =>  {return {"name": val, "count": this.props.items[val]}}),"count","desc");
     var dataList = [];
+    var filterSpec = this.props.filterSpec;
 //    var dataList =  _.keys(this.props.items).map( (val,i) => {
     dataList = mylist.map( (val,i) => {
         var itemName = val["name"];
@@ -39,7 +40,12 @@ class FacetPanelComponent extends Component {
         // var itemCount = this.props.items[val]; 
         var theClass = _.includes(itemHoveredTags, itemName) ? 'selected' : '';
         theClass = (val == overItem) ? "myOver" : theClass;
-          return(<tr  className={theClass} key={"i"+i} onMouseOut= {(e)=>this.handleBrushOut(itemName)}  onMouseOver= {(e)=>this.handleOver(panelSubject, itemName)}  onClick={(e) => this.handleClick(panelSubject,itemName)}> 
+        var filtered = "";
+        if (panelSubject in filterSpec) {
+            if (_.indexOf(filterSpec[panelSubject], itemName) > -1) filtered = "x";
+        }  
+          return(<tr  className={theClass} key={"i"+i} onMouseOut= {(e)=>this.handleBrushOut(itemName)}  onMouseOver= {(e)=>this.handleOver(panelSubject, itemName)}  onClick={(e) => this.handleClick(panelSubject,itemName)}>
+          <td> {filtered} </td> 
           <td> {itemName} </td>
           <td> {itemCount}</td>
           </tr>);
@@ -48,6 +54,7 @@ class FacetPanelComponent extends Component {
     return(<Table bordered condensed hover className="myFacet">
         <thead>
         <tr>
+            <th> X  </th>
             <th> {panelSubject} </th>
             <th> count </th>
         </tr>
