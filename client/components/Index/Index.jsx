@@ -5,7 +5,7 @@ import * as _ from "lodash";
 import Masonry from 'react-masonry-component';
 var masonryOptions = {
   transitionDuration: 500,  
-  itemSelector: ".grid-item",
+  itemSelector: ".researchItem",
   gutter: 20,
   resize: true
 };
@@ -40,8 +40,8 @@ class IndexComponent extends Component {
     var overItem = this.state.over;
   
     if (this.props.mode == "tile") {
-      var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "grid-item selected research-item" : "grid-item research-item";
-      theClass = (val == overItem) ? "grid-item myOver research-item" : theClass;
+      var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "researchItem gridItem selected" : "researchItem gridItem ";
+      theClass = (val == overItem) ? "researchItem gridItem  myOver" : theClass;
  
       return(<div className={theClass}
           onMouseOver= {(e)=>this.handleOver(val)}
@@ -52,14 +52,14 @@ class IndexComponent extends Component {
             {val.caption}
             </div>);
       } else {
-        var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "detail-item selected research-item" : "deftail-item research-item";
-         theClass = (val == overItem) ? "detail-item myOver research-item" : theClass;
+        var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "researchItem detailItem  selected" : "researchItem detailItem";
+         theClass = (val == overItem) ? "researchItem detailItem  myOver" : theClass;
  
         return(<div className={theClass}
           onMouseOver= {(e)=>this.handleOver(val)}
           onMouseOut= {(e)=>this.handleOut(val)}
           onClick=  {(e)=>this.localHandleClick(val)}
-          key={"di"+val.id}> 
+          key={"i"+val.id}> 
           <img src={"client/" + val.img} width="180" height="120" className="detailsImage"></img>
             <h4> {val.caption} </h4>
             <h6> {val.reference}</h6>
@@ -83,7 +83,7 @@ class IndexComponent extends Component {
  //const { Grid } = this.state;
  return (
    <Masonry
-      className={'index-class'}
+      className={'indexClass'}
       elementType={'div'}  
       options={masonryOptions}
       disableImagesLoaded={false}

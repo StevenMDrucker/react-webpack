@@ -19,7 +19,7 @@ var App = React.createClass({
   getInitialState: function () {   
       return({researchData:[],
           itemHovered:'',
-          mode:"details",
+          mode:"tile",
           filterSpec:{}});
   },
   componentDidMount: function() {

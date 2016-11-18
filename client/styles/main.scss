@@ -90,7 +90,7 @@ button {
   margin: 0 auto;
 }
 
-.grid-item {
+.gridItem {
   list-style: none;
   font-size: 0.75rem;
   padding: 5px 5px;
@@ -100,29 +100,39 @@ button {
   overflow: hidden;
   width: 200;
   height: 160;    
+  font-size:14;    
+  color: white;
+  margin-bottom: 20px;
 }
-.detail-item {
+.detailItem {
   list-style: none;
   font-size: 0.75rem;
   padding: 5px 5px;
-  background-color: #444;
+  background-color: #222;
   border-radius: 3px;
-  border: 2px solid #aaa;
+  border: 1px solid #aaa;
   overflow: hidden;
-  width: 800;
-  height: 160;
+  width: 100%;
+  height: 140;
   overflow: hidden;
+  font-size:14;    
+  color: white;
+  margin-bottom: 2px;
+}
+
+.researchItem {
+  background-color: #000;
 }
 
 .selected {
-    background-color: #ee6666;
+  background-color: #ee6666;
 }
 
 .myOver {
   background-color: #3344ff;   
 }
 
-.index-class {
+.indexClass {
   width:100%;
   cursor: pointer;  
 }
@@ -130,12 +140,7 @@ button {
 .detailsImage {
   float:left;
 }
-.research-item {
-  font-size:14;    
-  color: white;
-  margin-bottom: 20px;
-}
- 
+
 .grid-item p {
   text-align: left;
   margin: 0.5em 0;
