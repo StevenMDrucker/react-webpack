@@ -101,6 +101,18 @@ button {
   width: 200;
   height: 160;    
 }
+.detail-item {
+  list-style: none;
+  font-size: 0.75rem;
+  padding: 5px 5px;
+  background-color: #444;
+  border-radius: 3px;
+  border: 2px solid #aaa;
+  overflow: hidden;
+  width: 800;
+  height: 160;
+  overflow: hidden;
+}
 
 .selected {
     background-color: #ee6666;
@@ -115,6 +127,9 @@ button {
   cursor: pointer;  
 }
 
+.detailsImage {
+  float:left;
+}
 .research-item {
   font-size:14;    
   color: white;

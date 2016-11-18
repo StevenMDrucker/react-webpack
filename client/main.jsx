@@ -17,7 +17,10 @@ var App = React.createClass({
   globalState: [],
   facetPanels: {},      
   getInitialState: function () {   
-      return({researchData:[],itemHovered:'',filterSpec:{}});
+      return({researchData:[],
+          itemHovered:'',
+          mode:"details",
+          filterSpec:{}});
   },
   componentDidMount: function() {
     D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
@@ -56,6 +59,12 @@ var App = React.createClass({
                     return !_.isEmpty(_.intersection(value,o.tags[key]))}); 
                 return result}, this.researchData)});
 
+  },
+  tileMode:function(){
+    this.setState({'mode':"tile"})
+  },
+  detailMode: function() {
+    this.setState({'mode':"details"})
   },
   handleExit:function(){
       this.setState({'highlight':''});
@@ -123,7 +132,21 @@ var App = React.createClass({
                 </Tabs>
                 </Col>
                 <Col lg={9} sm={3} md={3}>
-                    <Index items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
+                    <Row>
+                         <ButtonToolbar>
+                          
+
+                            {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
+                            <Button bsStyle="primary" onClick={self.tileMode}>Tiles</Button>
+
+                            {/* Indicates a successful or positive action */}
+                            <Button bsStyle="success"  onClick={self.detailMode}>Details</Button>
+
+                        </ButtonToolbar>
+                    </Row>
+                    <Row>
+                        <Index mode={this.state.mode} items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
+                    </Row>
                 </Col>                   
             </Row>
         </Grid>

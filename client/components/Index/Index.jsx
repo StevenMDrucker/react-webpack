@@ -29,33 +29,55 @@ class IndexComponent extends Component {
     this.props.handleClick(val);
   };
 
-  render() {
-    if (this.props.items.length === 0) {
-      return (
-        <p ref="empty">Index is empty. </p>        
-      );
-    }
+  generateCard(val)
+  { 
     var highlightTitle = '';
     var highlightVariable = '';
     if (this.props.highlight) { 
       highlightTitle = this.props.highlight[0];
       highlightVariable = this.props.highlight[1];
     } 
-    var overItem = this.state.over;    
-    var dataList =  this.props.items.map( (val,i) => {
+    var overItem = this.state.over;
+  
+    if (this.props.mode == "tile") {
       var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "grid-item selected research-item" : "grid-item research-item";
       theClass = (val == overItem) ? "grid-item myOver research-item" : theClass;
-
+ 
       return(<div className={theClass}
-        onMouseOver= {(e)=>this.handleOver(val)}
-        onMouseOut= {(e)=>this.handleOut(val)}
-        onClick=  {(e)=>this.localHandleClick(val)}
-  
-            style={{
-              }} key={"i"+val.id}> 
-        <img src={"client/" + val.img} width="180" height="120"></img>
-          {val.caption}
-          </div>);
+          onMouseOver= {(e)=>this.handleOver(val)}
+          onMouseOut= {(e)=>this.handleOut(val)}
+          onClick=  {(e)=>this.localHandleClick(val)}
+          key={"i"+val.id}> 
+          <img src={"client/" + val.img} width="180" height="120"></img>
+            {val.caption}
+            </div>);
+      } else {
+        var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "detail-item selected research-item" : "deftail-item research-item";
+         theClass = (val == overItem) ? "detail-item myOver research-item" : theClass;
+ 
+        return(<div className={theClass}
+          onMouseOver= {(e)=>this.handleOver(val)}
+          onMouseOut= {(e)=>this.handleOut(val)}
+          onClick=  {(e)=>this.localHandleClick(val)}
+          key={"di"+val.id}> 
+          <img src={"client/" + val.img} width="180" height="120" className="detailsImage"></img>
+            <h4> {val.caption} </h4>
+            <h6> {val.reference}</h6>
+            <p> {val.pabstract}</p>
+            </div>);
+      }
+  };
+
+  render() {
+    if (this.props.items.length === 0) {
+      return (
+        <p ref="empty">Index is empty. </p>        
+      );
+    }
+     
+    var dataList =  this.props.items.map( (val,i) => {
+      var aCard = this.generateCard(val);
+      return(aCard);  
     });
            
  //const { Grid } = this.state;
