@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import * as D3 from "d3";
 import * as _ from "lodash";
+import {Row, Col, Button} from 'react-bootstrap';
+
 //import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle } from 'react-stonecutter';
 import Masonry from 'react-masonry-component';
 var masonryOptions = {
@@ -47,7 +49,7 @@ class IndexComponent extends Component {
           onMouseOver= {(e)=>this.handleOver(val)}
           onMouseOut= {(e)=>this.handleOut(val)}
           onClick=  {(e)=>this.localHandleClick(val)}
-          key={"i"+val.id}> 
+          key={"i"+val.id}>           
           <img src={"client/" + val.img} width="180" height="120"></img>
             {val.caption}
             </div>);
@@ -60,10 +62,22 @@ class IndexComponent extends Component {
           onMouseOut= {(e)=>this.handleOut(val)}
           onClick=  {(e)=>this.localHandleClick(val)}
           key={"i"+val.id}> 
-          <img src={"client/" + val.img} width="180" height="120" className="detailsImage"></img>
-            <h4> {val.caption} </h4>
-            <h6> {val.reference}</h6>
-            <p> {val.pabstract}</p>
+          <Row>
+            <Col lg={2} sm={2} md={2}>
+              <Row>
+              <img src={"client/" + val.img} width="180" height="120" className="detailsImage"></img>
+              </Row>
+              <Row>
+                <Button> Paper </Button>
+                <Button> Video </Button>
+              </Row>
+            </Col>
+            <Col lg={10} sm={10} md={10}>
+              <div className="DCaption"> {val.caption} </div>
+              <div className="DReference"> {val.reference}</div>
+              <div className="DAbstract"> {val.pabstract}</div>
+            </Col>
+          </Row>
             </div>);
       }
   };
