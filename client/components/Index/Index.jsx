@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import * as D3 from "d3";
 import * as _ from "lodash";
-import {Row, Col, Button} from 'react-bootstrap';
+import {Row, Col, Button, SplitButton, MenuItem} from 'react-bootstrap';
 
 //import { CSSGrid, SpringGrid, measureItems, makeResponsive,enterExitStyle } from 'react-stonecutter';
 import Masonry from 'react-masonry-component';
 var masonryOptions = {
   transitionDuration: 500,  
   itemSelector: ".researchItem",
+  columnWidth: 200,
   gutter: 20,
   resize: true
 };
@@ -93,18 +94,21 @@ class IndexComponent extends Component {
       var aCard = this.generateCard(val);
       return(aCard);  
     });
-           
+              
  //const { Grid } = this.state;
  return (
-   <Masonry
-      className={'indexClass'}
-      elementType={'div'}  
-      options={masonryOptions}
-      disableImagesLoaded={false}
-      updateOnEachImageLoad={false}
-      >
-      {dataList}
-      </Masonry>);
+    
+    
+
+    <Masonry
+        className={'indexClass'}
+        elementType={'div'}  
+        options={masonryOptions}
+        disableImagesLoaded={false}
+        updateOnEachImageLoad={false}
+        >
+        {dataList}
+        </Masonry>);
 /*
   return(<Grid
       component="div"

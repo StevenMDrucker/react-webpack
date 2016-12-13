@@ -10,8 +10,7 @@ import FacetPanel from 'components/FacetPanel/FacetPanel';
 import MyPopop from 'components/ImageBox/ImageBox';
 import * as D3 from "d3";
 import * as _ from "lodash";
-
-import { Button,ButtonToolbar,Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
+import { Button,ButtonToolbar, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
 
 var App = React.createClass({
   globalState: [],
@@ -19,8 +18,21 @@ var App = React.createClass({
   getInitialState: function () {   
       return({researchData:[],
           itemHovered:'',
+          sortedBy:'',
           mode:"tile",
           filterSpec:{}});
+  },
+  onSortBy: function (afacet) {
+      var reverse  = false;
+      if (this.state.sortedBy == afacet) {
+          this.setState({"sortedBy":''});
+          reverse = true;
+      } else {
+          this.setState({"sortedBy":afacet});
+      }
+      this.setState({"researchData": (reverse) ? _.sortBy(this.state.researchData, (a)=>a.tags[afacet]) : 
+      _.reverse(_.sortBy(this.state.researchData, (a)=>a.tags[afacet]))
+    });
   },
   componentDidMount: function() {
     D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
@@ -119,6 +131,12 @@ var App = React.createClass({
               </Tab>);
       });
     } 
+    if (this.state.researchData.length > 0) {
+        var facets = _.keys(this.state.researchData[0].tags);
+        var sortByItems = facets.map((afacet,i)=> <MenuItem eventKey={i} onSelect={(e)=>this.onSortBy(afacet)}> {afacet} </MenuItem>  );
+    } else {
+        sortByItems = '';
+    }
     return(<div> 
         <Grid className="show-grid" fluid={true}>           
             <Row>
@@ -131,7 +149,7 @@ var App = React.createClass({
                     {tabList}
                 </Tabs>
                 </Col>
-                <Col lg={9} sm={3} md={3}>
+                <Col lg={9} sm={9} md={9}>
                     <Row>
                          <ButtonToolbar>
                           
@@ -141,6 +159,10 @@ var App = React.createClass({
 
                             {/* Indicates a successful or positive action */}
                             <Button bsStyle="success"  onClick={self.detailMode}>Details</Button>
+
+                            <SplitButton title="Sort By" pullRight id="split-button-pull-right">
+                            {sortByItems}
+                            </SplitButton>
 
                         </ButtonToolbar>
                     </Row>
