@@ -10,7 +10,7 @@ import FacetPanel from 'components/FacetPanel/FacetPanel';
 import MyPopop from 'components/ImageBox/ImageBox';
 import * as D3 from "d3";
 import * as _ from "lodash";
-import { Button,ButtonToolbar, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
+import { Button,ButtonToolbar, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab, PanelGroup, Panel } from 'react-bootstrap';
 
 var App = React.createClass({
   globalState: [],
@@ -124,11 +124,15 @@ var App = React.createClass({
       tabList = _.map(this.facetPanels, (filteredVals,tag) => {
           i++;
           var values = _.countBy(_.flatMap(filteredVals, val=>val.tags[tag]));
+            //   <Tab eventKey={i} title={tag}>
+            //         <FacetPanel items={values} filterSpec={this.state.filterSpec} itemTitle={tag} selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
+            //         </FacetPanel>
+            //   </Tab>);
           return(
-              <Tab eventKey={i} title={tag}>
+              <Panel eventKey={i} header={tag} className="filterPanel">
                     <FacetPanel items={values} filterSpec={this.state.filterSpec} itemTitle={tag} selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
                     </FacetPanel>
-              </Tab>);
+              </Panel>);
       });
     } 
     if (this.state.researchData.length > 0) {
@@ -137,6 +141,9 @@ var App = React.createClass({
     } else {
         sortByItems = '';
     }
+             // <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+                //     {tabList}
+                // </Tabs>
     return(<div> 
         <Grid className="show-grid" fluid={true}>           
             <Row>
@@ -145,9 +152,11 @@ var App = React.createClass({
                     <Button bsStyle="primary" onClick={self.resetData} >Reset Filter</Button>
                     <MyPopop ref="myPopup"> </MyPopop>                                      
                 </Row>
-                <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+       
+                <PanelGroup defaultActiveKey={1} id="uncontrolled-tab-example" accordion>
                     {tabList}
-                </Tabs>
+                </PanelGroup>
+
                 </Col>
                 <Col lg={9} sm={9} md={9}>
                     <Row>

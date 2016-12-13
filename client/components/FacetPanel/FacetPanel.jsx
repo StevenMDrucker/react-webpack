@@ -54,7 +54,7 @@ class FacetPanelComponent extends Component {
     return(<Table bordered condensed hover className="myFacet">
         <thead>
         <tr>
-            <th> X  </th>
+            <th>   </th>
             <th> {panelSubject} </th>
             <th> count </th>
         </tr>
