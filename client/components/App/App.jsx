@@ -8,6 +8,7 @@ import MyPopop from 'components/ImageBox/ImageBox';
 import * as D3 from "d3";
 import * as _ from "lodash";
 import { Button,ButtonToolbar, DropdownButton, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab, PanelGroup, Panel } from 'react-bootstrap';
+import KeywordVis from 'components/KeywordVis/KeywordVis';
 
 export default React.createClass({
   globalData: [],
@@ -85,6 +86,9 @@ export default React.createClass({
   detailMode: function() {
     this.setState({'mode':"details"})
   },
+  visMode: function() {
+    this.setState({'mode':"visualization"})
+  },
   handleExit:function(){
       this.setState({'highlight':''});
   },
@@ -151,6 +155,12 @@ export default React.createClass({
     const divStyle = {
     margin: '0 20 2 20'
     };
+    var resultsDisplay = '';
+    if (this.state.mode == "tile" || this.state.mode == "details") {
+        resultsDisplay = <Index mode={this.state.mode} items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
+    } else {
+        resultsDisplay = <KeywordVis items={this.state.researchData} ref="targetDiv"> </KeywordVis>
+    }
     return(<div> 
         <Grid className="show-grid" fluid={true}>           
             <Row>
@@ -176,7 +186,8 @@ export default React.createClass({
                             <Button bsSize="small" bsStyle="primary" onClick={self.tileMode}>Tiles</Button>
 
                             {/* Indicates a successful or positive action */}
-                            <Button bsSize="small" bsStyle="success"  onClick={self.detailMode}>Details</Button>                            
+                            <Button bsSize="small" bsStyle="success"  onClick={self.detailMode}>Details</Button>
+                            <Button bsSize="small" bsStyle="warn" onClick={self.visMode}>Visualization</Button>                           
                             <DropdownButton bsSize="small" title={self.state.sortedBy + " " + ((self.state.reverse) ? String.fromCharCode( "8595" ) : String.fromCharCode( "8593" ))} pullRight id="split-button-pull-right">
                             {sortByItems}
                             </DropdownButton>
@@ -184,7 +195,7 @@ export default React.createClass({
                         </ButtonToolbar>
                     </Row>
                     <Row>
-                        <Index mode={this.state.mode} items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
+                        {resultsDisplay}
                     </Row>
                 </Col>                   
             </Row>
