@@ -7,6 +7,10 @@ export default React.createClass({
 
     render() {
         return(
+         <div>
+          <Col lg={3} md={2} sm={1}>
+          </Col>
+          <Col lg={6} md={8} sm={10}>        
           <div className="bio">
             <img src="client/images/justheadmed.jpg"></img>
             <div className="firstBio">
@@ -46,6 +50,13 @@ export default React.createClass({
             </div>
         </div>
 
+
+
+          </Col>          
+          <Col lg={3} md={2} sm={1}>
+          </Col>       
+
+        </div>
         )
     }
 })

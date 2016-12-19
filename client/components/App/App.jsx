@@ -8,6 +8,8 @@ import MyPopop from 'components/ImageBox/ImageBox';
 import * as D3 from "d3";
 import * as _ from "lodash";
 import { Button,ButtonToolbar, DropdownButton, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab, PanelGroup, Panel } from 'react-bootstrap';
+import ContainerDimensions from 'react-container-dimensions'; 
+
 import KeywordVis from 'components/KeywordVis/KeywordVis';
 
 export default React.createClass({
@@ -159,35 +161,35 @@ export default React.createClass({
     if (this.state.mode == "tile" || this.state.mode == "details") {
         resultsDisplay = <Index mode={this.state.mode} items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
     } else {
-        resultsDisplay = <KeywordVis items={this.state.researchData} ref="targetDiv"> </KeywordVis>
+        resultsDisplay = <div> 
+            <ContainerDimensions> 
+               { ({ width, height }) => 
+                <KeywordVis items={this.state.researchData} width={width} height={height} ref="targetDiv">
+                </KeywordVis> 
+                
+                }
+             </ContainerDimensions>
+          </div>
     }
-    return(<div> 
-        <Grid className="show-grid" fluid={true}>           
-            <Row>
-                <Col lg={3} sm={3} md={3}>
-                 <Row>
-                 <ButtonToolbar>
-                    <Button style={divStyle} bsSize="small" bsStyle="default" onClick={self.resetData} >Reset Filter</Button>
-                </ButtonToolbar>
-                    <MyPopop ref="myPopup"> </MyPopop>                                      
-                </Row>
-       
-                <PanelGroup defaultActiveKey={1} id="uncontrolled-tab-example" accordion>
-                    {tabList}
-                </PanelGroup>
+    var rowStyle = {
+        margin: "0 0 0 25",
+    }
+    var buttonBarStyle = {
+        margin: "0 0 10 0",
+    }
 
-                </Col>
+    return(<div> 
+        <Grid className="show-grid" fluid={true} style={rowStyle}>           
+            <Row>          
                 <Col lg={9} sm={9} md={9}>
                     <Row>
-                         <ButtonToolbar>
-                          
-
+                         <ButtonToolbar style={buttonBarStyle}>                          
                             {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
                             <Button bsSize="small" bsStyle="primary" onClick={self.tileMode}>Tiles</Button>
 
                             {/* Indicates a successful or positive action */}
                             <Button bsSize="small" bsStyle="success"  onClick={self.detailMode}>Details</Button>
-                            <Button bsSize="small" bsStyle="warn" onClick={self.visMode}>Visualization</Button>                           
+                            <Button bsSize="small" bsStyle="warning" onClick={self.visMode}>Visualization</Button>                           
                             <DropdownButton bsSize="small" title={self.state.sortedBy + " " + ((self.state.reverse) ? String.fromCharCode( "8595" ) : String.fromCharCode( "8593" ))} pullRight id="split-button-pull-right">
                             {sortByItems}
                             </DropdownButton>
@@ -197,6 +199,18 @@ export default React.createClass({
                     <Row>
                         {resultsDisplay}
                     </Row>
+                </Col>
+                <Col lg={3} sm={3} md={3}>
+                    <Row>
+                    <ButtonToolbar>
+                        <Button style={divStyle} bsSize="small" bsStyle="default" onClick={self.resetData} >Reset Filter</Button>
+                    </ButtonToolbar>
+                        <MyPopop ref="myPopup"> </MyPopop>                                      
+                    </Row>
+        
+                    <PanelGroup defaultActiveKey={1} id="uncontrolled-tab-example" accordion>
+                        {tabList}
+                    </PanelGroup>
                 </Col>                   
             </Row>
         </Grid>
