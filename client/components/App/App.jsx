@@ -114,6 +114,7 @@ export default React.createClass({
         });
     }
   },
+
   render: function() {
     var self = this;
     var subjects = [];
@@ -164,7 +165,7 @@ export default React.createClass({
         resultsDisplay = <div> 
             <ContainerDimensions> 
                { ({ width, height }) => 
-                <KeywordVis items={this.state.researchData} width={width} height={height} ref="targetDiv">
+                <KeywordVis items={this.state.researchData} width={width} height={height}>
                 </KeywordVis> 
                 
                 }
@@ -181,7 +182,7 @@ export default React.createClass({
     return(<div> 
         <Grid className="show-grid" fluid={true} style={rowStyle}>           
             <Row>          
-                <Col lg={9} sm={9} md={9}>
+                <Col lg={10} sm={10} md={10}>
                     <Row>
                          <ButtonToolbar style={buttonBarStyle}>                          
                             {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
@@ -200,7 +201,7 @@ export default React.createClass({
                         {resultsDisplay}
                     </Row>
                 </Col>
-                <Col lg={3} sm={3} md={3}>
+                <Col lg={2} sm={2} md={2}>
                     <Row>
                     <ButtonToolbar>
                         <Button style={divStyle} bsSize="small" bsStyle="default" onClick={self.resetData} >Reset Filter</Button>

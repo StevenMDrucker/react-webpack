@@ -218,3 +218,31 @@ table {
   text-align: left;
   margin-right: 200px;
 }
+
+.chart {
+  background: white;
+}
+
+.keyword {
+  font-size: 9pt;
+  text-anchor: end;
+}
+
+.project {
+  font-size: 9pt;
+}
+
+.vertline {
+    stroke: black;
+    stroke-width: .1px;
+}
+
+.horline {
+    stroke: black;
+    stroke-width: .1px;
+}
+
+.highlighted {
+    stroke: purple;
+    stroke-width: 1px;
+}
