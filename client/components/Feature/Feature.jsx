@@ -17,9 +17,9 @@ export default React.createClass({
     }
     return (
         <Grid fluid={true}> 
-            <Col lg={3} md={2} sm={1}>
+            <Col lg={2} md={2} sm={1}>
           </Col>
-          <Col lg={6} md={8} sm={10}>    
+          <Col lg={8} md={8} sm={10}>    
             <Slider {...settings}>
                 <div>
                     <h3>SandDance</h3>
@@ -37,7 +37,7 @@ export default React.createClass({
                 </div>
         </Slider>
         </Col>
-        <Col lg={3} md={2} sm={1}>
+        <Col lg={2} md={2} sm={1}>
           </Col>
       </Grid>
     );

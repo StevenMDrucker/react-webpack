@@ -13,9 +13,9 @@ export default React.createClass({
     return (
       <div>
           <Row>
-          <Col lg={3} md={2} sm={1}>
+          <Col lg={1} md={1} sm={1}>
           </Col>
-          <Col lg={6} md={8} sm={10}>        
+          <Col lg={8} md={8} sm={8}>        
             <Nav bsStyle="pills">  
               <LinkContainer to="/about">
                   <NavItem eventKey={1}> Bio </NavItem>
@@ -31,7 +31,7 @@ export default React.createClass({
               </LinkContainer>            
             </Nav>
           </Col>          
-          <Col lg={3} md={2} sm={1}>
+          <Col lg={1} md={1} sm={1}>
           </Col>        
         </Row>
         <div className="spacer"  />
