@@ -22,6 +22,6 @@ var Root = React.createClass({
     }
 })
 
-render(<Root />,document.getElementById('js-main'));
+render(<Root />,document.getElementById('js-main')); 
 
  
