@@ -18,6 +18,8 @@ export default React.createClass({
   facetPanels: {},      
   getInitialState: function () {   
       return({researchData:[],
+          currentProjects:[],
+          highlight:[],
           itemHovered:'',
           sortedBy:'year',
           reverse: false,
@@ -57,17 +59,22 @@ export default React.createClass({
     }); 
   },
   handleBrush: function(title,val) {
-      this.setState({'highlight':[title,val]});
+    var projList = _.map(_.filter(this.state.researchData, (proj)=> (_.includes(proj.tags[title], val))), (aProj)=>aProj.caption);
+    this.setState({"currentProjects": projList});
+    this.setState({"highlight":[title,val]});
   },
   handleBrushOut: function(val) {
       this.setState({'itemHovered':val});
+      this.setState({"currentProjects":[]});
+      this.setState({"highlight":[]});
   },
   handleBrushReset: function() {
-      this.setState({'itemHovered':''});
+    this.setState({'itemHovered':''});
+    this.setState({"currentProjects":[]});
+    this.setState({"highlight":[]});
   },
   handleFilter: function(title,val) {
     var localFilterSpec = this.state.filterSpec;
-    //this.setState({"researchData": this.researchData.filter(function(item) { return _.includes(item.tags[title],val)})});
     if (title in localFilterSpec) {
         if (localFilterSpec[title].indexOf(val) >= 0) {
             localFilterSpec[title] = _.filter(localFilterSpec[title],(a)=>(a!=val));
@@ -96,7 +103,8 @@ export default React.createClass({
     this.setState({'mode':"timeline"})
   },
   handleExit:function(){
-      this.setState({'highlight':''});
+    this.setState({'highlight':''});
+    this.setState({"currentProjects":[]});
   },
 
   resetData: function() {
@@ -164,12 +172,12 @@ export default React.createClass({
     };
     var resultsDisplay = '';
     if (this.state.mode == "tile" || this.state.mode == "details") {
-        resultsDisplay = <Index mode={this.state.mode} items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
+        resultsDisplay = <Index mode={this.state.mode} items={this.state.researchData} currentProjects={this.state.currentProjects} handleClick={this.openModal} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
     } else if (this.state.mode == "keyword") {
         resultsDisplay = <div> 
             <ContainerDimensions> 
                { ({ width, height }) => 
-                <KeywordVis items={this.state.researchData} width={width} height={height}>
+                <KeywordVis items={this.state.researchData} currentProjects={this.state.currentProjects} highlight={this.state.highlight} width={width} height={height}>
                 </KeywordVis> 
                 
                 }
@@ -179,7 +187,7 @@ export default React.createClass({
         resultsDisplay = <div>
             <ContainerDimensions> 
                { ({ width, height }) => 
-                <TimelineVis items={this.state.researchData} width={width} height={height}>
+                <TimelineVis items={this.state.researchData} currentProjects={this.state.currentProjects} width={width} height={height}>
                 </TimelineVis> 
                 
                 }

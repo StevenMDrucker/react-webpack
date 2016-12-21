@@ -12,6 +12,11 @@ const TimelineVis = React.createClass({
         currentProject:'',
         currentSubect:''});                
     },
+    calcHighlight: function(aproject) {
+        if (this.props.currentProjects.indexOf(aproject)>=0)
+          return("highlighted");
+        else return("normal")
+    },
     render: function() {
         const {  items } = this.props;
         var sm = 0;
@@ -63,7 +68,7 @@ const TimelineVis = React.createClass({
     //   var y_axis = d3.svg.axis().scale(y_scale).orient('left');
     //   x_axis.tickFormat(d3.format());
 
-
+       var self = this;
         var groupedList = _.groupBy(items, function (d) { return d.primary })
         var sortedData = _.sortBy(items, function (d) { return -1 * d.tags.year });
 
@@ -82,6 +87,7 @@ const TimelineVis = React.createClass({
                 {groups}
             </svg>
         );
+ 
 
         function layoutGroup(groupArray, groupName, primaryList) {
         
@@ -91,9 +97,9 @@ const TimelineVis = React.createClass({
             
             var groupElements = _.map(sortedGroup, (d,i)=>{
                 return(
-                    <g>
-                        <text key={"t"+i} x={x_scale(d.tags.year)+5} y={y_scale(baseCount+i)-2} cursor="pointer"> {d.caption} </text>
-                        <circle cx={x_scale(d.tags.year)-2} cy={y_scale(baseCount+i)-5} r={3}> </circle>
+                    <g key={"g"+ groupName + i}>
+                        <text className = {self.calcHighlight(d.caption)} key={"t"+i} x={x_scale(d.tags.year)+5} y={y_scale(baseCount+i)-2} cursor="pointer"> {d.caption} </text>
+                        <circle className = {self.calcHighlight(d.caption)} cx={x_scale(d.tags.year)-2} cy={y_scale(baseCount+i)-5} r={3}> </circle>
                        <text key={"title"+i} x={3} y={y_scale(baseCount+sortedGroup.length/2)+5} className="titleClass">{groupName}</text>
                     </g>
                 );               

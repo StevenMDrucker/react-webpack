@@ -12,7 +12,7 @@ const KeywordVis = React.createClass({
         currentSubect:''});                
   },
   calcHighlight: function(aproject) {
-      if (this.state.highlightProjects.indexOf(aproject)>=0) {
+    if ((this.props.currentProjects.indexOf(aproject)>=0) || (this.state.highlightProjects.indexOf(aproject)>=0)) {
           return("highlighted");
       } else {
           if (this.state.currentProject == aproject) {
@@ -20,17 +20,29 @@ const KeywordVis = React.createClass({
           }
           return("normal")
       }
+    //   if (this.state.highlightProjects.indexOf(aproject)>=0) {
+    //       return("highlighted");
+    //   } else {
+    //       if (this.state.currentProject == aproject) {
+    //           return("highlighted");
+    //       }
+    //       return("normal")
+    //   }
   },
   calcHighlightSubject: function(aSubject) {
       if (this.state.highlightSubjects.indexOf(aSubject)>=0) {
           return("highlighted");
-      } else {
-         if (this.state.currentSubject == aSubject) {
-              return("highlighted");
+      } else if (this.state.currentSubject == aSubject) {
+          return("highlighted");
+      } else if (this.props.highlight.length > 1) {
+          if (this.props.highlight[0] == "subject") {
+              if (this.props.highlight[1] == aSubject) {
+                  return("highlighted");
+              }
           }
-
-          return("normal")
       }
+
+      return("normal");
   },
   highlightProjects: function(aKey) {
       var toHighlight = _.filter(this.props.items, (anItem)=> anItem.tags.subject.indexOf(aKey)>0);

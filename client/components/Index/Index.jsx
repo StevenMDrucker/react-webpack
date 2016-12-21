@@ -34,16 +34,11 @@ class IndexComponent extends Component {
 
   generateCard(val)
   { 
-    var highlightTitle = '';
-    var highlightVariable = '';
-    if (this.props.highlight) { 
-      highlightTitle = this.props.highlight[0];
-      highlightVariable = this.props.highlight[1];
-    } 
     var overItem = this.state.over;
   
+    var highlighted = _.includes(this.props.currentProjects,val.caption);
     if (this.props.mode == "tile") {
-      var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "researchItem gridItem selected" : "researchItem gridItem ";
+      var theClass = highlighted ? "researchItem gridItem selected" : "researchItem gridItem ";
       theClass = (val == overItem) ? "researchItem gridItem  myOver" : theClass;
  
       return(<div className={theClass}
@@ -55,7 +50,7 @@ class IndexComponent extends Component {
             {val.caption}
             </div>);
       } else {
-        var theClass = _.includes(val.tags[highlightTitle], highlightVariable) ? "researchItem detailItem  selected" : "researchItem detailItem";
+        var theClass = highlighted ? "researchItem gridItem selected" : "researchItem gridItem ";
          theClass = (val == overItem) ? "researchItem detailItem  myOver" : theClass;
  
         return(<div className={theClass}
