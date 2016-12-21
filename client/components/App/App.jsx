@@ -11,6 +11,7 @@ import { Button,ButtonToolbar, DropdownButton, SplitButton, MenuItem, Grid, Row,
 import ContainerDimensions from 'react-container-dimensions'; 
 
 import KeywordVis from 'components/KeywordVis/KeywordVis';
+import TimelineVis from 'components/TimelineVis/TimelineVis';
 
 export default React.createClass({
   globalData: [],
@@ -88,8 +89,11 @@ export default React.createClass({
   detailMode: function() {
     this.setState({'mode':"details"})
   },
-  visMode: function() {
-    this.setState({'mode':"visualization"})
+  keywordMode: function() {
+    this.setState({'mode':"keyword"})
+  },
+  timelineMode: function() {
+    this.setState({'mode':"timeline"})
   },
   handleExit:function(){
       this.setState({'highlight':''});
@@ -140,15 +144,15 @@ export default React.createClass({
             //         </FacetPanel>
             //   </Tab>);
           return(
-              <Panel eventKey={i} header={tag} className="filterPanel">
-                    <FacetPanel items={values} filterSpec={this.state.filterSpec} itemTitle={tag} selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
+              <Panel key={i} eventKey={i} header={tag} className="filterPanel">
+                    <FacetPanel key={"P"+i} items={values} filterSpec={this.state.filterSpec} itemTitle={tag} selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
                     </FacetPanel>
               </Panel>);
       });
     } 
     if (this.state.researchData.length > 0) {
         var facets = _.keys(this.state.researchData[0].tags);
-        var sortByItems = facets.map((afacet,i)=> <MenuItem eventKey={i} onSelect={(e)=>this.onSortBy(afacet)}> {afacet} </MenuItem>  );
+        var sortByItems = facets.map((afacet,i)=> <MenuItem key={i} eventKey={i} onSelect={(e)=>this.onSortBy(afacet)}> {afacet} </MenuItem>  );
     } else {
         sortByItems = '';
     }
@@ -161,7 +165,7 @@ export default React.createClass({
     var resultsDisplay = '';
     if (this.state.mode == "tile" || this.state.mode == "details") {
         resultsDisplay = <Index mode={this.state.mode} items={this.state.researchData}  handleClick={this.openModal} highlight={this.state.highlight} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
-    } else {
+    } else if (this.state.mode == "keyword") {
         resultsDisplay = <div> 
             <ContainerDimensions> 
                { ({ width, height }) => 
@@ -171,7 +175,17 @@ export default React.createClass({
                 }
              </ContainerDimensions>
           </div>
-    }
+    } else if (this.state.mode == "timeline") {
+        resultsDisplay = <div>
+            <ContainerDimensions> 
+               { ({ width, height }) => 
+                <TimelineVis items={this.state.researchData} width={width} height={height}>
+                </TimelineVis> 
+                
+                }
+             </ContainerDimensions>
+          </div>
+    } else  resultsDisplay = <div>No View</div>
     var rowStyle = {
         margin: "0 0 0 25",
     }
@@ -186,11 +200,12 @@ export default React.createClass({
                     <Row>
                          <ButtonToolbar style={buttonBarStyle}>                          
                             {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
-                            <Button bsSize="small" bsStyle="primary" onClick={self.tileMode}>Tiles</Button>
+                            <Button key="Tiles" bsSize="small" bsStyle="primary" onClick={self.tileMode}>Tiles</Button>
 
                             {/* Indicates a successful or positive action */}
-                            <Button bsSize="small" bsStyle="success"  onClick={self.detailMode}>Details</Button>
-                            <Button bsSize="small" bsStyle="warning" onClick={self.visMode}>Visualization</Button>                           
+                            <Button key="Details" bsSize="small" bsStyle="success"  onClick={self.detailMode}>Details</Button>
+                            <Button key="TimelineVis"  bsSize="small" bsStyle="info" onClick={self.timelineMode}>TimelineVis</Button>
+                            <Button key="KeywordVis"  bsSize="small" bsStyle="warning" onClick={self.keywordMode}>KeywordVis</Button>                           
                             <DropdownButton bsSize="small" title={self.state.sortedBy + " " + ((self.state.reverse) ? String.fromCharCode( "8595" ) : String.fromCharCode( "8593" ))} pullRight id="split-button-pull-right">
                             {sortByItems}
                             </DropdownButton>

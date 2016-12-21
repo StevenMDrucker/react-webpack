@@ -110,7 +110,7 @@ const KeywordVis = React.createClass({
             anItem.tags.subject.map((sItem, j) => {
                 var vertPosition = y(keywords.indexOf(sItem))-7;
                 var horPosition = x(i);
-                return(<circle cx={horPosition} cy={vertPosition} r={2} fill={'red'} />); 
+                return(<circle key={"c"+i+"d"+j} cx={horPosition} cy={vertPosition} r={2} fill={'red'} />); 
             })
         );
     }));

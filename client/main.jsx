@@ -10,9 +10,9 @@ var Root = React.createClass({
 
     render() {
         return(
-            <Router history={hashHistory}>                
+            <Router history={hashHistory}>
                 <Route path="/" component={MyNav}>
-                    <IndexRoute component={About}/>
+                    <IndexRoute component={About}/>                
                     <Route path="/app" component={App}/>
                     <Route path="/featured" component={Feature}/>                 
                     <Route path="/about" component={About}/>
