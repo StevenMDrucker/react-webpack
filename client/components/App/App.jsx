@@ -102,6 +102,9 @@ export default React.createClass({
   timelineMode: function() {
     this.setState({'mode':"timeline"})
   },
+  publicationMode: function() {
+    this.setState({'mode':"publication"})
+  },
   handleExit:function(){
     this.setState({'highlight':''});
     this.setState({"currentProjects":[]});
@@ -171,7 +174,7 @@ export default React.createClass({
     margin: '0 20 2 20'
     };
     var resultsDisplay = '';
-    if (this.state.mode == "tile" || this.state.mode == "details") {
+    if (this.state.mode == "tile" || this.state.mode == "details" || this.state.mode == "publication") {
         resultsDisplay = <Index mode={this.state.mode} items={this.state.researchData} currentProjects={this.state.currentProjects} handleClick={this.openModal} brushOut={this.handleBrushOut} brushReset={this.handleBrushReset}/>
     } else if (this.state.mode == "keyword") {
         resultsDisplay = <div> 
@@ -208,10 +211,9 @@ export default React.createClass({
                     <Row>
                          <ButtonToolbar style={buttonBarStyle}>                          
                             {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
-                            <Button key="Tiles" bsSize="small" bsStyle="primary" onClick={self.tileMode}>Tiles</Button>
-
-                            {/* Indicates a successful or positive action */}
-                            <Button key="Details" bsSize="small" bsStyle="success"  onClick={self.detailMode}>Details</Button>
+                            <Button key="Tiles" bsSize="small"  onClick={self.tileMode}>Tile</Button>
+                            <Button key="Details" bsSize="small" bsStyle="primary" onClick={self.detailMode}>Detail</Button>
+                            <Button key="Publications" bsSize="small" bsStyle="success"  onClick={self.publicationMode}>Publication</Button>
                             <Button key="TimelineVis"  bsSize="small" bsStyle="info" onClick={self.timelineMode}>TimelineVis</Button>
                             <Button key="KeywordVis"  bsSize="small" bsStyle="warning" onClick={self.keywordMode}>KeywordVis</Button>                           
                             <DropdownButton bsSize="small" title={self.state.sortedBy + " " + ((self.state.reverse) ? String.fromCharCode( "8595" ) : String.fromCharCode( "8593" ))} pullRight id="split-button-pull-right">

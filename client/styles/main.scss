@@ -121,6 +121,24 @@ table {
   margin-bottom: 10px;  
 }
 
+
+
+.publicationItem {
+  list-style: none;
+  font-size: 0.75rem;
+  padding: 5px 5px;
+  background-color: #222;
+  border-radius: 3px;
+  border: none;
+  overflow: hidden;
+  width: 100%;  
+  overflow: hidden;
+  font-size:14;    
+  color: white;
+  margin-bottom: 1px;  
+  text-align: left;
+}
+
 .researchItem {
   background-color: #000;
 }
@@ -141,6 +159,8 @@ table {
 .detailsImage {
   float:left;
   padding:5px;
+  width: 150px;
+  height:100px;
 }
 
 .grid-item p {

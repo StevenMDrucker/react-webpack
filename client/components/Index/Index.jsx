@@ -49,9 +49,9 @@ class IndexComponent extends Component {
           <img src={"client/" + val.img} width="180" height="120"></img>
             {val.caption}
             </div>);
-      } else {
-        var theClass = highlighted ? "researchItem gridItem selected" : "researchItem gridItem ";
-         theClass = (val == overItem) ? "researchItem detailItem  myOver" : theClass;
+      } else if  (this.props.mode == "details") {
+        var theClass = highlighted ? "researchItem detailItem selected" : "researchItem detailItem ";
+         theClass = (val == overItem) ? "researchItem detailItem myOver" : theClass;
  
         return(<div className={theClass}
           onMouseOver= {(e)=>this.handleOver(val)}
@@ -61,7 +61,7 @@ class IndexComponent extends Component {
           <Row>
             <Col lg={2} sm={2} md={2}>
               <Row>
-              <img src={"client/" + val.img} width="180" height="120" className="detailsImage"></img>
+              <img src={"client/" + val.img}  className="detailsImage"></img>
               </Row>
               <Row>
                 <Button> Paper </Button>
@@ -75,6 +75,21 @@ class IndexComponent extends Component {
             </Col>
           </Row>
             </div>);
+      } else if (this.props.mode == "publication") {
+         var theClass = highlighted ? "researchItem publicationItem selected" : "researchItem publicationItem ";
+         theClass = (val == overItem) ? "researchItem publicationItem  myOver" : theClass;
+ 
+        return(<div className={theClass}
+          onMouseOver= {(e)=>this.handleOver(val)}
+          onMouseOut= {(e)=>this.handleOut(val)}
+          onClick=  {(e)=>this.localHandleClick(val)}
+          key={"i"+val.id}>
+          <Row> 
+          <Col lg={12} sm={12} md={12}>
+            <span> <a href={val.pdf}> PDF: </a> </span> <span className="DReference"> {val.reference}</span>
+           </Col>
+           </Row>
+           </div>);
       }
   };
 
