@@ -8,20 +8,23 @@ import MyNav from 'components/MyNav/MyNav'
 import Feature from 'components/Feature/Feature'
 var Root = React.createClass({
 
-    render() {
-        return(
-            <Router history={hashHistory}>
-                <Route path="/" component={MyNav}>
+  routes: (
+   <Route path="/" component={MyNav}>
                     <IndexRoute component={About}/>                
                     <Route path="/app" component={App}/>
                     <Route path="/featured" component={Feature}/>                 
                     <Route path="/about" component={About}/>
                     <Route path="/cv" component={About}/>
                 </Route>
+    ),
+
+    render() {
+        return(
+            <Router history={hashHistory}>
+            {this.routes}
+               
             </Router>);
     }
 })
 
 render(<Root />,document.getElementById('js-main')); 
-
- 

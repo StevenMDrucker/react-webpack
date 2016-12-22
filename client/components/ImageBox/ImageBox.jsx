@@ -22,11 +22,19 @@ class MyPopop extends Component {
             <RB.Modal.Header closeButton>
                 <RB.Modal.Title>{this.state.item.caption}</RB.Modal.Title>
             </RB.Modal.Header>
-            <RB.Modal.Body>                
-                <img src={"client/" + this.state.item.img} width="360" height="240"></img>
-                <RB.Button href={this.state.item.paper}>Paper</RB.Button> <RB.Button href={this.state.item.video}>Video</RB.Button>
-                <h4>Abstract</h4>
-                <p> {this.state.item.pabstract}</p>                
+                
+            <div className="center">
+                <img src={"client/" + this.state.item.img} width="400" height="300"></img>
+            </div>
+            <br />
+            <div className="center">
+                <RB.Button bsStyle="primary" href={this.state.item.paper}>Paper</RB.Button>
+                <span width="5"> </span>
+                <RB.Button bsStyle="primary" href={this.state.item.video}>Video</RB.Button>
+            </div>
+            <RB.Modal.Body>  
+                <h6 style={{textAlign:"left"}} >Reference: {this.state.item.reference} </h6>
+                <p style={{textAlign:"left"}}> Abstract: {this.state.item.pabstract} </p>
             </RB.Modal.Body>
             <RB.Modal.Footer>
                 <RB.Button onClick={(e)=>this.close()}>Close</RB.Button>

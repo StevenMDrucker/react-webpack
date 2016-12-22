@@ -7,6 +7,7 @@ export default React.createClass({
     var settings = {
       dots: true,
       infinite: true,
+      adaptiveHeight: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
@@ -16,19 +17,22 @@ export default React.createClass({
         margin: "0 20",
     }
     return (
-        <Grid fluid={true}> 
-            <Col lg={2} md={2} sm={1}>
+        <Grid fluid={true}>
+        <h4> Recently Featured Projects
+        </h4>
+         
+          <Col lg={2} md={2} sm={1}>
           </Col>
           <Col lg={8} md={8} sm={10}>    
             <Slider {...settings}>
-                <div>
+                <div style={{height:500}}>
                     <h3>SandDance</h3>
                     <img style={imageStyle} src="client/researchImages/SandDancePublic.jpg" />
                     <p className="featureText">
                     SandDance is a browser based information visualization system prototype created at Microsoft SandDance lets you see both the individual records, and their overall structure. SandDance focusses on natural user interaction techniques. Touch interaction is a first class citizen, allowing the entire experience to be easily operated through a touch screen. The system also understand speech commands for searching, selecting, focusing and filtering the data. A kinect system can be used to sense gestures for moving between views of the data. Collaboration is supported by allowing multiple sets of people to interact with the same dataset. Selections and filters in one system are automatically replicated to other systems viewing the data.
                     </p>
                 </div>
-                <div>
+                <div style={{height:500}}>
                     <h3>TouchVis</h3>
                      <img style={imageStyle} src="client/researchImages/touchvis.png" />
                     <p className="featureText">

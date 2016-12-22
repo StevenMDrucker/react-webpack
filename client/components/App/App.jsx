@@ -116,8 +116,15 @@ export default React.createClass({
       this.setState({"researchData":this.globalData});
   },
   openModal: function(val) {
-      this.refs.myPopup.setState({ showModal: true, item: val });
-  },
+      if (typeof(val)=="string") {
+          var myIndex = _.findIndex(this.globalData, (a)=>a.caption==val);
+          if (myIndex >=0) {
+            this.refs.myPopup.setState( {showModal: true, item: this.globalData[myIndex]});
+          }
+      } else {
+        this.refs.myPopup.setState({ showModal: true, item: val });
+      }  
+},
   calculateLocalData: function() { 
     if (this.globalData != null) {
         var facets = _.keys(this.globalData[0].tags);
@@ -180,7 +187,7 @@ export default React.createClass({
         resultsDisplay = <div> 
             <ContainerDimensions> 
                { ({ width, height }) => 
-                <KeywordVis items={this.state.researchData} currentProjects={this.state.currentProjects} highlight={this.state.highlight} width={width} height={height}>
+                <KeywordVis items={this.state.researchData} currentProjects={this.state.currentProjects} highlight={this.state.highlight} handleClick={this.openModal} width={width} height={height}>
                 </KeywordVis> 
                 
                 }
@@ -190,7 +197,7 @@ export default React.createClass({
         resultsDisplay = <div>
             <ContainerDimensions> 
                { ({ width, height }) => 
-                <TimelineVis items={this.state.researchData} currentProjects={this.state.currentProjects} width={width} height={height}>
+                <TimelineVis items={this.state.researchData} currentProjects={this.state.currentProjects} handleClick={this.openModal} width={width} height={height}>
                 </TimelineVis> 
                 
                 }
@@ -211,13 +218,13 @@ export default React.createClass({
                     <Row>
                          <ButtonToolbar style={buttonBarStyle}>                          
                             {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
-                            <Button key="Tiles" bsSize="small"  onClick={self.tileMode}>Tile</Button>
+                            <Button key="Tiles" style={{background: "brown"}} bsSize="small"  onClick={self.tileMode}>Tile</Button>
                             <Button key="Details" bsSize="small" bsStyle="primary" onClick={self.detailMode}>Detail</Button>
                             <Button key="Publications" bsSize="small" bsStyle="success"  onClick={self.publicationMode}>Publication</Button>
                             <Button key="TimelineVis"  bsSize="small" bsStyle="info" onClick={self.timelineMode}>TimelineVis</Button>
                             <Button key="KeywordVis"  bsSize="small" bsStyle="warning" onClick={self.keywordMode}>KeywordVis</Button>                           
-                            <DropdownButton bsSize="small" title={self.state.sortedBy + " " + ((self.state.reverse) ? String.fromCharCode( "8595" ) : String.fromCharCode( "8593" ))} pullRight id="split-button-pull-right">
-                            {sortByItems}
+                            <DropdownButton style={{float:"right"}} bsSize="small" title={"Sort By: " + self.state.sortedBy + " " + ((self.state.reverse) ? String.fromCharCode( "8595" ) : String.fromCharCode( "8593" ))} pullRight id="split-button-pull-right">
+                             {sortByItems}
                             </DropdownButton>
 
                         </ButtonToolbar>

@@ -17,6 +17,9 @@ const TimelineVis = React.createClass({
           return("highlighted");
         else return("normal")
     },
+    localHandleClick: function(val) {
+        this.props.handleClick(val);
+    },
     render: function() {
         const {  items } = this.props;
         var sm = 0;
@@ -98,8 +101,8 @@ const TimelineVis = React.createClass({
             var groupElements = _.map(sortedGroup, (d,i)=>{
                 return(
                     <g key={"g"+ groupName + i}>
-                        <text className = {self.calcHighlight(d.caption)} key={"t"+i} x={x_scale(d.tags.year)+5} y={y_scale(baseCount+i)-2} cursor="pointer"> {d.caption} </text>
-                        <circle className = {self.calcHighlight(d.caption)} cx={x_scale(d.tags.year)-2} cy={y_scale(baseCount+i)-5} r={3}> </circle>
+                        <text className = {self.calcHighlight(d.caption)}  onClick=  {(e)=>self.localHandleClick(d.caption)} key={"t"+i} x={x_scale(d.tags.year)+5} y={y_scale(baseCount+i)-2} cursor="pointer"> {d.caption} </text>
+                        <circle className = {self.calcHighlight(d.caption)}  onClick=  {(e)=>self.localHandleClick(d.caption)} cx={x_scale(d.tags.year)-2} cy={y_scale(baseCount+i)-5} r={3}> </circle>
                        <text key={"title"+i} x={3} y={y_scale(baseCount+sortedGroup.length/2)+5} className="titleClass">{groupName}</text>
                     </g>
                 );               

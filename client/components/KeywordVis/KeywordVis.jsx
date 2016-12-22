@@ -11,6 +11,9 @@ const KeywordVis = React.createClass({
         currentProject:'',
         currentSubect:''});                
   },
+  localHandleClick: function(val) {
+    this.props.handleClick(val);
+  },
   calcHighlight: function(aproject) {
     if ((this.props.currentProjects.indexOf(aproject)>=0) || (this.state.highlightProjects.indexOf(aproject)>=0)) {
           return("highlighted");
@@ -92,7 +95,7 @@ const KeywordVis = React.createClass({
 
     var keywordlist = keywords.map((akey,i)=> {
         return(<g key={"k"+i} transform={"translate(" + (marginx-5) + "," + y(i) + ")" }>
-            <text dy="-.3em" className={"keyword "+ this.calcHighlightSubject(akey)}  
+            <text  dy="-.3em" className={"keyword "+ this.calcHighlightSubject(akey)}  
             onMouseEnter={(e)=>this.highlightProjects(akey)} 
             onMouseLeave={(e)=>this.clearHighlightProjects()}>{akey}</text>
         </g>);
@@ -100,7 +103,7 @@ const KeywordVis = React.createClass({
 
     var projectlist =projects.map((akey,i)=> {
         return(<g key={"p"+i} transform={"translate(" + x(i) + ",150)" }>
-            <text dy=".3em" transform="rotate(-90)" className={"project " + this.calcHighlight(akey)} 
+            <text onClick=  {(e)=>this.localHandleClick(akey)} dy=".3em" transform="rotate(-90)" className={"project " + this.calcHighlight(akey)} 
             onMouseEnter={(e)=>this.highlightSubjects(akey)} 
             onMouseLeave={(e)=>this.clearHighlightSubjects()}>
             {akey}
