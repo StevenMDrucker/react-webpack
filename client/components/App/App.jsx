@@ -7,16 +7,18 @@ import FacetPanel from 'components/FacetPanel/FacetPanel';
 import MyPopop from 'components/ImageBox/ImageBox';
 import * as D3 from "d3";
 import * as _ from "lodash";
-import { Button,ButtonToolbar, DropdownButton, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab, PanelGroup, Panel } from 'react-bootstrap';
+import {Form, FormControl, Button,ButtonToolbar, DropdownButton, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab, PanelGroup, Panel } from 'react-bootstrap';
 import ContainerDimensions from 'react-container-dimensions'; 
-
+//import SearchInput, {createFilter} from 'react-search-input';
 import KeywordVis from 'components/KeywordVis/KeywordVis';
 import TimelineVis from 'components/TimelineVis/TimelineVis';
 
+//const KEYS_TO_FILTERS = ['']
 export default React.createClass({
   globalData: [],
   facetPanels: {},      
-  getInitialState: function () {   
+  getInitialState: function () {
+     // this.searchUpdate = this.searchUpdated.bind(this);   
       return({researchData:[],
           currentProjects:[],
           highlight:[],
@@ -24,18 +26,20 @@ export default React.createClass({
           sortedBy:'year',
           reverse: false,
           mode:"tile",
+          searchTerm: "",
           filterSpec:{}});
   },
-  calculateResults: function(localFilterSpec, localOrderBy, localReverse ) {
+  calculateResults: function(localFilterSpec, localOrderBy, localReverse, localSearchTerm ) {
       var results = 
             _.reduce(localFilterSpec, (result, value, key) => {
                 result= _.filter(result, (o) => {
                     return !_.isEmpty(_.intersection(value,o.tags[key]))}); 
                 return result}, this.globalData)
      var afacet = localOrderBy;
-      var finalresults = (localReverse) ? _.reverse(_.sortBy(results, (a)=>a.tags[afacet])) : _.sortBy(results, (a)=>a.tags[afacet]);
-
-    this.setState({"researchData": finalresults});
+     var finalresults = (localReverse) ? _.reverse(_.sortBy(results, (a)=>a.tags[afacet])) : _.sortBy(results, (a)=>a.tags[afacet]);
+     
+     var searchResearchData = localSearchTerm.length==0 ?  finalresults : finalresults.filter((a)=>_.startsWith(_.toLower(a.caption), _.toLower(localSearchTerm)));
+     return(searchResearchData);
   },
   onSortBy: function (afacet) {
       var reverse  = false;
@@ -49,8 +53,8 @@ export default React.createClass({
       } else {
           this.setState({"sortedBy":afacet});
       }
-
-      this.calculateResults(this.state.filterSpec, afacet, reverse);
+      
+      this.setState({"researchData": this.calculateResults(this.state.filterSpec, afacet, reverse, this.state.searchTerm)});
   },
   componentDidMount: function() {
     D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
@@ -88,7 +92,7 @@ export default React.createClass({
         localFilterSpec[title]=[val];
     }
     this.setState({"filterSpec":localFilterSpec});
-    this.calculateResults(localFilterSpec, this.state.orderBy, this.state.reverse);    
+    this.setState({"researchData": this.calculateResults(localFilterSpec, this.state.orderBy, this.state.reverse, this.state.searchTerm)});   
   },
   tileMode:function(){
     this.setState({'mode':"tile"})
@@ -111,6 +115,7 @@ export default React.createClass({
   },
 
   resetData: function() {
+      this.state.searchTerm = "";
       this.setState({"filterSpec":{}});
       this.setState({"reverse":false});
       this.setState({"researchData":this.globalData});
@@ -124,7 +129,12 @@ export default React.createClass({
       } else {
         this.refs.myPopup.setState({ showModal: true, item: val });
       }  
-},
+  },
+  searchUpdated: function(e) {
+    var term = e.target.value;
+    this.setState({"searchTerm":term});
+    this.setState({"researchData": this.calculateResults(this.state.filterSpec, this.state.orderBy, this.state.reverse, term)});   
+  },
   calculateLocalData: function() { 
     if (this.globalData != null) {
         var facets = _.keys(this.globalData[0].tags);
@@ -210,13 +220,17 @@ export default React.createClass({
     var buttonBarStyle = {
         margin: "0 0 10 0",
     }
-
+//                            <SearchInput className="search-input" onChange={this.searchUpdated} />
+    var itemsDisplayedString = this.state.researchData.length == 1 ? 
+        this.state.researchData.length + " item displayed" :
+        this.state.researchData.length + " items displayed";
     return(<div> 
         <Grid className="show-grid" fluid={true} style={rowStyle}>           
             <Row>          
                 <Col lg={10} sm={10} md={10}>
                     <Row>
-                         <ButtonToolbar style={buttonBarStyle}>                          
+                    <Col lg={6} sm={6} md={6}>
+                          <ButtonToolbar style={{float:"left"}}>                         
                             {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
                             <Button key="Tiles" style={{background: "brown"}} bsSize="small"  onClick={self.tileMode}>Tile</Button>
                             <Button key="Details" bsSize="small" bsStyle="primary" onClick={self.detailMode}>Detail</Button>
@@ -225,9 +239,21 @@ export default React.createClass({
                             <Button key="KeywordVis"  bsSize="small" bsStyle="warning" onClick={self.keywordMode}>KeywordVis</Button>                           
                             <DropdownButton style={{float:"right"}} bsSize="small" title={"Sort By: " + self.state.sortedBy + " " + ((self.state.reverse) ? String.fromCharCode( "8595" ) : String.fromCharCode( "8593" ))} pullRight id="split-button-pull-right">
                              {sortByItems}
-                            </DropdownButton>
-
+                            </DropdownButton>                          
                         </ButtonToolbar>
+                    </Col>
+                    <Col lg={4} sm={4} md={4} lgOffset={1} smOffset={1} mdOffset={1}>
+                          <div style={{padding:"0 20 0 0", display:"table-cell", verticalAlignment:"middle"}}> {itemsDisplayedString}  </div>
+                            <Form  inline style={{padding:"0 0 5 0", display:"table-cell", verticalAlignment:"middle"}}>
+                                <FormControl
+                                    bsSize="small"
+                                    type="text"
+                                    value={this.state.searchTerm}
+                                    placeholder="Search"
+                                    onChange={this.searchUpdated}
+                                />
+                            </Form>
+                    </ Col>
                     </Row>
                     <Row>
                         {resultsDisplay}
