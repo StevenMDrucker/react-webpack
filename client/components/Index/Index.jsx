@@ -15,10 +15,8 @@ var masonryOptions = {
 const enterExitStyles = ['Simple', 'Skew', 'Newspaper',  'Fold Up', 'From Center', 'From Left to Right', 'From Top', 'From Bottom'];
 class IndexComponent extends Component {   
   componentWillMount() {
- //   let Grid = makeResponsive(measureItems(CSSGrid), {maxWidth: 1920, minPadding:100});
-//    let Grid = measureItems(CSSGrid);
-//    this.setState({ Grid });
-  this.setState({"over":null});
+
+    this.setState({"over":null});
   };
   handleOver(val) {
     this.setState({"over":val});

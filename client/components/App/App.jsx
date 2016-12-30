@@ -56,11 +56,28 @@ export default React.createClass({
       
       this.setState({"researchData": this.calculateResults(this.state.filterSpec, afacet, reverse, this.state.searchTerm)});
   },
+  convertData: function(anItem) {
+      var facetlist = _.filter(_.keys(anItem), (a)=>_.startsWith(a,"facet"));
+      var newItem = Object.assign({}, anItem);
+      newItem["tags"] = {};
+      _.each(facetlist, (afacet)=>{
+          delete newItem[afacet];
+          var facetname = afacet.split('.')[1]
+          newItem["tags"][facetname]=anItem[afacet].split(',');
+      });
+      return(newItem);
+  },
   componentDidMount: function() {
-    D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
-        this.globalData = data;
-        this.setState({"researchData":data}); 
-    }); 
+    
+    D3.tsv("http://localhost:3001/client/researchTSV.txt", (data) => {
+        var finaldata = _.map(data, (a)=>this.convertData(a));
+        this.globalData = finaldata;
+        this.setState({"researchData": finaldata});
+    });
+ //   D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
+ //       this.globalData = data;
+ //       this.setState({"researchData":data}); 
+ //   }); 
   },
   handleBrush: function(title,val) {
     var projList = _.map(_.filter(this.state.researchData, (proj)=> (_.includes(proj.tags[title], val))), (aProj)=>aProj.caption);
