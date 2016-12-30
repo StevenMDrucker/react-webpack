@@ -14,7 +14,7 @@ class CardComponent extends Component {
         var val = this.props.theItem;
         if (this.props.mode == "tile") {
              var theCard = 
-                <div onMouseOver= {(e)=>this.props.handleOver(val)}
+                <div onMouseEnter= {(e)=>this.props.handleOver(val)}
                     onMouseOut= {(e)=>this.props.handleOut(val)}
                     onClick=  {(e)=>this.props.handleClick(val)}
                     key={"i"+val.id}>           
@@ -23,7 +23,7 @@ class CardComponent extends Component {
                 </div>;
          } else if (this.props.mode == "details") {
             var theCard = 
-                <div onMouseOver= {(e)=>this.props.handleOver(val)}
+                <div onMouseEnter= {(e)=>this.props.handleOver(val)}
                     onMouseOut= {(e)=>this.props.handleOut(val)}
                     onClick=  {(e)=>this.props.handleClick(val)}
                     key={"i"+val.id}> 
@@ -46,7 +46,7 @@ class CardComponent extends Component {
                 </div>;
         } else if (this.props.mode == "publication") {
         var theCard =  
-            <div onMouseOver= {(e)=>this.props.handleOver(val)}
+            <div onMouseEnter= {(e)=>this.props.handleOver(val)}
                 onMouseOut= {(e)=>this.props.handleOut(val)}
                 onClick=  {(e)=>this.props.handleClick(val)}
                 key={"i"+val.id}>

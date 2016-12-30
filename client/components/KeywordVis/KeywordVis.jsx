@@ -48,7 +48,7 @@ const KeywordVis = React.createClass({
       return("normal");
   },
   highlightProjects: function(aKey) {
-      var toHighlight = _.filter(this.props.items, (anItem)=> anItem.tags.subject.indexOf(aKey)>0);
+      var toHighlight = _.filter(this.props.items, (anItem)=> anItem.tags.subject.indexOf(aKey)>=0);
       var highlightList = _.map(toHighlight, (e)=>e.caption);
       this.setState({highlightProjects:highlightList});
       this.setState({currentSubject:aKey});      
