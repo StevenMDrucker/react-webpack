@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import {Row, Col, Button, SplitButton, MenuItem} from 'react-bootstrap';
 
 class CardComponent extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        if (this.props.mode !== nextProps.mode) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     render() {
         var val = this.props.theItem;
         if (this.props.mode == "tile") {
@@ -54,10 +62,10 @@ class CardComponent extends Component {
 }
 
 CardComponent.propTypes = {
-    theItem: React.PropTypes.object.required,
-    theMode: React.Proptype.string,
-    handleOver: React.PropTypes.func.required,
-    handleOut: React.PropTypes.func.required,
-    handleClick: React.PropTypes.func.required
+    theItem: React.PropTypes.object,
+    mode: React.PropTypes.string,
+    handleOver: React.PropTypes.func,
+    handleOut: React.PropTypes.func,
+    handleClick: React.PropTypes.func
 } 
 export default CardComponent;
