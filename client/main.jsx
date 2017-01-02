@@ -14,7 +14,6 @@ var Root = React.createClass({
                     <Route path="/app" component={App}/>
                     <Route path="/featured" component={Feature}/>                 
                     <Route path="/about" component={About}/>
-                    <Route path="/cv" component={About}/>
                 </Route>
     ),
 
