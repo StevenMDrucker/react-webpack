@@ -28,7 +28,7 @@ class MyPopop extends Component {
             </div>
             <br />
             <div className="center">
-                <RB.Button bsStyle="primary" href={this.state.item.paper}>Paper</RB.Button>
+                <RB.Button bsStyle="primary" href={this.state.item.pdf}>Paper</RB.Button>
                 <span width="5"> </span>
                 <RB.Button bsStyle="primary" href={this.state.item.video}>Video</RB.Button>
             </div>

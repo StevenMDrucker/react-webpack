@@ -32,9 +32,10 @@ class CardComponent extends Component {
                         <Row>
                         <img src={"client/" + val.img}  className="detailsImage"></img>
                         </Row>
-                        <Row>
-                            <Button> Paper </Button>
-                            <Button> Video </Button>
+                        <Row  style={{textAlign: "left", margin: 5}}>
+                            <Button bsStyle="primary" href={val.pdf}>Paper</Button>
+                            <span width="5"> </span>
+                            <Button bsStyle="primary" href={val.video}>Video</Button>
                         </Row>
                         </Col>
                         <Col lg={10} sm={10} md={10}>
