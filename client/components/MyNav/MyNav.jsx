@@ -30,10 +30,7 @@ export default React.createClass({
                 </LinkContainer>
                 <LinkContainer to="/app">
                     <NavItem eventKey={3}> Research </NavItem>
-                </LinkContainer>
-                <LinkContainer to="/cv">
-                    <NavItem eventKey={4}> CV </NavItem>
-                </LinkContainer>            
+                </LinkContainer>         
               </Nav>
             </Navbar.Collapse>
             </Navbar>

@@ -69,7 +69,8 @@ export default React.createClass({
   },
   componentDidMount: function() {
     
-    D3.tsv("http://localhost:3001/client/researchTSV.txt", (data) => {
+//    D3.tsv("http://localhost:3001/client/researchTSV.txt", (data) => {
+    D3.tsv("client/researchTSV.txt", (data) => {
         var finaldata = _.map(data, (a)=>this.convertData(a));
         this.globalData = finaldata;
         this.setState({"researchData": finaldata});
