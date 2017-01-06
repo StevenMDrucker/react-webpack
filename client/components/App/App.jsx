@@ -12,6 +12,8 @@ import ContainerDimensions from 'react-container-dimensions';
 //import SearchInput, {createFilter} from 'react-search-input';
 import KeywordVis from 'components/KeywordVis/KeywordVis';
 import TimelineVis from 'components/TimelineVis/TimelineVis';
+import Bibliography, {parseString} from 'bibliography';
+
 
 //const KEYS_TO_FILTERS = ['']
 export default React.createClass({
@@ -71,10 +73,14 @@ export default React.createClass({
     
 //    D3.tsv("http://localhost:3001/client/researchTSV.txt", (data) => {
     D3.tsv("client/researchTSV.txt", (data) => {
-        var finaldata = _.map(data, (a)=>this.convertData(a));
-        this.globalData = finaldata;
-        this.setState({"researchData": finaldata});
+        this.globalData = _.map(data, (a)=>this.convertData(a));
+        this.globalData = this.calculateResults({}, "year", true, "");   
+        this.setState({"researchData": this.globalData});
     });
+
+  //  D3.text("client/research.bib", (theText)=> {
+  //      var bibliography = parseString(theText);
+  //  });
  //   D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
  //       this.globalData = data;
  //       this.setState({"researchData":data}); 
@@ -190,7 +196,7 @@ export default React.createClass({
             //         </FacetPanel>
             //   </Tab>);
           return(
-              <Panel key={i} eventKey={i} header={tag} className="filterPanel">
+              <Panel key={i} eventKey={i} header={tag} className="filterPanel" style={{"cursor":"pointer"}}>
                     <FacetPanel key={"P"+i} items={values} filterSpec={this.state.filterSpec} itemTitle={tag} selected = {this.state.itemHovered} brush = {this.handleBrush} filter = {this.handleFilter} clearFilter= {this.handleExit}>
                     </FacetPanel>
               </Panel>);
