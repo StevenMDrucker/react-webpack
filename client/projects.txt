@@ -1,0 +1,1015 @@
+@misc{siegel1987performance,
+  title={Performance analysis of a tactile sensor},
+  author={Siegel, David M and Drucker, Steven M and Garabieta, Inaki},
+  year={1987},
+  publisher={IEEE},
+  caption={Tactile Sensor}
+}
+
+@article{yankelovich1988intermedia,
+  title={Intermedia: The concept and the construction of a seamless information environment},
+  author={Yankelovich, Nicole and Haan, Bernard J. and Meyrowitz, Norman K. and Drucker, Steven M.},
+  journal={IEEE computer},
+  volume={21},
+  number={1},
+  pages={81--96},
+  year={1988},
+  caption={Intermedia1}
+}
+
+@article{yankelovich1987connections,
+  title={Connections in Context: The intermedia system},
+  author={Yankelovich, Nicole and Haan, Bernard and Drucker, Stephen},
+  journal={Providence, Rhode Island: Institute for Research in Information and Scholarship, Brown University},
+  year={1987},
+  caption={Intermedia2}
+}
+
+@inproceedings{aboaf1989task,
+  title={Task-level robot learning: Juggling a tennis ball more accurately},
+  author={Aboaf, Eric W and Drucker, Steven M and Atkeson, Christopher G},
+  booktitle={Robotics and Automation, 1989. Proceedings., 1989 IEEE International Conference on},
+  pages={1290--1295},
+  year={1989},
+  organization={IEEE},
+  caption={Task Level Learning}
+}
+
+@inproceedings{drucker1992cinema,
+  title={Cinema: A system for procedural camera movements},
+  author={Drucker, Steven M and Galyean, Tinsley A and Zeltzer, David},
+  booktitle={Proceedings of the 1992 symposium on Interactive 3D graphics},
+  pages={67--70},
+  year={1992},
+  organization={ACM},
+  caption={Cinema Program}
+}
+
+@article{schroder1992data,
+  title={A data parallel algorithm for raytracing of heterogeneous databases},
+  author={Schroder, Peter and Drucker, Steven},
+  journal={Proceedings of Computer Graphics Interface},
+  pages={167--175},
+  year={1992},
+  caption={Parallel Raytracing}
+}
+
+@inproceedings{drucker1992fast,
+  title={Fast radiosity using a data parallel architecture},
+  author={Drucker, Steven M and Schr{\"o}der, Peter},
+  booktitle={Third Eurographics Workshop on Rendering (Bristol, uk},
+  pages={247--258},
+  year={1992},
+  caption={Parallel Radiosity}
+}
+
+
+@phdthesis{drucker1994intelligent,
+  title={Intelligent camera control for graphical environments},
+  author={Drucker, Steven Mark},
+  year={1994},
+  school={Massachusetts Institute of Technology},
+  caption={Conversation Agent}
+}
+
+@inproceedings{zeltzer1992virtual,
+  title={A virtual environment system for mission planning},
+  author={Zeltzer, David and Drucker, Steven},
+  booktitle={Proceedings of the IMAGE VI conference},
+  pages={125--134},
+  year={1992},
+  caption={Mission Planner}
+}
+
+
+@inproceedings{drucker1994intelligent,
+  title={Intelligent camera control in a virtual environment},
+  author={Drucker, Steven M and Zeltzer, David},
+  booktitle={Graphics Interface},
+  pages={190--190},
+  year={1994},
+  organization={CANADIAN INFORMATION PROCESSING SOCIETY},
+  caption={Virtual Museum}
+}
+
+@inproceedings{vronay1999alternative,
+  title={Alternative interfaces for chat},
+  author={Vronay, David and Smith, Marc and Drucker, Steven},
+  booktitle={Proceedings of the 12th annual ACM symposium on User interface software and technology},
+  pages={19--26},
+  year={1999},
+  organization={ACM},
+  caption={Streaming Chat}
+}
+
+@article{xiong1998visualizations,
+  title={Visualizations of collaborative information for end-users},
+  author={Xiong, Rebecca and Smith, Marc A and Drucker, Steven M},
+  journal={Microsoft Research},
+  pages={1--8},
+  year={1998},
+  caption={Collaborative Visualization}
+}
+
+
+@article{colburn2000role,
+  title={The role of eye gaze in avatar mediated conversational interfaces},
+  author={Colburn, Alex and Cohen, Michael F and Drucker, Steven and others},
+  journal={Sketches and Applications, Siggraph'00},
+  year={2000},
+  caption={Avatar Eye Gaze}
+}
+
+
+@inproceedings{jensen2000effect,
+  title={The effect of communication modality on cooperation in online environments},
+  author={Jensen, Carlos and Farnham, Shelly D and Drucker, Steven M and Kollock, Peter},
+  booktitle={Proceedings of the SIGCHI conference on Human Factors in Computing Systems},
+  pages={470--477},
+  year={2000},
+  organization={ACM},
+  caption={Social Dilemma Testing}
+}
+
+@inproceedings{smith2000social,
+  title={The social life of small graphical chat spaces},
+  author={Smith, Marc A and Farnham, Shelly D and Drucker, Steven M},
+  booktitle={Proceedings of the SIGCHI conference on Human Factors in Computing Systems},
+  pages={462--469},
+  year={2000},
+  organization={ACM},
+  caption={Social Life of Avatars}
+}
+
+
+@inproceedings{drucker2002smartskip,
+  title={SmartSkip: consumer level browsing and skipping of digital video content},
+  author={Drucker, Steven M and Glatzer, Asta and De Mar, Steven and Wong, Curtis},
+  booktitle={Proceedings of the SIGCHI conference on Human factors in computing systems},
+  pages={219--226},
+  year={2002},
+  organization={ACM},
+  caption={Smart Skip}
+}
+
+@inproceedings{gemmell2002mylifebits,
+  title={MyLifeBits: fulfilling the Memex vision},
+  author={Gemmell, Jim and Bell, Gordon and Lueder, Roger and Drucker, Steven and Wong, Curtis},
+  booktitle={Proceedings of the tenth ACM international conference on Multimedia},
+  pages={235--238},
+  year={2002},
+  organization={ACM},
+  caption={Memex Vision}
+}
+
+
+@techreport{drucker2003photo,
+  title={Photo-triage: Rapidly annotating your digital photographs},
+  author={Drucker, Steven and Wong, Curtis and Roseway, Asta and Glenner, Steve and De Mar, Steve},
+  year={2003},
+  number={MSR-TR-2003-99},
+  institution={Microsoft Research},
+  caption={Phototriage}  
+}
+
+@techreport{drucker2002spectator,
+  title={Spectator games: A new entertainment modality of networked multiplayer games},
+  author={Drucker, Steven and He, Li-wei and Cohen, Michael and Wong, Curtis and Gupta, Anoop},
+  year={2002},
+  institution={Microsoft Research},
+  caption={Spectator (concept)}
+}
+
+@misc{drucker22002spectator2,
+    title={Spectator implementation in Mechwarrior},
+    author={Steven M. Drucker, Steven De Mar},
+    year={2002},
+    insitution={Microsoft Research},
+    caption={Spectator (MechWarrior)}
+}
+
+
+@inproceedings{agarwala2004interactive,
+  title={Interactive digital photomontage},
+  author={Agarwala, Aseem and Dontcheva, Mira and Agrawala, Maneesh and Drucker, Steven and Colburn, Alex and Curless, Brian and Salesin, David and Cohen, Michael},
+  booktitle={ACM Transactions on Graphics (TOG)},
+  volume={23},
+  number={3},
+  pages={294--302},
+  year={2004},
+  organization={ACM},
+  caption={Interactive Digital Photomontage}
+}
+
+@inproceedings{drucker2004mediabrowser,
+  title={MediaBrowser: reclaiming the shoebox},
+  author={Drucker, Steven M and Wong, Curtis and Roseway, Asta and Glenner, Steven and De Mar, Steven},
+  booktitle={Proceedings of the working conference on Advanced visual interfaces},
+  pages={433--436},
+  year={2004},
+  organization={ACM},
+  caption={MediaBrowser}
+}
+
+
+@inproceedings{huynh2005time,
+  title={Time quilt: scaling up zoomable photo browsers for large, unstructured photo collections},
+  author={Huynh, David F and Drucker, Steven M and Baudisch, Patrick and Wong, Curtis},
+  booktitle={CHI'05 extended abstracts on Human factors in computing systems},
+  pages={1937--1940},
+  year={2005},
+  organization={ACM},
+  caption={TimeQuilt}
+}
+
+@inproceedings{dontcheva2005v4v,
+  title={v4v: a View for the Viewer},
+  author={Dontcheva, Mira and Drucker, Steven M and Cohen, Michael F},
+  booktitle={Proceedings of the 2005 conference on Designing for User eXperience},
+  pages={19},
+  year={2005},
+  organization={AIGA: American Institute of Graphic Arts},
+  caption={V4V}
+}
+
+@inproceedings{drucker2005visual,
+  title={The visual decision maker: A recommendation system for collocated users},
+  author={Drucker, Steven M and Regan, Tim and Roseway, Asta and Lofstrom, Markus},
+  booktitle={Proceedings of the 2005 conference on Designing for User eXperience},
+  pages={21},
+  year={2005},
+  organization={AIGA: American Institute of Graphic Arts},
+  caption={Visual Decision Maker}
+}
+
+@article{white2006supporting,
+  title={Supporting exploratory search, introduction, special issue, communications of the ACM},
+  author={White, Ryen W and Kules, Bill and Drucker, Steven M and others},
+  journal={Communications of the ACM},
+  volume={49},
+  number={4},
+  pages={36--39},
+  year={2006},
+  caption={Exploratory Search}
+}
+
+@inproceedings{drucker2006comparing,
+  title={Comparing and managing multiple versions of slide presentations},
+  author={Drucker, Steven M and Petschnigg, Georg and Agrawala, Maneesh},
+  booktitle={Proceedings of the 19th annual ACM symposium on User interface software and technology},
+  pages={47--56},
+  year={2006},
+  organization={ACM},
+  caption={Powerpoint Diff}
+}
+
+@inproceedings{dontcheva2006summarizing,
+  title={Summarizing personal web browsing sessions},
+  author={Dontcheva, Mira and Drucker, Steven M and Wade, Geraldine and Salesin, David and Cohen, Michael F},
+  booktitle={Proceedings of the 19th annual ACM symposium on User interface software and technology},
+  pages={115--124},
+  year={2006},
+  organization={ACM},
+  caption={Summarizing Web Sessions}
+}
+
+@inproceedings{deline2006code,
+  title={Code thumbnails: Using spatial memory to navigate source code},
+  author={DeLine, Robert and Czerwinski, Mary and Meyers, Brian and Venolia, Gina and Drucker, Steven and Robertson, George},
+  booktitle={Visual Languages and Human-Centric Computing (VL/HCC'06)},
+  pages={11--18},
+  year={2006},
+  organization={IEEE},
+  caption={Code Thumbnails}
+}
+
+@inproceedings{wang2006cartoon,
+  title={The cartoon animation filter},
+  author={Wang, Jue and Drucker, Steven M and Agrawala, Maneesh and Cohen, Michael F},
+  booktitle={ACM Transactions on Graphics (TOG)},
+  volume={25},
+  number={3},
+  pages={1169--1173},
+  year={2006},
+  organization={ACM},
+  caption={Cartoon Animation Filter}
+}
+
+@inproceedings{meyers2006dance,
+  title={Dance your work away: exploring step user interfaces},
+  author={Meyers, Brian and Brush, AJ and Drucker, Steven and Smith, Marc A and Czerwinski, Mary},
+  booktitle={CHI'06 extended abstracts on Human factors in computing systems},
+  pages={387--392},
+  year={2006},
+  organization={ACM},
+  caption={Step User Interfaces}
+}
+
+
+@inproceedings{dontcheva2007relations,
+  title={Relations, cards, and search templates: user-guided web data integration and layout},
+  author={Dontcheva, Mira and Drucker, Steven M and Salesin, David and Cohen, Michael F},
+  booktitle={Proceedings of the 20th annual ACM symposium on User interface software and technology},
+  pages={61--70},
+  year={2007},
+  organization={ACM},
+  caption={Relations Templates}
+}
+
+
+@inproceedings{white2007investigating,
+  title={Investigating behavioral variability in web search},
+  author={White, Ryen W and Drucker, Steven M},
+  booktitle={Proceedings of the 16th international conference on World Wide Web},
+  pages={21--30},
+  year={2007},
+  organization={ACM},
+  caption={Web Search Variability}
+}
+
+@inproceedings{hua2007face,
+  title={Face recognition using discriminatively trained orthogonal rank one tensor projections},
+  author={Hua, Gang and Viola, Paul A and Drucker, Steven M},
+  booktitle={2007 IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1--8},
+  year={2007},
+  organization={IEEE},
+  caption={FaceRec}
+}
+
+@inproceedings{white2007exploratory,
+  title={Exploratory search and HCI: designing and evaluating interfaces to support exploratory search interaction},
+  author={White, Ryen W and Drucker, Steven M and Marchionini, Gary and Hearst, Marti and others},
+  booktitle={CHI'07 Extended Abstracts on Human Factors in Computing Systems},
+  pages={2877--2880},
+  year={2007},
+  organization={ACM},
+  caption={Search Workshop}
+}
+
+@inproceedings{luan2008annotating,
+  title={Annotating gigapixel images},
+  author={Luan, Qing and Drucker, Steven M and Kopf, Johannes and Xu, Ying-Qing and Cohen, Michael F},
+  booktitle={Proceedings of the 21st annual ACM symposium on User interface software and technology},
+  pages={33--36},
+  year={2008},
+  organization={ACM},
+  caption={Annotation Gigapixel Images}
+}
+
+@inproceedings{satpathy2008pixaura,
+  title={Pixaura: supporting tentative decision making when selecting and sharing digital photos},
+  author={Satpathy, Lalatendu and Kamppari, Saara and Lewis, Bridget and Prasad, Ajay and Rhee, Yong Woo and Elgart, Benjamin and Drucker, Steven},
+  booktitle={Proceedings of the 22nd British HCI Group Annual Conference on People and Computers: Culture, Creativity, Interaction-Volume 2},
+  pages={87--91},
+  year={2008},
+  organization={British Computer Society},
+  caption={Pixaura}
+}
+
+
+@inproceedings{teevan2009visual,
+  title={Visual snippets: summarizing web pages for search and revisitation},
+  author={Teevan, Jaime and Cutrell, Edward and Fisher, Danyel and Drucker, Steven M and Ramos, Gonzalo and Andr{\'e}, Paul and Hu, Chang},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages={2023--2032},
+  year={2009},
+  organization={ACM},
+  caption={Visual Snippets}
+}
+
+@inproceedings{medynskiy2009exploring,
+  title={Exploring websites through contextual facets},
+  author={Medynskiy, Yevgeniy and Dontcheva, Mira and Drucker, Steven M},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages={2013--2022},
+  year={2009},
+  organization={ACM},
+  caption={Contextual Facets}
+}
+
+
+@inproceedings{toomim2009attaching,
+  title={Attaching UI enhancements to websites with end users},
+  author={Toomim, Michael and Drucker, Steven M and Dontcheva, Mira and Rahimi, Ali and Thomson, Blake and Landay, James A},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages={1859--1868},
+  year={2009},
+  organization={ACM},
+  caption={reForm}
+}
+
+
+@article{fisher2010visualizations,
+  title={Visualizations everywhere: A multiplatform infrastructure for linked visualizations},
+  author={Fisher, Danyel and Drucker, Steven and Fernandez, Roland and Ruble, Scott},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  volume={16},
+  number={6},
+  pages={1157--1163},
+  year={2010},
+  publisher={IEEE},
+  caption={WebCharts}
+}
+
+
+
+@inproceedings{basu2010assisting,
+  title={Assisting Users with Clustering Tasks by Combining Metric Learning and Classification.},
+  author={Basu, Sumit and Fisher, Danyel and Drucker, Steven M and Lu, Hao},
+  booktitle={AAAI},
+  year={2010},
+  caption={iClusterTheory}
+}
+
+@inproceedings{patel2010gestalt,
+  title={Gestalt: integrated support for implementation and analysis in machine learning},
+  author={Patel, Kayur and Bancroft, Naomi and Drucker, Steven M and Fogarty, James and Ko, Andrew J and Landay, James},
+  booktitle={Proceedings of the 23nd annual ACM symposium on User interface software and technology},
+  pages={37--46},
+  year={2010},
+  organization={ACM},
+  caption={Gestalt}
+}
+
+@inproceedings{patel2011using,
+  title={Using multiple models to understand data},
+  author={Patel, Kayur and Drucker, Steven M and Fogarty, James and Kapoor, Ashish and Tan, Desney S},
+  booktitle={IJCAI Proceedings-International Joint Conference on Artificial Intelligence},
+  volume={22},
+  number={1},
+  pages={1723},
+  year={2011},
+  caption={Prospect}
+}
+
+@techreport{fisher2011vis,
+  title={Vis-a-vis: A Visual Language for Spreadsheet Visualizations},
+  author={Fisher, Danyel and Drucker, Steven and Fernandez, Roland and Chen, Xiaoji},
+  year={2011},
+  institution={Technical Report MSR-TR-2011-142, Microsoft Research},
+  caption={Vis-a-vis}
+}
+
+
+@inproceedings{drucker2011helping,
+  title={Helping users sort faster with adaptive machine learning recommendations},
+  author={Drucker, Steven M and Fisher, Danyel and Basu, Sumit},
+  booktitle={IFIP Conference on Human-Computer Interaction},
+  pages={187--203},
+  year={2011},
+  organization={Springer Berlin Heidelberg},
+  caption={iCluster}
+}
+
+
+
+@inproceedings{joshi2012cliplets,
+  title={Cliplets: juxtaposing still and dynamic imagery},
+  author={Joshi, Neel and Mehta, Sisil and Drucker, Steven and Stollnitz, Eric and Hoppe, Hugues and Uyttendaele, Matt and Cohen, Michael},
+  booktitle={Proceedings of the 25th annual ACM symposium on User interface software and technology},
+  pages={251--260},
+  year={2012},
+  organization={ACM},
+  caption={Cliplets}
+}
+
+
+@article{kopf2012quality,
+  title={Quality prediction for image completion},
+  author={Kopf, Johannes and Kienzle, Wolf and Drucker, Steven and Kang, Sing Bing},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={31},
+  number={6},
+  pages={131},
+  year={2012},
+  publisher={ACM},
+  caption={Completion}
+}
+
+
+@article{guenter2012foveated,
+  title={Foveated 3D graphics},
+  author={Guenter, Brian and Finch, Mark and Drucker, Steven and Tan, Desney and Snyder, John},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={31},
+  number={6},
+  pages={164},
+  year={2012},
+  publisher={ACM},
+  caption={Foveated}
+}
+
+
+@inproceedings{fisher2012trust,
+  title={Trust me, I'm partially right: incremental visualization lets analysts explore large datasets faster},
+  author={Fisher, Danyel and Popov, Igor and Drucker, Steven and others},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages={1673--1682},
+  year={2012},
+  organization={ACM},
+  caption={Incremental Visualization}
+}
+
+@inproceedings{zhao2012timeslice,
+  title={TimeSlice: Interactive faceted browsing of timeline data},
+  author={Zhao, Jian and Drucker, Steven M and Fisher, Danyel and Brinkman, Donald},
+  booktitle={Proceedings of the International Working Conference on Advanced Visual Interfaces},
+  pages={433--436},
+  year={2012},
+  organization={ACM},
+  caption={TimeSlice}
+}
+
+
+@article{fisher2012interactions,
+  title={Interactions with big data analytics},
+  author={Fisher, Danyel and DeLine, Rob and Czerwinski, Mary and Drucker, Steven},
+  journal={interactions},
+  volume={19},
+  number={3},
+  pages={50--59},
+  year={2012},
+  publisher={ACM},
+  caption={Big Data Interaction}
+}
+
+@inproceedings{bigelow2014reflections,
+  title={Reflections on how designers design with data},
+  author={Bigelow, Alex and Drucker, Steven and Fisher, Danyel and Meyer, Miriah},
+  booktitle={Proceedings of the 2014 International Working Conference on Advanced Visual Interfaces},
+  pages={17--24},
+  year={2014},
+  organization={ACM},
+  caption={DesignReflections}
+}
+
+
+@article{morris2014reducing,
+  title={Reducing legacy bias in gesture elicitation studies},
+  author={Morris, Meredith Ringel and Danielescu, Andreea and Drucker, Steven and Fisher, Danyel and Lee, Bongshin and Wobbrock, Jacob O and others},
+  journal={interactions},
+  volume={21},
+  number={3},
+  pages={40--45},
+  year={2014},
+  publisher={ACM},
+  caption={GestureElicitation}
+}
+
+@article{fisher2012exploratory,
+  title={Exploratory visualization involving incremental, approximate database queries and uncertainty},
+  author={Fisher, Danyel and Drucker, Steven M and K{\"o}nig, Arnd Christian},
+  journal={IEEE computer graphics and applications},
+  volume={32},
+  number={4},
+  pages={55--62},
+  year={2012},
+  caption={IncrementalVis}
+}
+
+@inproceedings{barnett2013stat,
+  title={Stat!: an interactive analytics environment for big data},
+  author={Barnett, Mike and Chandramouli, Badrish and DeLine, Robert and Drucker, Steven and Fisher, Danyel and Goldstein, Jonathan and Morrison, Patrick and Platt, John},
+  booktitle={Proceedings of the 2013 ACM SIGMOD International Conference on Management of Data},
+  pages={1013--1016},
+  year={2013},
+  organization={ACM},
+  caption={Stat!}
+}
+
+
+@article{hullman2013deeper,
+  title={A deeper understanding of sequence in narrative visualization},
+  author={Hullman, Jessica and Drucker, Steven and Riche, Nathalie Henry and Lee, Bongshin and Fisher, Danyel and Adar, Eytan},
+  journal={IEEE transactions on visualization and computer graphics},
+  volume={19},
+  number={12},
+  pages={2406--2415},
+  year={2013},
+  publisher={IEEE},
+  caption={Narrative}
+}
+
+@misc {
+    title={SandDance},
+    author={Steven M. Drucker and Roland Fernandez},
+    insitution={Microsoft Research},
+    year={2013},
+    type={software},
+    caption={SandDance},
+}
+@inproceedings{drucker2013touchviz,
+  title={TouchViz: a case study comparing two interfaces for data analytics on tablets},
+  author={Drucker, Steven M and Fisher, Danyel and Sadana, Ramik and Herron, Jessica and others},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages={2301--2310},
+  year={2013},
+  organization={ACM},
+  caption={TouchViz}
+}
+
+
+@article{zgraggen2014panoramicdata,
+  title={PanoramicData: Data analysis through pen \& touch},
+  author={Zgraggen, Emanuel and Zeleznik, Robert and Drucker, Steven M},
+  journal={IEEE transactions on visualization and computer graphics},
+  volume={20},
+  number={12},
+  pages={2112--2121},
+  year={2014},
+  publisher={IEEE},
+  caption={Panoramic Data}
+}
+
+
+@article{liu2015exploring,
+  title={Exploring topical lead-lag across corpora},
+  author={Liu, Shixia and Chen, Yang and Wei, Hao and Yang, Jing and Zhou, Kun and Drucker, Steven M},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  volume={27},
+  number={1},
+  pages={115--129},
+  year={2015},
+  publisher={IEEE},
+  caption={Topic-Lead-Lag}
+}
+
+@inproceedings{chi2014demowiz,
+  title={DemoWiz: re-performing software demonstrations for a live presentation},
+  author={Chi, Pei-Yu and Lee, Bongshin and Drucker, Steven M},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages={1581--1590},
+  year={2014},
+  organization={ACM},
+  caption={Demowiz}  
+}
+
+
+@inproceedings{kairam2015refinery,
+  title={Refinery: Visual exploration of large, heterogeneous networks through associative browsing},
+  author={Kairam, Sanjay and Riche, Nathalie Henry and Drucker, Steven and Fernandez, Roland and Heer, Jeffrey},
+  booktitle={Computer Graphics Forum},
+  volume={34},
+  number={3},
+  pages={301--310},
+  year={2015},
+  caption={Refinery}
+}
+
+@inproceedings{amershi2015modeltracker,
+  title={Modeltracker: Redesigning performance analysis tools for machine learning},
+  author={Amershi, Saleema and Chickering, Max and Drucker, Steven M and Lee, Bongshin and Simard, Patrice and Suh, Jina},
+  booktitle={Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems},
+  pages={337--346},
+  year={2015},
+  organization={ACM},
+  caption={Modeltracker}
+}
+
+@proceedings{squeries-visual-regular-expressions-for-querying-and-exploring-event-sequences,
+    author = {Emanuel Zgraggen, Steven Drucker, Danyel Fisher, Rob DeLine},
+    title = {(s|qu)eries: Visual Regular Expressions for Querying and Exploring Event Sequences},
+    year = {2015},
+    month = {April},
+    abstract = {
+    Many different domains collect event sequence data and rely on finding and analyzing patterns within it to gain meaningful insights. Current systems that support such queries either provide limited expressiveness, hinder exploratory workflows or present interaction and visualization models which do not scale well to large and multi-faceted data sets. In this paper we present (s|qu)eries (pronounced “Squeries”), a visual query interface for creating queries on sequences (series) of data, based on regular expressions. (s|qu)eries is a touchbased system that exposes the full expressive power of regular expressions in an approachable way and interleaves query specification with result visualizations. Being able to visually investigate the results of different query-parts supports debugging and encourages iterative query-building as well as exploratory work-flows. We validate our design and implementation through a set of informal interviews with data scientists that analyze event sequences on a daily basis.
+    },
+    publisher = {ACM – Association for Computing Machinery},
+    url = {https://www.microsoft.com/en-us/research/publication/squeries-visual-regular-expressions-for-querying-and-exploring-event-sequences/},
+    caption={Squeries}
+}
+
+@article{fisher2014business,
+  title={Business Intelligence Analytics [Guest editors' introduction]},
+  author={Fisher, Danyel and Drucker, Steven and Czerwinski, Mary},
+  journal={IEEE computer graphics and applications},
+  volume={34},
+  number={5},
+  pages={22--24},
+  year={2014},
+  publisher={IEEE},
+  caption={Bi Analytics}
+}
+
+@article{bigelow2017iterating,
+  title={Iterating between tools to create and edit visualizations},
+  author={Bigelow, Alex and Drucker, Steven and Fisher, Danyel and Meyer, Miriah},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  volume={23},
+  number={1},
+  pages={481--490},
+  year={2017},
+  publisher={IEEE},
+  caption={Hanpuku}
+}
+
+@inproceedings{barik2016bones,
+  title={The bones of the system: a case study of logging and telemetry at Microsoft},
+  author={Barik, Titus and DeLine, Robert and Drucker, Steven and Fisher, Danyel},
+  booktitle={Proceedings of the 38th International Conference on Software Engineering Companion},
+  pages={92--101},
+  year={2016},
+  organization={ACM},
+  caption={Bones}
+}
+
+
+
+@article{edge2016slidespace,
+  title={SlideSpace: Heuristic Design of a Hybrid Presentation Medium},
+  author={Edge, Darren and Yang, Xi and Kotturi, Yasmine and Wang, Shuoping and Feng, Dan and Lee, Bongshin and Drucker, Steven},
+  journal={ACM Transactions on Computer-Human Interaction (TOCHI)},
+  volume={23},
+  number={3},
+  pages={16},
+  year={2016},
+  publisher={ACM},
+  caption={SlideSpace}
+}
+
+
+@article{shneiderman2006find,
+  title={Find that photo!: interface strategies to annotate, browse, and share},
+  author={Shneiderman, Ben and Bederson, Benjamin B and Drucker, Steven M},
+  journal={Communications of the ACM},
+  volume={49},
+  number={4},
+  pages={69--71},
+  year={2006},
+  publisher={ACM},
+  caption={Find That Photo}
+}
+
+@inproceedings{vellon1998architecture,
+  title={The Architecture of a Distributed Virtual Worlds System.},
+  author={Vellon, Manny and Marple, Kirk and Mitchell, Don and Drucker, Steven},
+  booktitle={COOTS},
+  pages={211--218},
+  year={1998},
+  caption={VWorlds}
+}
+
+
+@article{edmonds2007instrumenting,
+  title={Instrumenting the dynamic web},
+  author={Edmonds, Andy and White, Ryen W and Morris, Dan and Drucker, Steven M},
+  journal={Journal of Web Engineering},
+  volume={6},
+  number={3},
+  pages={243},
+  year={2007},
+  publisher={Rinton Press}
+}
+
+@article{colburn2001graphical,
+  title={Graphical enhancements for voice only conference calls},
+  author={Colburn, R Alex and Cohen, Michael F and Drucker, Steven M and LeeTiernan, Scott and Gupta, Anoop},
+  journal={Microsoft Corporation, Redmond, WA, Technical Report MSR-TR-2001-95},
+  year={2001},
+  caption={Graphic enhancement for conference calls}
+}
+
+@inproceedings{dontcheva2006collecting,
+  title={Collecting and organizing web content},
+  author={Dontcheva, Mira and Drucker, Steven M and Wade, Geraldine and Salesin, David and Cohen, Michael F},
+  booktitle={Personal Information Management-Special Interest Group for Information Retrieval Workshop},
+  pages={44--47},
+  year={2006},
+  caption={Collecting Web Content}
+}
+
+@inproceedings{brooks2015featureinsight,
+  title={FeatureInsight: Visual support for error-driven feature ideation in text classification},
+  author={Brooks, Michael and Amershi, Saleema and Lee, Bongshin and Drucker, Steven M and Kapoor, Ashish and Simard, Patrice},
+  booktitle={Visual Analytics Science and Technology (VAST), 2015 IEEE Conference on},
+  pages={105--112},
+  year={2015},
+  organization={IEEE}
+  caption={Feature Insight},
+}
+
+@techreport{chen2008interactive,
+  title={Interactive techniques for registering images to digital terrain and building models},
+  author={Chen, Billy and Ramos, Gonzalo and Ofek, Eyal and Cohen, Michael and Drucker, Steven and Nist{\'e}r, David},
+  year={2008},
+  institution={Microsoft Research}
+  caption={Terrain Registration},
+}
+
+@inproceedings{ali2011online,
+  title={Online visualization of geospatial stream data using the WorldWide telescope},
+  author={Ali, Mohamed and Chandramouli, Badrish and Fay, Jonathan and Wong, Curtis and Drucker, Steven and Raman, Balan Sethu},
+  booktitle={Proceedings of the International Conference on Very Large Data Bases (VLDB)},
+  year={2011},
+  caption={Geospatial Stream}
+}
+
+@inproceedings{smith1999counting,
+  title={Counting on community in cyberspace},
+  author={Smith, Marc A and Drucker, Steven M and Kraut, Robert and Wellman, Barry},
+  booktitle={CHI'99 Extended Abstracts on Human Factors in Computing Systems},
+  pages={87--88},
+  year={1999},
+  organization={ACM},
+  caption={Counting Community}
+}
+
+@inproceedings{dontcheva2008experiences,
+  title={Experiences with content extraction from the web},
+  author={Dontcheva, Mira and Lin, Sharon and Drucker, Steven M and Salesin, David and Cohen, Michael F},
+  booktitle={Proc SUI},
+  year={2008},
+  caption={Content Extraction}
+}
+
+@inproceedings{kerne2013evaluation,
+  title={Evaluation methods for creativity support environments},
+  author={Kerne, Andruid and Webb, Andrew M and Latulipe, Celine and Carroll, Erin and Drucker, Steven M and Candy, Linda and H{\"o}{\"o}k, Kristina},
+  booktitle={CHI'13 Extended Abstracts on Human Factors in Computing Systems},
+  pages={3295--3298},
+  year={2013},
+  organization={ACM},
+}
+
+@techreport{imageflow-streaming-image-search,
+    author = {Varun Jampani, Gonzalo Ramos, Steven Drucker},
+    title = {ImageFlow: Streaming Image Search},
+    year = {2010},
+    month = {November},
+    abstract = {
+    Traditional grid and list representations of image search results are the dominant interaction paradigms that users face on a daily basis, yet it is unclear that such paradigms are well-suited for experiences where the user's task is to browse images for leisure, to discover new information or to seek particular images to represent ideas. We introduce ImageFlow, a novel image search user interface that explores a different alternative to the traditional presentation of image search results. ImageFlow presents image results on a canvas where we map semantic features (e.g., relevance, related queries) to the canvas' spatial dimensions (e.g., x, y, z) in a way that allows for several levels of engagement – from passively viewing a stream of images, to seamlessly navigating through the semantic space and actively collecting images for sharing and reuse. We have implemented our system as a fully functioning prototype, and we report on promising, preliminary usage results.
+    },
+    institution = {Microsoft Research},
+    url = {https://www.microsoft.com/en-us/research/publication/imageflow-streaming-image-search/},
+    caption={imageflow}
+}
+
+@incollection{whitted2012visualization,
+  title={Visualization Surfaces},
+  author={Whitted, Turner and Drucker, Steven},
+  abstract={
+      Large displays suitable for visualization applications are typically constructed from arrays of smaller ones. The physical and optical challenges of designing these assemblies are the first topic addressed here.
+  }
+  booktitle={Expanding the Frontiers of Visual Analytics and Visualization},
+  pages={417--427},
+  year={2012},
+  publisher={Springer London}
+}
+
+@article{dontcheva2010web,
+  title={From Web Summaries to search templates},
+  author={Dontcheva, Mira and Drucker, Steven M and Salesin, David and Cohen, Michael F},
+  journal={No Code Required: Giving Users Tools to Transform the Web},
+  pages={235},
+  year={2010},
+  publisher={Morgan Kaufmann}
+}
+
+@unpublished{andre2007informal,
+       booktitle = {CHI2008},
+            type = {Technical Report},
+           title = {Informal Online Decision Making: Current Practices and Support System Design},
+          author = {Paul Andr{\'e} and Steven Drucker and m.c. schraefel},
+            year = {2007},
+     institution = {Microsoft, University of Southampton},
+             url = {http://eprints.soton.ac.uk/264545/},
+        abstract = {Existing group decision support systems are too complex to support lightweight, informal decision making made popular by the amount of information available on the Web. From an examination of related work, an online survey and a formative study to examine how people currently use the Web for decision support, we present a set of design recommendations towards the development of an informal Web decision support tool.},
+        caption={Informal Decisions}
+}
+
+@article{sarikayasequence,
+  title={Sequence Pre-processing: Focusing Analysis of Log Event Data},
+  author={Sarikaya, Alper and Zgraggen, Emanuel and DeLine, Rob and Drucker, Steven and Fisher, Danyel},
+  year={2016},
+  caption={Sequence Preprocessing}
+}
+
+@incollection {texturefromtouch,
+    booktitle={Natural Computation},
+    title={Texture from Touch},
+    editor={Whitman Richards},
+    publisher={MIT Press},
+    year={1988},
+    caption={Texture From Touch}
+}
+
+@misc {selfinflated,
+    author={Tinsley Galyean and Steven Drucker},
+    type={animation},
+    year={1992},
+    caption={Self Inflated}
+}
+
+@incollection {virtualfootball,
+  booktitle={Intelligent camera control for graphical environments},
+  title={Virtual Football}
+  author={Drucker, Steven Mark},
+  year={1994},
+  publisher={MIT},
+  caption={Virtual Football}
+}
+
+@incollection {virtualfootball,
+  booktitle={Intelligent camera control for graphical environments},
+  title={CamDroid}
+  author={Drucker, Steven Mark},
+  year={1994},
+  publisher={MIT},
+  caption={CamDroid}
+}
+
+@techreport {tokentv,
+    title={Token TV: Sharing preferences for Television DVR recording},
+    author={Steven M. Drucker, Curtis Wong},
+    institution={Microsoft Research},
+    caption={tokentv},
+    year={2001}
+}
+
+@techreport{druckermoving,
+  title={Moving from MOOs to Multi-User Applications},
+  author={Drucker, Steven M},
+  instituion={Microsoft Research},
+  caption={MOOs to Multi-user apps},
+  year={1999}
+}
+
+@techreport {deepnews,
+    title={DeepNews: Automatic related material based on closed caption information},
+    author={Steven M. Drucker, Curtis Wong},
+    institution={Microsoft Research},
+    caption={deepnews},
+    year={2001}
+}
+
+@techreport {flatland,
+    title={Flatland, Rapid prototyping of distributed internet applications},
+    author={Harry Chesley, Steven M. Drucker, Anoop Gupta, Greg Kimberly, Steven White},
+    institution={Microsoft Research},
+    number={MSR-TR-2001-73}
+    caption={flatland},
+    year={2001}
+}
+
+@techreport {filteredepg,
+    title={Filtered Electronic Program Guides},
+    author={Steven M. Drucker, Curtis Wong},
+    institution={Microsoft Research},
+    caption={Filtered EPG},
+    year={2002}
+}
+
+@misc {rnviewer,
+    title={Right Now Viewer},
+    author={Steven M. Drucker, Curtis Wong, Steven De Mar},
+    type={demo},
+    year={2002},
+    caption={Right Now Viewer}
+}
+
+@misc {pivotviewer,
+    title={LiveLabs Pivot Viewer},
+    author={Gary Flake, Karim Farouki, Brett Brewer, Steven M. Drucker},
+    type={software},
+    year={2009},
+    caption={LiveLabs Pivot Viewer}
+}
+
+@misc {llthumbtack,
+    title={LiveLabs ThumbTack},
+    author={Steven M. Drucker, Aamer Hydrie},
+    type={software},
+    year={2009},
+    caption={LiveLabs Thumbtack}
+}
+
+@techreport{understanding-breadth-event-space-learning-logan,
+    author = {Danyel Fisher, Steven Drucker, Mary Czerwinski, Rob DeLine, Kael Rowan},
+    title = {Understanding the Breadth of the Event Space: Learning from Logan},
+    booktitle = {Proceedings of the Event Event: Temporal & Sequential Event Analysis. IEEE VIS 2016 Workshop},
+    year = {2016},
+    month = {October},
+    abstract = {Event processing, analysis, and visualization are increasingly important, and common, problems as telemetry and log recording become ubiquitous. We are still learning about the space of ways to both query and see the results of sequential queries against event-logged data. In this paper, we discuss our Logan event exploration prototype, which is based on regular-expression queries and result histograms; we then discuss the many factors that vary between tools, domains, and datasets -- tradeoffs of factors such as session size, cardinality of events, and the presence of event arguments.},
+    url = {https://www.microsoft.com/en-us/research/publication/understanding-breadth-event-space-learning-logan/},
+    caption={Logan},
+}
+
+
+@misc {movievariations,
+    title={Movie Variations},
+    author={Steven M. Drucker, Curtis Wong},
+    type={software},
+    year={2003},
+    caption={Movie Variations}
+}
+
+@misc {peoplebrowser,
+    title={People Browser},
+    author={Steven M. Drucker, Curtis Wong},
+    type={software},
+    year={2003},
+    caption={People Browser}
+}
+
+

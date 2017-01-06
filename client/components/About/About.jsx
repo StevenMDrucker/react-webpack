@@ -2,10 +2,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Image, Button,ButtonToolbar, SplitButton, MenuItem, Grid, Row, Col, Tabs, Tab, PanelGroup, Panel } from 'react-bootstrap';
-
+import Bibliography, {parseString} from 'bibliography'
+import AMA from 'bibliography/AMA'
 export default React.createClass({
 
     render() {
+    // Parse bibliography string    
         return(
          <div>
           <Col lg={2} md={2} sm={1}>
@@ -53,6 +55,7 @@ export default React.createClass({
                                     His email address is sdrucker (at) microsoft.com.
                     </div>
                 </Col>
+
              </Row>
         </div>
           </Col>          
