@@ -1770,7 +1770,7 @@
     {
         "caption": "Imageflow",
         "thumb": "",
-        "facet.subject": "",
+        "facet.subject": "Media,UI,Web,Visualization",
         "img": "researchImages/imageflow.png",
         "ENTRYTYPE": "techreport",
         "year": "2010",

@@ -14,6 +14,9 @@ const KeywordVis = React.createClass({
   localHandleClick: function(val) {
     this.props.handleClick(val);
   },
+  KeywordHandleClick: function(title, val) {
+      this.props.filter(title, val);
+  },
   calcHighlight: function(aproject) {
     if ((this.props.currentProjects.indexOf(aproject)>=0) || (this.state.highlightProjects.indexOf(aproject)>=0)) {
           return("highlighted");
@@ -96,6 +99,7 @@ const KeywordVis = React.createClass({
     var keywordlist = keywords.map((akey,i)=> {
         return(<g key={"k"+i} transform={"translate(" + (marginx-5) + "," + y(i) + ")" }>
             <text  dy="-.3em" className={"keyword "+ this.calcHighlightSubject(akey)}  
+            onClick={(e) => this.KeywordHandleClick("subject",akey)}
             onMouseEnter={(e)=>this.highlightProjects(akey)} 
             onMouseLeave={(e)=>this.clearHighlightProjects()}>{akey}</text>
         </g>);

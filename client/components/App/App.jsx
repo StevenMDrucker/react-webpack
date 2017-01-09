@@ -222,7 +222,7 @@ export default React.createClass({
         resultsDisplay = <div> 
             <ContainerDimensions> 
                { ({ width, height }) => 
-                <KeywordVis items={this.state.researchData} currentProjects={this.state.currentProjects} highlight={this.state.highlight} handleClick={this.openModal} width={width} height={height}>
+                <KeywordVis items={this.state.researchData} currentProjects={this.state.currentProjects} highlight={this.state.highlight} handleClick={this.openModal} filter = {this.handleFilter} width={width} height={height}>
                 </KeywordVis> 
                 
                 }
