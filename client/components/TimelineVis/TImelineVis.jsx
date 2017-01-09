@@ -27,7 +27,7 @@ const TimelineVis = React.createClass({
         var runsum = [];
         var b = _.countBy(items, function (d) { return d.primary });
         var marginx = 50;
-        var marginy = 20;
+        var marginy = 0;
         var foo =
         _.sortBy(
             _.uniq(
