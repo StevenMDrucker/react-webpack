@@ -41,7 +41,7 @@ class CardComponent extends Component {
                         <Col lg={10} sm={10} md={10}>
                         <div className="DCaption"> {val.caption} </div>
                         <div className="DReference"> {val.reference}</div>
-                        <div className="DAbstract"> {val.pabstract}</div>
+                        <div className="DAbstract"> {val.abstract}</div>
                         </Col>
                     </Row>
                 </div>;

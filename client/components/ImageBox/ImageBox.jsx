@@ -34,7 +34,7 @@ class MyPopop extends Component {
             </div>
             <RB.Modal.Body>  
                 <h6 style={{textAlign:"left"}} >Reference: {this.state.item.reference} </h6>
-                <p style={{textAlign:"left"}}> Abstract: {this.state.item.pabstract} </p>
+                <p style={{textAlign:"left"}}> Abstract: {this.state.item.abstract} </p>
             </RB.Modal.Body>
             <RB.Modal.Footer>
                 <RB.Button onClick={(e)=>this.close()}>Close</RB.Button>

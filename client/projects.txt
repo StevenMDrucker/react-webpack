@@ -184,7 +184,7 @@
     title={Spectator implementation in Mechwarrior},
     author={Steven M. Drucker, Steven De Mar},
     year={2002},
-    insitution={Microsoft Research},
+    institution={Microsoft Research},
     caption={Spectator (MechWarrior)}
 }
 
@@ -313,7 +313,7 @@
   pages={61--70},
   year={2007},
   organization={ACM},
-  caption={Relations Templates}
+  caption={Relations, Templates}
 }
 
 
@@ -594,7 +594,7 @@
 @misc {
     title={SandDance},
     author={Steven M. Drucker and Roland Fernandez},
-    insitution={Microsoft Research},
+    institution={Microsoft Research},
     year={2013},
     type={software},
     caption={SandDance},
@@ -672,7 +672,7 @@
     title = {(s|qu)eries: Visual Regular Expressions for Querying and Exploring Event Sequences},
     year = {2015},
     month = {April},
-    abstract = {
+    pabstract = {
     Many different domains collect event sequence data and rely on finding and analyzing patterns within it to gain meaningful insights. Current systems that support such queries either provide limited expressiveness, hinder exploratory workflows or present interaction and visualization models which do not scale well to large and multi-faceted data sets. In this paper we present (s|qu)eries (pronounced “Squeries”), a visual query interface for creating queries on sequences (series) of data, based on regular expressions. (s|qu)eries is a touchbased system that exposes the full expressive power of regular expressions in an approachable way and interleaves query specification with result visualizations. Being able to visually investigate the results of different query-parts supports debugging and encourages iterative query-building as well as exploratory work-flows. We validate our design and implementation through a set of informal interviews with data scientists that analyze event sequences on a daily basis.
     },
     publisher = {ACM – Association for Computing Machinery},
@@ -837,18 +837,18 @@
     title = {ImageFlow: Streaming Image Search},
     year = {2010},
     month = {November},
-    abstract = {
+    pabstract = {
     Traditional grid and list representations of image search results are the dominant interaction paradigms that users face on a daily basis, yet it is unclear that such paradigms are well-suited for experiences where the user's task is to browse images for leisure, to discover new information or to seek particular images to represent ideas. We introduce ImageFlow, a novel image search user interface that explores a different alternative to the traditional presentation of image search results. ImageFlow presents image results on a canvas where we map semantic features (e.g., relevance, related queries) to the canvas' spatial dimensions (e.g., x, y, z) in a way that allows for several levels of engagement – from passively viewing a stream of images, to seamlessly navigating through the semantic space and actively collecting images for sharing and reuse. We have implemented our system as a fully functioning prototype, and we report on promising, preliminary usage results.
     },
     institution = {Microsoft Research},
     url = {https://www.microsoft.com/en-us/research/publication/imageflow-streaming-image-search/},
-    caption={imageflow}
+    caption={Imageflow}
 }
 
 @incollection{whitted2012visualization,
   title={Visualization Surfaces},
   author={Whitted, Turner and Drucker, Steven},
-  abstract={
+  pabstract={
       Large displays suitable for visualization applications are typically constructed from arrays of smaller ones. The physical and optical challenges of designing these assemblies are the first topic addressed here.
   }
   booktitle={Expanding the Frontiers of Visual Analytics and Visualization},
@@ -874,7 +874,7 @@
             year = {2007},
      institution = {Microsoft, University of Southampton},
              url = {http://eprints.soton.ac.uk/264545/},
-        abstract = {Existing group decision support systems are too complex to support lightweight, informal decision making made popular by the amount of information available on the Web. From an examination of related work, an online survey and a formative study to examine how people currently use the Web for decision support, we present a set of design recommendations towards the development of an informal Web decision support tool.},
+        pabstract = {Existing group decision support systems are too complex to support lightweight, informal decision making made popular by the amount of information available on the Web. From an examination of related work, an online survey and a formative study to examine how people currently use the Web for decision support, we present a set of design recommendations towards the development of an informal Web decision support tool.},
         caption={Informal Decisions}
 }
 
@@ -891,7 +891,7 @@
     editor={Whitman Richards},
     publisher={MIT Press},
     year={1988},
-    caption={Texture From Touch}
+    caption={Texture from Touch}
 }
 
 @misc {selfinflated,
@@ -923,14 +923,14 @@
     title={Token TV: Sharing preferences for Television DVR recording},
     author={Steven M. Drucker, Curtis Wong},
     institution={Microsoft Research},
-    caption={tokentv},
+    caption={Token TV},
     year={2001}
 }
 
 @techreport{druckermoving,
   title={Moving from MOOs to Multi-User Applications},
   author={Drucker, Steven M},
-  instituion={Microsoft Research},
+  institution={Microsoft Research},
   caption={MOOs to Multi-user apps},
   year={1999}
 }
@@ -939,7 +939,7 @@
     title={DeepNews: Automatic related material based on closed caption information},
     author={Steven M. Drucker, Curtis Wong},
     institution={Microsoft Research},
-    caption={deepnews},
+    caption={DeepNews},
     year={2001}
 }
 
@@ -947,8 +947,8 @@
     title={Flatland, Rapid prototyping of distributed internet applications},
     author={Harry Chesley, Steven M. Drucker, Anoop Gupta, Greg Kimberly, Steven White},
     institution={Microsoft Research},
-    number={MSR-TR-2001-73}
-    caption={flatland},
+    number={MSR-TR-2001-73},
+    caption={Flatland},
     year={2001}
 }
 
@@ -990,7 +990,7 @@
     booktitle = {Proceedings of the Event Event: Temporal & Sequential Event Analysis. IEEE VIS 2016 Workshop},
     year = {2016},
     month = {October},
-    abstract = {Event processing, analysis, and visualization are increasingly important, and common, problems as telemetry and log recording become ubiquitous. We are still learning about the space of ways to both query and see the results of sequential queries against event-logged data. In this paper, we discuss our Logan event exploration prototype, which is based on regular-expression queries and result histograms; we then discuss the many factors that vary between tools, domains, and datasets -- tradeoffs of factors such as session size, cardinality of events, and the presence of event arguments.},
+    pabstract = {Event processing, analysis, and visualization are increasingly important, and common, problems as telemetry and log recording become ubiquitous. We are still learning about the space of ways to both query and see the results of sequential queries against event-logged data. In this paper, we discuss our Logan event exploration prototype, which is based on regular-expression queries and result histograms; we then discuss the many factors that vary between tools, domains, and datasets -- tradeoffs of factors such as session size, cardinality of events, and the presence of event arguments.},
     url = {https://www.microsoft.com/en-us/research/publication/understanding-breadth-event-space-learning-logan/},
     caption={Logan},
 }

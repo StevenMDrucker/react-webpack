@@ -34,7 +34,7 @@ class IndexComponent extends Component {
     this.props.handleClick(val);
   };
 
-  generateCard(val) {
+  generateCard(val,i) {
     var overItem = this.state.over;
     var highlighted = _.includes(this.props.currentProjects,val.caption);
     if (this.props.mode == "tile") {
@@ -62,7 +62,7 @@ class IndexComponent extends Component {
     }
      
     var dataList =  this.props.items.map( (val,i) => {
-      var aCard = this.generateCard(val);
+      var aCard = this.generateCard(val,i);
       return(aCard);  
     });
               

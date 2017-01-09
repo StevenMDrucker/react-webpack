@@ -72,19 +72,20 @@ export default React.createClass({
   componentDidMount: function() {
     
 //    D3.tsv("http://localhost:3001/client/researchTSV.txt", (data) => {
-    D3.tsv("client/researchTSV.txt", (data) => {
-        this.globalData = _.map(data, (a)=>this.convertData(a));
-        this.globalData = this.calculateResults({}, "year", true, "");   
-        this.setState({"researchData": this.globalData});
-    });
+//    D3.tsv("client/researchTSV.txt", (data) => {
+//        this.globalData = _.map(data, (a)=>this.convertData(a));
+//        this.globalData = this.calculateResults({}, "year", true, "");   
+//        this.setState({"researchData": this.globalData});
+//    });
 
   //  D3.text("client/research.bib", (theText)=> {
   //      var bibliography = parseString(theText);
   //  });
- //   D3.json("http://localhost:3001/client/researchData.json", (error, data) => {
- //       this.globalData = data;
- //       this.setState({"researchData":data}); 
- //   }); 
+  D3.json("client/bibtextjson.txt", (error, data) => {
+        this.globalData = _.map(data, (a)=>this.convertData(a));
+        this.globalData = this.calculateResults({}, "year", true, "");   
+        this.setState({"researchData": this.globalData}); 
+  }); 
   },
   handleBrush: function(title,val) {
     var projList = _.map(_.filter(this.state.researchData, (proj)=> (_.includes(proj.tags[title], val))), (aProj)=>aProj.caption);
