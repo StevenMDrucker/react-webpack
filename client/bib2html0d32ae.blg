@@ -1,0 +1,22 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: bib2html0d32ae.aux
+The style file: plain.bst
+Database file #1: .\research.bib
+Repeated entry---line 48 of file .\research.bib
+ : @inproceedings{drucker1992cinema
+ :                                 ,
+I'm skipping whatever remains of this entry
+Name 1 in "Chesley, Harry, and Drucker, Steven and Gupta, Anoop and Kimberly, Greg and White, Steven" has a comma at the end for entry chesley2001
+while executing---line 1049 of file plain.bst
+Warning--can't use both volume and number fields in agarwala2004interactive
+Warning--empty journal in andre2007informal
+Name 1 in "Chesley, Harry, and Drucker, Steven and Gupta, Anoop and Kimberly, Greg and White, Steven" has a comma at the end for entry chesley2001
+while executing---line 1090 of file plain.bst
+Warning--empty journal in druckermoving
+Warning--empty year in druckermoving
+Warning--can't use both volume and number fields in kairam2015refinery
+Warning--can't use both volume and number fields in patel2011using
+Warning--empty journal in sarikayasequence
+Warning--empty year in sarikayasequence
+Warning--can't use both volume and number fields in wang2006cartoon
+Warning--empty journal in zgraggen2015s
+(There were 3 error messages)

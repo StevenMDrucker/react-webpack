@@ -75,6 +75,9 @@ export default React.createClass({
           this.globalData = this.calculateResults({}, "year", true, "");
           this.setState({"researchData": this.globalData}); 
       });
+   // D3.text("client/researchData.bib", (theText)=> {
+   //   var bibliography = parseString(theText);
+   // });
     // D3.json("client/bibtextjson.txt", (error, data) => {
     //         this.globalData = _.map(data, (a)=>this.convertData(a));
     //         this.globalData = this.calculateResults({}, "year", true, "");   

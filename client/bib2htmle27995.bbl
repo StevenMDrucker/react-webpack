@@ -1,0 +1,545 @@
+\begin{thebibliography}{10}
+
+\bibitem{aboaf1989task}
+Eric~W Aboaf, Steven~M Drucker, and Christopher~G Atkeson.
+\newblock Task-level robot learning: Juggling a tennis ball more accurately.
+\newblock In {\em Robotics and Automation, 1989. Proceedings., 1989 IEEE
+  International Conference on}, pages 1290--1295. IEEE, 1989.
+
+\bibitem{agarwala2004interactive}
+Aseem Agarwala, Mira Dontcheva, Maneesh Agrawala, Steven Drucker, Alex Colburn,
+  Brian Curless, David Salesin, and Michael Cohen.
+\newblock Interactive digital photomontage.
+\newblock In {\em ACM Transactions on Graphics (TOG)}, volume~23, pages
+  294--302. ACM, 2004.
+
+\bibitem{ali2011online}
+Mohamed Ali, Badrish Chandramouli, Jonathan Fay, Curtis Wong, Steven Drucker,
+  and Balan~Sethu Raman.
+\newblock Online visualization of geospatial stream data using the worldwide
+  telescope.
+\newblock In {\em Proceedings of the International Conference on Very Large
+  Data Bases (VLDB)}, 2011.
+
+\bibitem{amershi2015modeltracker}
+Saleema Amershi, Max Chickering, Steven~M Drucker, Bongshin Lee, Patrice
+  Simard, and Jina Suh.
+\newblock Modeltracker: Redesigning performance analysis tools for machine
+  learning.
+\newblock In {\em Proceedings of the 33rd Annual ACM Conference on Human
+  Factors in Computing Systems}, pages 337--346. ACM, 2015.
+
+\bibitem{andre2007informal}
+Paul Andr{\'e}, Steven Drucker, et~al.
+\newblock Informal online decision making: Current practices and support system
+  design.
+\newblock 2007.
+
+\bibitem{barik2016bones}
+Titus Barik, Robert DeLine, Steven Drucker, and Danyel Fisher.
+\newblock The bones of the system: a case study of logging and telemetry at
+  microsoft.
+\newblock In {\em Proceedings of the 38th International Conference on Software
+  Engineering Companion}, pages 92--101. ACM, 2016.
+
+\bibitem{barnett2013stat}
+Mike Barnett, Badrish Chandramouli, Robert DeLine, Steven Drucker, Danyel
+  Fisher, Jonathan Goldstein, Patrick Morrison, and John Platt.
+\newblock Stat!: an interactive analytics environment for big data.
+\newblock In {\em Proceedings of the 2013 ACM SIGMOD International Conference
+  on Management of Data}, pages 1013--1016. ACM, 2013.
+
+\bibitem{basu2010assisting}
+Sumit Basu, Danyel Fisher, Steven~M Drucker, and Hao Lu.
+\newblock Assisting users with clustering tasks by combining metric learning
+  and classification.
+\newblock In {\em AAAI}, 2010.
+
+\bibitem{bigelow2014reflections}
+Alex Bigelow, Steven Drucker, Danyel Fisher, and Miriah Meyer.
+\newblock Reflections on how designers design with data.
+\newblock In {\em Proceedings of the 2014 International Working Conference on
+  Advanced Visual Interfaces}, pages 17--24. ACM, 2014.
+
+\bibitem{bigelow2017iterating}
+Alex Bigelow, Steven Drucker, Danyel Fisher, and Miriah Meyer.
+\newblock Iterating between tools to create and edit visualizations.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  23(1):481--490, 2017.
+
+\bibitem{brooks2015featureinsight}
+Michael Brooks, Saleema Amershi, Bongshin Lee, Steven~M Drucker, Ashish Kapoor,
+  and Patrice Simard.
+\newblock Featureinsight: Visual support for error-driven feature ideation in
+  text classification.
+\newblock In {\em Visual Analytics Science and Technology (VAST), 2015 IEEE
+  Conference on}, pages 105--112. IEEE, 2015.
+
+\bibitem{chen2008interactive}
+Billy Chen, Gonzalo Ramos, Eyal Ofek, Michael Cohen, Steven Drucker, and David
+  Nist{\'e}r.
+\newblock Interactive techniques for registering images to digital terrain and
+  building models.
+\newblock Technical report, Technical report, Microsoft Research, 2008.
+
+\bibitem{chesley2001}
+Harry Chesley, Steven Drucker, Anoop Gupta, Greg Kimberly, and Steven White.
+\newblock Flatland: Rapid prototyping of distributed internet applications.
+\newblock Technical Report MSR-TR-2001-73, Microsoft Research, 2001.
+
+\bibitem{chi2014demowiz}
+Pei-Yu Chi, Bongshin Lee, and Steven~M Drucker.
+\newblock Demowiz: re-performing software demonstrations for a live
+  presentation.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 1581--1590. ACM, 2014.
+
+\bibitem{colburn2000role}
+Alex Colburn, Michael~F Cohen, Steven Drucker, et~al.
+\newblock The role of eye gaze in avatar mediated conversational interfaces.
+\newblock {\em Sketches and Applications, Siggraph'00}, 2000.
+
+\bibitem{colburn2001graphical}
+R~Alex Colburn, Michael~F Cohen, Steven~M Drucker, Scott LeeTiernan, and Anoop
+  Gupta.
+\newblock Graphical enhancements for voice only conference calls.
+\newblock {\em Microsoft Corporation, Redmond, WA, Technical Report
+  MSR-TR-2001-95}, 2001.
+
+\bibitem{deline2006code}
+Robert DeLine, Mary Czerwinski, Brian Meyers, Gina Venolia, Steven Drucker, and
+  George Robertson.
+\newblock Code thumbnails: Using spatial memory to navigate source code.
+\newblock In {\em Visual Languages and Human-Centric Computing (VL/HCC'06)},
+  pages 11--18. IEEE, 2006.
+
+\bibitem{dontcheva2005v4v}
+Mira Dontcheva, Steven~M Drucker, and Michael~F Cohen.
+\newblock v4v: a view for the viewer.
+\newblock In {\em Proceedings of the 2005 conference on Designing for User
+  eXperience}, page~19. AIGA: American Institute of Graphic Arts, 2005.
+
+\bibitem{dontcheva2007relations}
+Mira Dontcheva, Steven~M Drucker, David Salesin, and Michael~F Cohen.
+\newblock Relations, cards, and search templates: user-guided web data
+  integration and layout.
+\newblock In {\em Proceedings of the 20th annual ACM symposium on User
+  interface software and technology}, pages 61--70. ACM, 2007.
+
+\bibitem{dontcheva2010web}
+Mira Dontcheva, Steven~M Drucker, David Salesin, and Michael~F Cohen.
+\newblock From web summaries to search templates.
+\newblock {\em No Code Required: Giving Users Tools to Transform the Web}, page
+  235, 2010.
+
+\bibitem{dontcheva2006collecting}
+Mira Dontcheva, Steven~M Drucker, Geraldine Wade, David Salesin, and Michael~F
+  Cohen.
+\newblock Collecting and organizing web content.
+\newblock In {\em Personal Information Management-Special Interest Group for
+  Information Retrieval Workshop}, pages 44--47, 2006.
+
+\bibitem{dontcheva2006summarizing}
+Mira Dontcheva, Steven~M Drucker, Geraldine Wade, David Salesin, and Michael~F
+  Cohen.
+\newblock Summarizing personal web browsing sessions.
+\newblock In {\em Proceedings of the 19th annual ACM symposium on User
+  interface software and technology}, pages 115--124. ACM, 2006.
+
+\bibitem{dontcheva2008experiences}
+Mira Dontcheva, Sharon Lin, Steven~M Drucker, David Salesin, and Michael~F
+  Cohen.
+\newblock Experiences with content extraction from the web.
+\newblock In {\em Proc UIST}, 2008.
+
+\bibitem{drucker2002spectator}
+Steven Drucker, Li-wei He, Michael Cohen, Curtis Wong, and Anoop Gupta.
+\newblock Spectator games: A new entertainment modality of networked
+  multiplayer games.
+\newblock Technical report, Microsoft Research, 2002.
+
+\bibitem{drucker2002deepnews}
+Steven Drucker and Curtis Wong.
+\newblock Faceted filtering of electronic program guides.
+\newblock Technical report, Microsoft Research, 2002.
+
+\bibitem{drucker2002filteredEPG}
+Steven Drucker and Curtis Wong.
+\newblock Spectator games: A new entertainment modality of networked
+  multiplayer games.
+\newblock Technical report, Microsoft Research, 2002.
+
+\bibitem{drucker2003photo}
+Steven Drucker, Curtis Wong, Asta Roseway, Steve Glenner, and Steve De~Mar.
+\newblock Photo-triage: Rapidly annotating your digital photographs.
+\newblock Technical report, Microsoft Research Technical Report,
+  MSR-TR-2003-99, 2003.
+
+\bibitem{druckermoving}
+Steven~M Drucker.
+\newblock Moving from moos to multi-user applications.
+
+\bibitem{drucker1992radiosity}
+Steven~M Drucker.
+\newblock Radiosity: An illuminating perspective, 1992.
+
+\bibitem{drucker2011helping}
+Steven~M Drucker, Danyel Fisher, and Sumit Basu.
+\newblock Helping users sort faster with adaptive machine learning
+  recommendations.
+\newblock In {\em IFIP Conference on Human-Computer Interaction}, pages
+  187--203. Springer Berlin Heidelberg, 2011.
+
+\bibitem{drucker2013touchviz}
+Steven~M Drucker, Danyel Fisher, Ramik Sadana, Jessica Herron, et~al.
+\newblock Touchviz: a case study comparing two interfaces for data analytics on
+  tablets.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 2301--2310. ACM, 2013.
+
+\bibitem{drucker1992cinema}
+Steven~M Drucker, Tinsley~A Galyean, and David Zeltzer.
+\newblock Cinema: A system for procedural camera movements.
+\newblock In {\em Proceedings of the 1992 symposium on Interactive 3D
+  graphics}, pages 67--70. ACM, 1992.
+
+\bibitem{drucker2002smartskip}
+Steven~M Drucker, Asta Glatzer, Steven De~Mar, and Curtis Wong.
+\newblock Smartskip: consumer level browsing and skipping of digital video
+  content.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems}, pages 219--226. ACM, 2002.
+
+\bibitem{drucker2006comparing}
+Steven~M Drucker, Georg Petschnigg, and Maneesh Agrawala.
+\newblock Comparing and managing multiple versions of slide presentations.
+\newblock In {\em Proceedings of the 19th annual ACM symposium on User
+  interface software and technology}, pages 47--56. ACM, 2006.
+
+\bibitem{drucker2005visual}
+Steven~M Drucker, Tim Regan, Asta Roseway, and Markus Lofstrom.
+\newblock The visual decision maker: A recommendation system for collocated
+  users.
+\newblock In {\em Proceedings of the 2005 conference on Designing for User
+  eXperience}, page~21. AIGA: American Institute of Graphic Arts, 2005.
+
+\bibitem{drucker1992fast}
+Steven~M Drucker and Peter Schr{\"o}der.
+\newblock Fast radiosity using a data parallel architecture.
+\newblock In {\em Third Eurographics Workshop on Rendering (Bristol, uk}, pages
+  247--258, 1992.
+
+\bibitem{drucker2004mediabrowser}
+Steven~M Drucker, Curtis Wong, Asta Roseway, Steven Glenner, and Steven De~Mar.
+\newblock Mediabrowser: reclaiming the shoebox.
+\newblock In {\em Proceedings of the working conference on Advanced visual
+  interfaces}, pages 433--436. ACM, 2004.
+
+\bibitem{drucker1994intelligent}
+Steven~Mark Drucker.
+\newblock {\em Intelligent camera control for graphical environments}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 1994.
+
+\bibitem{edge2016slidespace}
+Darren Edge, Xi~Yang, Yasmine Kotturi, Shuoping Wang, Dan Feng, Bongshin Lee,
+  and Steven Drucker.
+\newblock Slidespace: Heuristic design of a hybrid presentation medium.
+\newblock {\em ACM Transactions on Computer-Human Interaction (TOCHI)},
+  23(3):16, 2016.
+
+\bibitem{edmonds2007instrumenting}
+Andy Edmonds, Ryen~W White, Dan Morris, and Steven~M Drucker.
+\newblock Instrumenting the dynamic web.
+\newblock {\em Journal of Web Engineering}, 6(3):243, 2007.
+
+\bibitem{fisher2012interactions}
+Danyel Fisher, Rob DeLine, Mary Czerwinski, and Steven Drucker.
+\newblock Interactions with big data analytics.
+\newblock {\em interactions}, 19(3):50--59, 2012.
+
+\bibitem{fisher2014business}
+Danyel Fisher, Steven Drucker, and Mary Czerwinski.
+\newblock Business intelligence analytics [guest editors' introduction].
+\newblock {\em IEEE computer graphics and applications}, 34(5):22--24, 2014.
+
+\bibitem{fisher2011vis}
+Danyel Fisher, Steven Drucker, Roland Fernandez, and Xiaoji Chen.
+\newblock Vis-a-vis: A visual language for spreadsheet visualizations.
+\newblock Technical Report MSR-TR-2011-142, Microsoft Research, 2011.
+
+\bibitem{fisher2010visualizations}
+Danyel Fisher, Steven Drucker, Roland Fernandez, and Scott Ruble.
+\newblock Visualizations everywhere: A multiplatform infrastructure for linked
+  visualizations.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  16(6):1157--1163, 2010.
+
+\bibitem{fisher2012exploratory}
+Danyel Fisher, Steven~M Drucker, and Arnd~Christian K{\"o}nig.
+\newblock Exploratory visualization involving incremental, approximate database
+  queries and uncertainty.
+\newblock {\em IEEE computer graphics and applications}, 32(4):55--62, 2012.
+
+\bibitem{fisher2012trust}
+Danyel Fisher, Igor Popov, Steven Drucker, et~al.
+\newblock Trust me, i'm partially right: incremental visualization lets
+  analysts explore large datasets faster.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 1673--1682. ACM, 2012.
+
+\bibitem{gemmell2002mylifebits}
+Jim Gemmell, Gordon Bell, Roger Lueder, Steven Drucker, and Curtis Wong.
+\newblock Mylifebits: fulfilling the memex vision.
+\newblock In {\em Proceedings of the tenth ACM international conference on
+  Multimedia}, pages 235--238. ACM, 2002.
+
+\bibitem{guenter2012foveated}
+Brian Guenter, Mark Finch, Steven Drucker, Desney Tan, and John Snyder.
+\newblock Foveated 3d graphics.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 31(6):164, 2012.
+
+\bibitem{hua2007face}
+Gang Hua, Paul~A Viola, and Steven~M Drucker.
+\newblock Face recognition using discriminatively trained orthogonal rank one
+  tensor projections.
+\newblock In {\em 2007 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 1--8. IEEE, 2007.
+
+\bibitem{hullman2013deeper}
+Jessica Hullman, Steven Drucker, Nathalie~Henry Riche, Bongshin Lee, Danyel
+  Fisher, and Eytan Adar.
+\newblock A deeper understanding of sequence in narrative visualization.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  19(12):2406--2415, 2013.
+
+\bibitem{huynh2005time}
+David~F Huynh, Steven~M Drucker, Patrick Baudisch, and Curtis Wong.
+\newblock Time quilt: scaling up zoomable photo browsers for large,
+  unstructured photo collections.
+\newblock In {\em CHI'05 extended abstracts on Human factors in computing
+  systems}, pages 1937--1940. ACM, 2005.
+
+\bibitem{jampani2010imageflow}
+Varun Jampani, Gonzalo Ramos, and Steven Drucker.
+\newblock Imageflow: Streaming image search.
+\newblock Technical report, Technical Report MSR-TR-2010-148, Microsoft
+  Corporation, 2010.
+
+\bibitem{jensen2000effect}
+Carlos Jensen, Shelly~D Farnham, Steven~M Drucker, and Peter Kollock.
+\newblock The effect of communication modality on cooperation in online
+  environments.
+\newblock In {\em Proceedings of the SIGCHI conference on Human Factors in
+  Computing Systems}, pages 470--477. ACM, 2000.
+
+\bibitem{joshi2012cliplets}
+Neel Joshi, Sisil Mehta, Steven Drucker, Eric Stollnitz, Hugues Hoppe, Matt
+  Uyttendaele, and Michael Cohen.
+\newblock Cliplets: juxtaposing still and dynamic imagery.
+\newblock In {\em Proceedings of the 25th annual ACM symposium on User
+  interface software and technology}, pages 251--260. ACM, 2012.
+
+\bibitem{kairam2015refinery}
+Sanjay Kairam, Nathalie~Henry Riche, Steven Drucker, Roland Fernandez, and
+  Jeffrey Heer.
+\newblock Refinery: Visual exploration of large, heterogeneous networks through
+  associative browsing.
+\newblock In {\em Computer Graphics Forum}, volume~34, pages 301--310, 2015.
+
+\bibitem{kerne2013evaluation}
+Andruid Kerne, Andrew~M Webb, Celine Latulipe, Erin Carroll, Steven~M Drucker,
+  Linda Candy, and Kristina H{\"o}{\"o}k.
+\newblock Evaluation methods for creativity support environments.
+\newblock In {\em CHI'13 Extended Abstracts on Human Factors in Computing
+  Systems}, pages 3295--3298. ACM, 2013.
+
+\bibitem{kopf2012quality}
+Johannes Kopf, Wolf Kienzle, Steven Drucker, and Sing~Bing Kang.
+\newblock Quality prediction for image completion.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 31(6):131, 2012.
+
+\bibitem{liu2015exploring}
+Shixia Liu, Yang Chen, Hao Wei, Jing Yang, Kun Zhou, and Steven~M Drucker.
+\newblock Exploring topical lead-lag across corpora.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  27(1):115--129, 2015.
+
+\bibitem{luan2008annotating}
+Qing Luan, Steven~M Drucker, Johannes Kopf, Ying-Qing Xu, and Michael~F Cohen.
+\newblock Annotating gigapixel images.
+\newblock In {\em Proceedings of the 21st annual ACM symposium on User
+  interface software and technology}, pages 33--36. ACM, 2008.
+
+\bibitem{medynskiy2009exploring}
+Yevgeniy Medynskiy, Mira Dontcheva, and Steven~M Drucker.
+\newblock Exploring websites through contextual facets.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 2013--2022. ACM, 2009.
+
+\bibitem{meyers2006dance}
+Brian Meyers, AJ~Brush, Steven Drucker, Marc~A Smith, and Mary Czerwinski.
+\newblock Dance your work away: exploring step user interfaces.
+\newblock In {\em CHI'06 extended abstracts on Human factors in computing
+  systems}, pages 387--392. ACM, 2006.
+
+\bibitem{morris2014reducing}
+Meredith~Ringel Morris, Andreea Danielescu, Steven Drucker, Danyel Fisher,
+  Bongshin Lee, Jacob~O Wobbrock, et~al.
+\newblock Reducing legacy bias in gesture elicitation studies.
+\newblock {\em interactions}, 21(3):40--45, 2014.
+
+\bibitem{patel2010gestalt}
+Kayur Patel, Naomi Bancroft, Steven~M Drucker, James Fogarty, Andrew~J Ko, and
+  James Landay.
+\newblock Gestalt: integrated support for implementation and analysis in
+  machine learning.
+\newblock In {\em Proceedings of the 23nd annual ACM symposium on User
+  interface software and technology}, pages 37--46. ACM, 2010.
+
+\bibitem{patel2011using}
+Kayur Patel, Steven~M Drucker, James Fogarty, Ashish Kapoor, and Desney~S Tan.
+\newblock Using multiple models to understand data.
+\newblock In {\em IJCAI Proceedings-International Joint Conference on
+  Artificial Intelligence}, volume~22, page 1723, 2011.
+
+\bibitem{sarikayasequence}
+Alper Sarikaya, Emanuel Zgraggen, Rob DeLine, Steven Drucker, and Danyel
+  Fisher.
+\newblock Sequence pre-processing: Focusing analysis of log event data.
+
+\bibitem{satpathy2008pixaura}
+Lalatendu Satpathy, Saara Kamppari, Bridget Lewis, Ajay Prasad, Yong~Woo Rhee,
+  Benjamin Elgart, and Steven Drucker.
+\newblock Pixaura: supporting tentative decision making when selecting and
+  sharing digital photos.
+\newblock In {\em Proceedings of the 22nd British HCI Group Annual Conference
+  on People and Computers: Culture, Creativity, Interaction-Volume 2}, pages
+  87--91. British Computer Society, 2008.
+
+\bibitem{schroder1992data}
+Peter Schroder and Steven Drucker.
+\newblock A data parallel algorithm for raytracing of heterogeneous databases.
+\newblock {\em Proceedings of Computer Graphics Interface}, pages 167--175,
+  1992.
+
+\bibitem{shneiderman2006find}
+Ben Shneiderman, Benjamin~B Bederson, and Steven~M Drucker.
+\newblock Find that photo!: interface strategies to annotate, browse, and
+  share.
+\newblock {\em Communications of the ACM}, 49(4):69--71, 2006.
+
+\bibitem{siegel1987performance}
+David~M Siegel, Steven~M Drucker, and Inaki Garabieta.
+\newblock Performance analysis of a tactile sensor, 1987.
+
+\bibitem{smith1999counting}
+Marc~A Smith, Steven~M Drucker, Robert Kraut, and Barry Wellman.
+\newblock Counting on community in cyberspace.
+\newblock In {\em CHI'99 Extended Abstracts on Human Factors in Computing
+  Systems}, pages 87--88. ACM, 1999.
+
+\bibitem{smith2000social}
+Marc~A Smith, Shelly~D Farnham, and Steven~M Drucker.
+\newblock The social life of small graphical chat spaces.
+\newblock In {\em Proceedings of the SIGCHI conference on Human Factors in
+  Computing Systems}, pages 462--469. ACM, 2000.
+
+\bibitem{teevan2009visual}
+Jaime Teevan, Edward Cutrell, Danyel Fisher, Steven~M Drucker, Gonzalo Ramos,
+  Paul Andr{\'e}, and Chang Hu.
+\newblock Visual snippets: summarizing web pages for search and revisitation.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 2023--2032. ACM, 2009.
+
+\bibitem{toomim2009attaching}
+Michael Toomim, Steven~M Drucker, Mira Dontcheva, Ali Rahimi, Blake Thomson,
+  and James~A Landay.
+\newblock Attaching ui enhancements to websites with end users.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 1859--1868. ACM, 2009.
+
+\bibitem{vellon1998architecture}
+Manny Vellon, Kirk Marple, Don Mitchell, and Steven Drucker.
+\newblock The architecture of a distributed virtual worlds system.
+\newblock In {\em COOTS}, pages 211--218, 1998.
+
+\bibitem{vronay1999alternative}
+David Vronay, Marc Smith, and Steven Drucker.
+\newblock Alternative interfaces for chat.
+\newblock In {\em Proceedings of the 12th annual ACM symposium on User
+  interface software and technology}, pages 19--26. ACM, 1999.
+
+\bibitem{wang2006cartoon}
+Jue Wang, Steven~M Drucker, Maneesh Agrawala, and Michael~F Cohen.
+\newblock The cartoon animation filter.
+\newblock In {\em ACM Transactions on Graphics (TOG)}, volume~25, pages
+  1169--1173. ACM, 2006.
+
+\bibitem{white2007investigating}
+Ryen~W White and Steven~M Drucker.
+\newblock Investigating behavioral variability in web search.
+\newblock In {\em Proceedings of the 16th international conference on World
+  Wide Web}, pages 21--30. ACM, 2007.
+
+\bibitem{white2007exploratory}
+Ryen~W White, Steven~M Drucker, Gary Marchionini, Marti Hearst, et~al.
+\newblock Exploratory search and hci: designing and evaluating interfaces to
+  support exploratory search interaction.
+\newblock In {\em CHI'07 Extended Abstracts on Human Factors in Computing
+  Systems}, pages 2877--2880. ACM, 2007.
+
+\bibitem{white2006supporting}
+Ryen~W White, Bill Kules, Steven~M Drucker, et~al.
+\newblock Supporting exploratory search, introduction, special issue,
+  communications of the acm.
+\newblock {\em Communications of the ACM}, 49(4):36--39, 2006.
+
+\bibitem{whitted2012visualization}
+Turner Whitted and Steven Drucker.
+\newblock Visualization surfaces.
+\newblock In {\em Expanding the Frontiers of Visual Analytics and
+  Visualization}, pages 417--427. Springer London, 2012.
+
+\bibitem{xiong1998visualizations}
+Rebecca Xiong, Marc~A Smith, and Steven~M Drucker.
+\newblock Visualizations of collaborative information for end-users.
+\newblock {\em Microsoft Research}, pages 1--8, 1998.
+
+\bibitem{yankelovich1987connections}
+Nicole Yankelovich, Bernard Haan, and Stephen Drucker.
+\newblock Connections in context: The intermedia system.
+\newblock {\em Providence, Rhode Island: Institute for Research in Information
+  and Scholarship, Brown University}, 1987.
+
+\bibitem{yankelovich1988intermedia}
+Nicole Yankelovich, Bernard~J. Haan, Norman~K. Meyrowitz, and Steven~M.
+  Drucker.
+\newblock Intermedia: The concept and the construction of a seamless
+  information environment.
+\newblock {\em IEEE computer}, 21(1):81--96, 1988.
+
+\bibitem{zeltzer1992virtual}
+David Zeltzer and Steven Drucker.
+\newblock A virtual environment system for mission planning.
+\newblock In {\em Proceedings of the IMAGE VI conference}, pages 125--134,
+  1992.
+
+\bibitem{zgraggen2015s}
+Emanuel Zgraggen, Steven~M Drucker, Danyel Fisher, and Robert Deline.
+\newblock (s| qu) eries: Visual regular expressions for querying and exploring
+  event sequences.
+\newblock 2015.
+
+\bibitem{zgraggen2014panoramicdata}
+Emanuel Zgraggen, Robert Zeleznik, and Steven~M Drucker.
+\newblock Panoramicdata: Data analysis through pen \& touch.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  20(12):2112--2121, 2014.
+
+\bibitem{zhao2012timeslice}
+Jian Zhao, Steven~M Drucker, Danyel Fisher, and Donald Brinkman.
+\newblock Timeslice: Interactive faceted browsing of timeline data.
+\newblock In {\em Proceedings of the International Working Conference on
+  Advanced Visual Interfaces}, pages 433--436. ACM, 2012.
+
+\end{thebibliography}
