@@ -313,10 +313,10 @@
         "thumb": "thumbnail/iclustering2.png",
         "booktitle": "AAAI",
         "id": 36,
-        "bibEntry": "<div class=\"csl-entry\">Basu, S., Fisher, D., Drucker, S. M., and Lu, H. (2010). Assisting Users with Clustering Tasks by Combining Metric Learning and Classification. In <i>AAAI</i>.</div>",
-        "pdf": "http://research.microsoft.com/~sdrucker/papers/iclustering-aaai-2010.pdf",        
+        "pdf": "http://research.microsoft.com/~sdrucker/papers/iclustering-aaai-2010.pdf",
         "reference": "Sumit Basu, Danyel Fisher, Steven M. Drucker, and Hao Lu, Assisting Users with Clustering Tasks by Combining Metric Learning and Classification, in Proceedings of the Twenty-Fourth Conference on Artificial Intelligence (AAAI 2010), American Association for Artificial Intelligence , July 2010",
         "img": "researchImages/iclustering2.png",
+        "bibEntry": "<div class=\"csl-entry\">Basu, S., Fisher, D., Drucker, S. M., and Lu, H. (2010). Assisting Users with Clustering Tasks by Combining Metric Learning and Classification. In <i>AAAI</i>.</div>",
         "text": "iClustering-aaai-2010.txt",
         "title": "Assisting Users with Clustering Tasks by Combining Metric Learning and Classification.",
         "author": [
@@ -1024,9 +1024,8 @@
         "number": "MSR-TR-2003-99",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/phototriage.pdf",
         "reference": "Drucker, S. C. Wong, A. Roseway, S. Glenner, S. De Mar, Photo-triage: Rapidly annotating your digital photographs. MSR Tech Report.",
-        "img": "researchImages/phototriage.jpg",       
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S., Wong, C., Roseway, A., Glenner, S., and De Mar, S. (2003). <i>Photo-triage: Rapidly annotating your digital photographs</i> (No. MSR-TR-2003-99). Microsoft Research.</div>",
- 
+        "img": "researchImages/phototriage.jpg",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1988). Texture from Touch. In W. Richards (Ed.), <i>Natural Computation</i>. MIT Press.</div>",
         "text": "phototriage.txt",
         "institution": "Microsoft Research",
         "title": "Photo-triage: Rapidly annotating your digital photographs",
@@ -1069,8 +1068,7 @@
         "publisher": "MIT Press",
         "reference": "Steven M. Drucker. Texture from Touch. In: Whitman Richards, editor. Natural Computation. MIT Press; 1988.",
         "img": "researchImages/natcomp.png",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1988). Texture from Touch. In W. Richards (Ed.), <i>Natural Computation</i>. MIT Press.</div>",
-        
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1994a). CamDroid. In <i>Intelligent camera control for graphical environments</i>. MIT.</div>",
         "editor": "Whitman Richards",
         "title": "Texture from Touch",
         "author": [
@@ -1105,7 +1103,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/moving.pdf",
         "reference": "Steven M. Drucker, Moving from MOOs to Multi-user Applications,  Internal Report, 1999.",
         "img": "researchImages/uistmoos.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1999). <i>Moving from MOOs to Multi-User Applications</i>. Microsoft Research.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1994b). <i>Intelligent camera control for graphical environments</i>. Massachusetts Institute of Technology.</div>",
         "text": "moving.txt",
         "institution": "Microsoft Research",
         "title": "Moving from MOOs to Multi-User Applications",
@@ -1139,7 +1137,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/spectator.pdf",
         "reference": "Drucker, S.M., He. L, Cohen, M., Gupta., A, Wong, C., Spectator Games: A New Entertainment Modality for Networked Multiplayer Games, 2003.",
         "img": "researchImages/spectator3.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and De Mar, S. (2002). <i>Spectator implementation in Mechwarrior</i>. Microsoft Research.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1994c). Virtual Football. In <i>Intelligent camera control for graphical environments</i>. MIT.</div>",
         "text": "spectator.txt",
         "institution": "Microsoft Research",
         "title": "Spectator implementation in Mechwarrior",
@@ -1183,8 +1181,8 @@
         "organization": "Springer Berlin Heidelberg",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/icluster_nonanonymous_sdrucker_cameraready.pdf",
         "reference": "Steven M. Drucker, Danyel Fisher, and Sumit Basu, Helping Users Sort Faster with Adaptive Machine Learning Recommendations, in Proceedings of Interact 2011, Springer, September 2011",
-        "img": "researchImages/iclustering1.png",        
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Fisher, D., and Basu, S. (2011). Helping users sort faster with adaptive machine learning recommendations. In <i>IFIP Conference on Human-Computer Interaction</i> (pp. 187â\u0080\u0093203). Springer Berlin Heidelberg.</div>",        
+        "img": "researchImages/iclustering1.png",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1999). <i>Moving from MOOs to Multi-User Applications</i>. Microsoft Research.</div>",
         "text": "icluster_nonanonymous_sdrucker_cameraready.txt",
         "title": "Helping users sort faster with adaptive machine learning recommendations",
         "author": [
@@ -1223,10 +1221,10 @@
         "booktitle": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
         "id": 18,
         "organization": "ACM",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Fisher, D., Sadana, R., and Herron, J. (2013). TouchViz: a case study comparing two interfaces for data analytics on tablets. In <i>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</i> (pp. 2301â\u0080\u00932310). ACM.</div>",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/touchvis-CHI2013-cameraready.pdf",
         "reference": "Steven M. Drucker, Danyel Fisher, Ramik Sadana, Jessica Herron, and mc schraefel, TouchViz, A Case Study Comparing Tow Interfaces for Data Analytics on Tablets, in Proceedings of the 2012 Conference on Human Factors in Computing Systems (CHI 2013), ACM Conference on Human Factors in Computing Systems, 29 April 2013",
         "img": "researchImages/touchvis.png",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and De Mar, S. (2002). <i>Spectator implementation in Mechwarrior</i>. Microsoft Research.</div>",
         "text": "touchvis-CHI2013-cameraready.txt",
         "title": "TouchViz: a case study comparing two interfaces for data analytics on tablets",
         "author": [
@@ -1272,7 +1270,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/SIG92symp.pdf",
         "reference": "Drucker, S.M., Galyean, T.A., and Zeltzer, D. CINEMA: A System for Procedural Camera Movements. SIGGRAPH Symposium on 3D Interaction. Cambridge, MA. 1992.",
         "img": "researchImages/cinema.gif",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Galyean, T. A., and Zeltzer, D. (1992). Cinema: A system for procedural camera movements. In <i>Proceedings of the 1992 symposium on Interactive 3D graphics</i> (pp. 67â\u0080\u009370). ACM.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Fernandez, R. (2013). <i>SandDance</i>. Microsoft Research.</div>",
         "text": "SIG92symp.txt",
         "title": "Cinema: A system for procedural camera movements",
         "author": [
@@ -1314,7 +1312,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/smartskipfinal.pdf",
         "reference": "Drucker, S.,  Glatzer, A., De Mar, S and Wong, C. SmartSkip: Consumer level browsing and skipping of digital video content. In Proceedings of CHI 2002, Minneapolis, Minnesota, 2002",
         "img": "researchImages/smartskip_photo.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Glatzer, A., De Mar, S., and Wong, C. (2002). SmartSkip: consumer level browsing and skipping of digital video content. In <i>Proceedings of the SIGCHI conference on Human factors in computing systems</i> (pp. 219â\u0080\u0093226). ACM.</div>",        
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Fisher, D., and Basu, S. (2011). Helping users sort faster with adaptive machine learning recommendations. In <i>IFIP Conference on Human-Computer Interaction</i> (pp. 187â\u0080\u0093203). Springer Berlin Heidelberg.</div>",
         "text": "smartskipfinal.txt",
         "title": "SmartSkip: consumer level browsing and skipping of digital video content",
         "author": [
@@ -1358,7 +1356,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/fp214-DruckerFinalSmall.pdf",
         "reference": "Drucker, S. M., Petschnigg, G., and Agrawala, M. 2006. Comparing and managing multiple versions of slide presentations. In Proceedings of the 19th Annual ACM Symposium on User interface Software and Technology (Montreux, Switzerland, October 15 - 18, 2006). UIST '06. ACM Press, New York, NY, 47-56.",
         "img": "researchImages/vizpptdiff.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Petschnigg, G., and Agrawala, M. (2006). Comparing and managing multiple versions of slide presentations. In <i>Proceedings of the 19th annual ACM symposium on User interface software and technology</i> (pp. 47â\u0080\u009356). ACM.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Fisher, D., Sadana, R., and Herron, J. (2013). TouchViz: a case study comparing two interfaces for data analytics on tablets. In <i>Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</i> (pp. 2301â\u0080\u00932310). ACM.</div>",
         "text": "fp214-DruckerFinalSmall.txt",
         "title": "Comparing and managing multiple versions of slide presentations",
         "author": [
@@ -1401,7 +1399,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/vdmfinal.pdf",
         "reference": "Drucker, S., Regan, T., Roseway, A., Lofstrom. M, The visual decision maker: a recommendation system for collocated users, DUX 2005",
         "img": "researchImages/VDM.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Regan, T., Roseway, A., and Lofstrom, M. (2005). The visual decision maker: A recommendation system for collocated users. In <i>Proceedings of the 2005 conference on Designing for User eXperience</i> (p. 21). AIGA: American Institute of Graphic Arts.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Galyean, T. A., and Zeltzer, D. (1992). Cinema: A system for procedural camera movements. In <i>Proceedings of the 1992 symposium on Interactive 3D graphics</i> (pp. 67â\u0080\u009370). ACM.</div>",
         "text": "vdmfinal.txt",
         "title": "The visual decision maker: A recommendation system for collocated users",
         "author": [
@@ -1445,8 +1443,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/eurorendworkshop.pdf",
         "reference": "Drucker, S.M. and Schroeder, P. Fast Radiosity:A Data Parallel Approach. 3rd Workshop on Photorealistic Rendering, Bristol, U.K. 1992.",
         "img": "researchImages/parallelRadiosity.gif",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and SchrÃ¶der, P. (1992). Fast radiosity using a data parallel architecture. In <i>Third Eurographics Workshop on Rendering (Bristol, uk</i> (pp. 247â\u0080\u0093258).</div>",
-        
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Glatzer, A., De Mar, S., and Wong, C. (2002). SmartSkip: consumer level browsing and skipping of digital video content. In <i>Proceedings of the SIGCHI conference on Human factors in computing systems</i> (pp. 219â\u0080\u0093226). ACM.</div>",
         "text": "eurorendworkshop.txt",
         "title": "Fast radiosity using a data parallel architecture",
         "author": [
@@ -1480,10 +1477,10 @@
     {
         "thumb": "thumbnail/tokenTV_photo.jpg",
         "id": 74,
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2001b). <i>Token TV: Sharing preferences for Television DVR recording</i>. Microsoft Research.</div>",
         "pdf": "http://research.microsoft.com/~sdrucker/papers/tokentv.doc",
         "reference": "Drucker, S.M., Wong, C. 2001, Token TV: Sharing preferences for Television DVR Recording, MS Technical Report",
         "img": "researchImages/tokenTV_photo.jpg",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Hydrie, A. (2009). <i>LiveLabs ThumbTack</i>.</div>",
         "institution": "Microsoft Research",
         "title": "Token TV: Sharing preferences for Television DVR recording",
         "author": [
@@ -1533,7 +1530,7 @@
         },
         "reference": "Drucker, S.M., Wong, C. 2001, DeepNews: Automatic related material based on closed caption information, MS Technical Report",
         "img": "researchImages/deepnews_photo.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2001a). <i>DeepNews: Automatic related material based on closed caption information</i>. Microsoft Research.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Petschnigg, G., and Agrawala, M. (2006). Comparing and managing multiple versions of slide presentations. In <i>Proceedings of the 19th annual ACM symposium on User interface software and technology</i> (pp. 47â\u0080\u009356). ACM.</div>",
         "institution": "Microsoft Research",
         "title": "DeepNews: Automatic related material based on closed caption information",
         "author": [
@@ -1570,8 +1567,7 @@
         },
         "reference": "Drucker, S.M. 2002, Filtered Electronic Program Guides, MS Technical Report",
         "img": "researchImages/tvnow_photo.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2002). <i>Filtered Electronic Program Guides</i>. Microsoft Research.</div>",
-        
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Regan, T., Roseway, A., and Lofstrom, M. (2005). The visual decision maker: A recommendation system for collocated users. In <i>Proceedings of the 2005 conference on Designing for User eXperience</i> (p. 21). AIGA: American Institute of Graphic Arts.</div>",
         "institution": "Microsoft Research",
         "title": "Filtered Electronic Program Guides",
         "author": [
@@ -1608,7 +1604,7 @@
         "type": "software",
         "reference": "Drucker, S, People Browser, MS Internal Report",
         "img": "researchImages/peoplebrowser_photo.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2003b). <i>People Browser</i>.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and SchrÃ¶der, P. (1992). Fast radiosity using a data parallel architecture. In <i>Third Eurographics Workshop on Rendering (Bristol, uk</i> (pp. 247â\u0080\u0093258).</div>",
         "title": "People Browser",
         "author": [
             "Drucker, Steven M",
@@ -1647,7 +1643,7 @@
         "type": "software",
         "reference": "Drucker, S. Movie Variations, MS Tech Report",
         "img": "researchImages/MV_photo.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2003a). <i>Movie Variations</i>.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2001a). <i>DeepNews: Automatic related material based on closed caption information</i>. Microsoft Research.</div>",
         "title": "Movie Variations",
         "author": [
             "Drucker, Steven M",
@@ -1668,7 +1664,7 @@
         "type": "demo",
         "reference": "Drucker, S. Wong, C. Right Now Viewer, MS Internal Report",
         "img": "researchImages/rightnow_viewer_photo.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Wong, C., and De Mar, S. (2002). <i>Right Now Viewer</i>.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2001b). <i>Token TV: Sharing preferences for Television DVR recording</i>. Microsoft Research.</div>",
         "title": "Right Now Viewer",
         "author": [
             "Drucker, Steven M",
@@ -1705,8 +1701,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/mediaframeAVIlong.pdf",
         "reference": "Drucker, S. C. Wong, A. Roseway, S. Glenner, S. De Mar, MediaBrowser: Reclaiming the Shoebox. in Proceedings of AVI2004, Gallipoli, Italy, 2004.",
         "img": "researchImages/MFAG.png",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Wong, C., Roseway, A., Glenner, S., and De Mar, S. (2004). MediaBrowser: reclaiming the shoebox. In <i>Proceedings of the working conference on Advanced visual interfaces</i> (pp. 433â\u0080\u0093436). ACM.</div>",
-        
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2002). <i>Filtered Electronic Program Guides</i>. Microsoft Research.</div>",
         "text": "mediaframeAVIlong.txt",
         "title": "MediaBrowser: reclaiming the shoebox",
         "author": [
@@ -1753,7 +1748,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/GImuseum_wfigs.pdf",
         "reference": "Drucker, S.M. and Zeltzer, D. Intelligent Camera Control in a Virtual Environment Graphics Interface '94.",
         "img": "researchImages/museum1.gif",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Zeltzer, D. (1994). Intelligent camera control in a virtual environment. In <i>Graphics Interface</i> (pp. 190â\u0080\u0093190). CANADIAN INFORMATION PROCESSING SOCIETY.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2003a). <i>Movie Variations</i>.</div>",
         "text": "GImuseum_wfigs.txt",
         "title": "Intelligent camera control in a virtual environment",
         "author": [
@@ -1792,8 +1787,7 @@
         "pdf": "http://research.microsoft.com/en-us/um/people/sdrucker/SandDance/",
         "reference": "Unpublished",
         "img": "researchImages/sanddance.png",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Fernandez, R. (2013). <i>SandDance</i>. Microsoft Research.</div>",
-        
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Wong, C. (2003b). <i>People Browser</i>.</div>",
         "text": "sanddance.txt",
         "institution": "Microsoft Research",
         "title": "SandDance",
@@ -1834,7 +1828,7 @@
         "type": "software",
         "reference": "Internal Report",
         "img": "researchImages/thumbtackthumb.jpg",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Hydrie, A. (2009). <i>LiveLabs ThumbTack</i>.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Wong, C., and De Mar, S. (2002). <i>Right Now Viewer</i>.</div>",
         "title": "LiveLabs ThumbTack",
         "author": [
             "Drucker, Steven M.",
@@ -1873,8 +1867,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/SIG95symp.pdf",
         "reference": "Drucker, S.M. and Zeltzer, D. CamDroid: A System for InEelligent Camera Control. SIGGRAPH Symposium on Interactive 3D Graphics, 1995.",
         "img": "researchImages/camdroid.gif",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1994a). CamDroid. In <i>Intelligent camera control for graphical environments</i>. MIT.</div>",
-        
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., Wong, C., Roseway, A., Glenner, S., and De Mar, S. (2004). MediaBrowser: reclaiming the shoebox. In <i>Proceedings of the working conference on Advanced visual interfaces</i> (pp. 433â\u0080\u0093436). ACM.</div>",
         "text": "SIG95symp.txt",
         "title": "CamDroid",
         "author": [
@@ -1912,7 +1905,7 @@
         "pdf": "http://research.microsoft.com/~sdrucker/papers/thesiswbmakrs.pdf",
         "reference": "Drucker, S.M. Intelligent Camera Control for Graphical Environments PhD Thesis, MIT Media Lab. 1994.",
         "img": "researchImages/footballsm.gif",
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1994c). Virtual Football. In <i>Intelligent camera control for graphical environments</i>. MIT.</div>",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M., and Zeltzer, D. (1994). Intelligent camera control in a virtual environment. In <i>Graphics Interface</i> (pp. 190â\u0080\u0093190). CANADIAN INFORMATION PROCESSING SOCIETY.</div>",
         "text": "thesiswbmakrs.txt",
         "title": "Virtual Football",
         "author": [
@@ -1948,9 +1941,9 @@
         "id": 90,
         "pdf": "http://research.microsoft.com/~sdrucker/papers/thesiswbmakrs.pdf",
         "reference": "Drucker, S.M. Intelligent Camera Control for Graphical Environments PhD Thesis, MIT Media Lab. 1994.",
-        "img": "researchImages/conversesm.gif",        
-        "bibEntry": "<div class=\"csl-entry\">Drucker, S. M. (1994b). <i>Intelligent camera control for graphical environments</i>. Massachusetts Institute of Technology.</div>",
-       "text": "thesiswbmakrs.txt",
+        "img": "researchImages/conversesm.gif",
+        "bibEntry": "<div class=\"csl-entry\">Drucker, S., Wong, C., Roseway, A., Glenner, S., and De Mar, S. (2003). <i>Photo-triage: Rapidly annotating your digital photographs</i> (No. MSR-TR-2003-99). Microsoft Research.</div>",
+        "text": "thesiswbmakrs.txt",
         "title": "Intelligent camera control for graphical environments",
         "author": [
             "Drucker, Steven Mark"
@@ -2206,7 +2199,6 @@
         "reference": "Danyel Fisher, Steven Drucker, Roland Fernandez, and Xiaoji Chen, Vis-a-vis: A Visual Language for Spreadsheet Visualizations, no. MSR-TR-2011-142, June 2011",
         "img": "researchImages/visavis.png",
         "bibEntry": "<div class=\"csl-entry\">Fisher, D., Drucker, S., Fernandez, R., and Chen, X. (2011). <i>Vis-a-vis: A Visual Language for Spreadsheet Visualizations</i>. Technical Report MSR-TR-2011-142, Microsoft Research.</div>",
-        
         "text": "VisAVis.txt",
         "institution": "Technical Report MSR-TR-2011-142, Microsoft Research",
         "title": "Vis-a-vis: A Visual Language for Spreadsheet Visualizations",
@@ -2216,7 +2208,7 @@
             "Fernandez, Roland",
             "Chen, Xiaoji"
         ],
-        "video": "",
+        "video": "http://research.microsoft.com/~sdrucker/video/icluster_INTERACT11.mov",
         "primary": "Visualization",
         "tags": {
             "collaborators": [
@@ -2280,7 +2272,7 @@
         "volume": "16",
         "title": "Visualizations everywhere: A multiplatform infrastructure for linked visualizations",
         "img": "researchImages/webcharts.png",
-        "video": "",
+        "video": "http://research.microsoft.com/~sdrucker/video/icluster_INTERACT11.mov",
         "primary": "Visualization",
         "pages": "1157--1163",
         "year": "2010",

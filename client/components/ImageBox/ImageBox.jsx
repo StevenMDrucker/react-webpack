@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as RB from 'react-bootstrap';
-
+import ReactHtmlParser from 'react-html-parser';
 class MyPopop extends Component {
   componentWillMount() {
       this.setState({ showModal: false, item: null });    
@@ -14,7 +14,7 @@ class MyPopop extends Component {
     this.setState({ showModal: true, item: itemVal });
   }
 
-  render() {
+  render() {      
       if (this.state.item) {   
         return (
         <div>                
@@ -33,7 +33,7 @@ class MyPopop extends Component {
                 <RB.Button bsStyle="primary" href={this.state.item.video}>Video</RB.Button>
             </div>
             <RB.Modal.Body>  
-                <h6 style={{textAlign:"left"}} >Reference: {this.state.item.reference} </h6>
+                <h6 style={{textAlign:"left"}} >Reference: {ReactHtmlParser(this.state.item.bibEntry)} </h6>
                 <p style={{textAlign:"left"}}> Abstract: {this.state.item.abstract} </p>
             </RB.Modal.Body>
             <RB.Modal.Footer>

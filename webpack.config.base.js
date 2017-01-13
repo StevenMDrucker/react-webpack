@@ -49,6 +49,11 @@ module.exports = {
 
   module: {
     loaders: [
+      {
+      test: /\.json$/,
+      include: /node_modules/,
+      loader: 'json-loader'
+    },
       {test: /\.css$/, loader: 'style-loader!css-loader'},
       {test: /\.scss$/, loader: 'style!css!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded'},  
       {test: /\.woff$|\.eot$|\.ttf$|\.woff2$|\.svg$/i, loader: 'file-loader'}, 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Row, Col, Button, SplitButton, MenuItem} from 'react-bootstrap';
-
+import ReactHtmlParser from 'react-html-parser';
 class CardComponent extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         if (this.props.mode !== nextProps.mode) {
@@ -53,7 +53,7 @@ class CardComponent extends Component {
                 key={"i"+val.id}>
                 <Row> 
                 <Col lg={12} sm={12} md={12}>
-                    <span> <a href={val.pdf}> PDF: </a> </span> <span className="DReference"> {val.reference}</span>
+                    <span> <a href={val.pdf}> PDF: </a> </span> <span className="DReference"> {ReactHtmlParser(val.bibEntry)}</span>
                 </Col>
                 </Row>
             </div>;
