@@ -12,6 +12,7 @@ display:block;
 }
 
 html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+.cvMain {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
 
 .clear {clear: both;}
 
@@ -22,6 +23,13 @@ p {
 	color: #444;
 }
 
+i {
+	font-style: italic;	
+}
+
+b {
+	font-weight: bold;
+}
 #cv {
 	width: 90%;
 	max-width: 800px;

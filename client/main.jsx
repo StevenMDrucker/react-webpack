@@ -6,6 +6,8 @@ import App from 'components/App/App'
 import About from 'components/About/About'
 import MyNav from 'components/MyNav/MyNav'
 import Feature from 'components/Feature/Feature'
+import CV from 'components/CV/CV'
+
 var Root = React.createClass({
 
   routes: (
@@ -14,6 +16,7 @@ var Root = React.createClass({
                     <Route path="/app" component={App}/>
                     <Route path="/featured" component={Feature}/>                 
                     <Route path="/about" component={About}/>
+                    <Route path="/cv" component={CV}/>
                 </Route>
     ),
 
