@@ -20,9 +20,10 @@ export default React.createClass({
 
                     <div id="contactDetails" className="quickFade delayFour">
                         <ul>
-                            <li>e: <a href="mailto:sdrucker@microsoft.com" target="_blank">sdrucker@microsoft.com</a></li>
-                            <li>w: <a href="http://steven-drucker.com">www.steven-drucker.com</a></li>
-                            <li>m: 425-703-5850</li>
+                            <li>email: <a href="mailto:sdrucker@microsoft.com" target="_blank">sdrucker@microsoft.com</a></li>
+                            <li>web: <a href="http://steven-drucker.com">www.steven-drucker.com</a></li>
+                            <li>office: 425-703-5850</li>
+                            <li>vidoes: <a href="https://www.youtube.com/channel/UCgh_BTNsTeI7MScu6e-9Yxw">youtube link</a></li>
                         </ul>
                     </div>
                     <div className="clear"></div>
@@ -639,7 +640,210 @@ export default React.createClass({
 
                     </section>
 
-                </div>
+                      <section>
+                        <div className="sectionTitle">
+                            <h1>Press</h1>
+                        </div>
+
+                        <div className="sectionContent">
+                        <ul>
+                        <li><a href="https://www.microsoft.com/en-us/garage/profiles/profile-sanddance.aspx">SandDance, a web app</a></li>
+                        <li><a href="https://www.schemadesign.com/work/microsoft-sanddance">Exploring Data Visually: Microsoft SandDance</a></li>
+                        <li><a href="http://thenextweb.com/apps/2016/03/23/microsoft-sanddance-beautiful-data-visualization-tool-chart-geeks/">Microsoft SandDance is a beautiful data visualization tool for chart geeks</a></li>
+                        <li><a href="http://community.powerbi.com/t5/Community-Blog/SandDance-my-first-impressions-and-test/ba-p/30479#.VxkeggQntpg.twitter">SandDance, my first impression​s and test</a></li>
+                        <li><a href="http://analyticswithankit.blogspot.com/2016/04/sanddance-in-power-bi.html">A blog on modern business intelligence technologies, tools and miscellaneous things</a></li>
+                        <li><a href="http://www.fastcodesign.com/3058185/microsofts-new-data-viz-tool-puts-excel-charts-to-shame">Microsoft&#8217;s New Data-Viz Tool Puts Excel Charts To Shame</a></li>
+                        <li><a href="https://blogs.microsoft.com/firehose/2016/03/22/discover-stories-within-data-using-sanddance-a-new-microsoft-research-project/">Discover stories within data using SandDance, a new Microsoft Research project </a></li>
+                        <li><a href="https://powerbi.microsoft.com/en-us/blog/visual-awesomeness-unlocked-sanddance/">Visual Awesomeness Unlocked – SandDance</a></li>
+                        <li><a href="http://www.tricentis.com/blog/2016/04/07/software-fail-watch-2016-quarter-one/">Software Fail Watch 2016, Quarter One</a></li>
+                        <li><a href="http://www.techworm.net/2016/03/microsoft-sanddance-lets-discover-stories-within-data.html">Microsoft SandDance lets you discover stories within data</a></li>
+                        <li><a href="http://www.fiercecio.com/story/sanddance-tells-data-stories-can-be-harder-read/2016-03-23">SandDance tells the data stories that can be harder to read </a></li>
+                        <li><a href="http://www.stocksdaily.net/microsoft-corporation-nasdaqmsft-sanddance-aids-in-finding-stories-and-extracting-insight-from-data/77006/">SandDance Aids In Finding Stories And Extracting Insight From Data</a></li>
+                        <li><a href="http://sqlmag.com/business-intelligence/power-bi-cozies-excel-gets-other-upgrades-microsoft-data-insight-summit">Power BI cozies up with Excel, gets other upgrades at Microsoft Data Insight Summit</a></li>
+                        <li><a href="http://thenextweb.com/apps/2016/03/23/microsoft-sanddance-beautiful-data-visualization-tool-chart-geeks/">Microsoft SandDance is a beautiful data visualization tool for chart geeks </a></li>
+                        <li> <a href="http://www.discover.com/issues/may-04/departments/emerging-technology"> Beauty and the Beastly PC: Microsoft discovers that software should be—surprise!—a thing of beauty. </a>
+                        Steven Johnson, Discover Magazine, Vol. 25, No. 4, May, 2004. </li>
+                        <li> <a href="http://www.canada.com/vancouver/theprovince/news/archives/story.html?id=a3930671-4985-40a7-a6e5-d3c46464a41d"> Imagining a digital future: Passion for science drives research to open new Windows, </a>
+                        Jim Jamieson, The Province, April 4, 2004. </li>                        
+                        <li> <a href="http://research.microsoft.com/~sdrucker/NYTimes31904.pdf"> Navigating Home Networks </a>
+                        Michel Marriott, New York Times, February 19, 2004.  </li> 
+                        <li> <a href="http://www.wired.com/news/technology/0,1282,61837,00.html?tw=wn_tophead_2"> Gates previews 'amazing decade.' </a>
+                        Wired Magazine, January 8, 2004. </li> 
+                        <li> <a href="http://www.microsoft.com/billgates/speeches/2004/01-07ces.asp">CES Keynote Speech With Bill Gates, (towards the end of transcript)</a>
+                        CES, January, 2004.</li> 
+                        <li> <a href="http://research.microsoft.com/~sdrucker/Press/dance.html">StepMail/StepPhoto </a>
+                        Ars Electronica, 3/1/2006.  </li>                         
+                        <li> <a href="http://research.microsoft.com/~sdrucker/Press/spectator.mht"> Spectator: Microsoft 5000th Patent </a>
+                        XGP Gaming, 3/2006  </li>                  
+                        <li> <a href="http://research.microsoft.com/~sdrucker/Press/IT%20Business.mht"> At home with Microsoft Research </a>
+                        ITBusiness.ca, Interview 4/13/2006)  </li> 
+                    </ul>
+                        </div>
+                        <div className="clear"></div>
+                    </section>
+
+                    <section>
+                        <div className="sectionTitle">
+                            <h1>Invited Presentations</h1>
+                        </div>
+
+                        <div className="sectionContent">
+                            <ul>
+                                <li>Microsoft CEO Summit Keynote Demo</li>
+                                <li>Texas A&amp;M: Distinguished Lecturer</li>
+                                <li>Georgia Tech (Atlanta, GA) Distinguished Lecturer</li>
+                                <li>SFU (Vancouver, BC) Distinguished Lecturer</li>
+                                <li>PARC (Palo Alto, California)</li>
+                                <li>USC (LA, Calilfornia)</li>
+                                <li>CMU (Pittsburgh, PA)</li>
+                                <li>E3 (Electronic Entertainment Exposition) “Educational Game Technology”</li>
+                                <li>GDC (Game Developer Conference) “MSR Graphics and Game”</li>
+                                <li>Microsoft Faculty Summit</li>
+                                <li>Microsoft South American Faculty Summit (Brazil)</li>
+                                <li>Microsoft South American Faculty Summit (Chile)</li>
+                                <li>MIT CSAIL, Media Laboratory (Cambridge, MA)</li>
+                                <li>Keynote demo, Bill Gates Presentation Consumer Electronics Show</li>
+                                <li>Keynote demo, Bill Gates, MGB</li>
+                                <li>Berkeley, (Berkeley, CA)</li>
+                                <li>Kunsthochshule für Medien(Cologne, Germany)</li>
+                                <li>GMD (Bonn, Germany)</li>
+                                <li>NACB (Providence, RI)</li>
+                                <li>NHK (Japan)</li>
+                                <li>Dartmouth University (NH)</li>
+                                <li>MERL (Cambridge, MA.)</li>
+                            </ul>
+                        </div>                         
+                        <div className="clear"></div>
+                    </section>              
+
+                        <section>
+                        <div className="sectionTitle">
+                            <h1>Selected Presentations</h1>
+                        </div>
+
+                        <div className="sectionContent">
+                            <ul>
+                                <li> <a href="http://research.microsoft.com/~sdrucker/Presentations/Making Tools for Making Games.ppt"> Making Tools for Making Games</a>, Presented at Education Arcade, E3, May, 2004. </li>
+                                <li> <a href="http://research.microsoft.com/~sdrucker/novel2004.ppt"> Creating Novel Experiences for interacting with media </a>, Presented at Strategy Day, November, 2004  </li>
+                                <li><a href="http://research.microsoft.com/~sdrucker/Presentations/MIT2006.ppt"> Information Overload meets Information Visualization: Building user interfaces to deal with too much information </a>, MIT, 2006. </li>
+                                <li> <a href="http://research.microsoft.com/~sdrucker/Presentations/DealingWithDigitalStuff.pptx"> Dealing with your Digital ‘Stuff’: Lessons from Information Visualization for Interacting with collections </a>. Georgia Tech, SFU, 2012 </li>
+                                <li> <a href="http://research.microsoft.com/~sdrucker/presentations/visualizationCommunication.pptx"> Visualization Communication. </a> HCIC, 2012 </li>
+                            </ul>
+                        </div>                         
+                        <div className="clear"></div>
+                    </section>             
+                    <section>
+                    <div className="sectionTitle">
+                        <h1>Reviews and Committees</h1>
+                    </div>
+
+                    <div className="sectionContent">
+                        <ul>
+                            <li>iCampus Joint Steering Committee (Microsoft-MIT Educational Technology Grant)</li>
+                            <li>Graphics Interface Program Committee</li>
+                            <li>SIGCHI Awards Chair</li>
+                            <li>SIGCHI Program Committee</li>
+                            <li>UIST Program Committee</li>
+                            <li>Infovis Program Committee</li>
+                            <li>Infovis Fundraising/Exhibits Chair</li>
+                            <li>VAST Program Committee</li>
+                            <li>ISVC (International Symposium on Visual Computing) Program Committee</li>
+                            <li>ISWC (International Semantic Web Conference Program Committee)</li>
+                            <li>WWW Conference, Program Committee</li>
+                            <li>Communications of the ACM, Guest Editor</li>
+                            <li>IEEE CG&amp;A: Guest Editor</li>
+                            <li>SIGGRAPH, SIGCHI, UIST, SIGCHI, TOG,WWW,IUI,TOCHI,CG&amp;A reviewer</li>
+                        </ul>
+                    </div>                         
+                    <div className="clear"></div>
+                </section>        
+                <section>
+                    <div className="sectionTitle">
+                        <h1>Granted Patents</h1>
+                    </div>
+
+                    <div className="sectionContent">
+                        <ol>
+                        <li>    Animation Transitions and Effects In A Spreadsheet Application</li>
+                        <li>	VISUALIZATION OF CHANGING CONFIDENCE INTERVALS</li>
+                        <li>	Image Completion Including Automatic Cropping</li>
+                        <li>	JUXTAPOSING STILL AND DYNAMIC IMAGERY FOR CLIPLET CREATION</li>
+                        <li>	RELATIONAL RENDERING OF MULTI-FACETED DATA</li>
+                        <li>	Staged Animated Transitions for Aggregation Charts</li>
+                        <li>	GENERATING CUSTOMIZED DATA BOUND VISUALIZATIONS</li>
+                        <li>	Browsing Related Image Search Result Sets</li>
+                        <li>	TEXT MINING OF MICROBLOGS USING LATENT TOPIC LABELS</li>
+                        <li>	COMMUNITY AUTHORING CONTENT GENERATION AND NAVIGATION</li>
+                        <li>	EXPLORING DATA USING MULTIPLE MACHINE-LEARNING MODELS</li>
+                        <li>	ASSISTED CLUSTERING</li>
+                        <li>	Pluggable Web-based Visualizations for Applications</li>
+                        <li>	ANIMATION TRANSITION ENGINE</li>
+                        <li>	RENDERING ANNOTATIONS FOR IMAGES</li>
+                        <li>	Hybrid Interface for Interactively Registering Images to Digital Models</li>
+                        <li>	VISUAL SUMMARIZATION OF WEB PAGES</li>
+                        <li>	Collection Represents Combined Intent</li>
+                        <li>	3D Content Aggregation  Built Into Devices</li>
+                        <li>	Mark-up Extensions for Semantically more Relevant Thumbnails of Content</li>
+                        <li>	Multi-Scale Navigational Vsualization</li>
+                        <li>	Non-Destructive Media Presentation Derivatives</li>
+                        <li>	Procedural Authoring</li>
+                        <li>	Dynamic Multi-scale Schema</li>
+                        <li>	Intermediate Point Between Images to Insert/Overlay Ads</li>
+                        <li>	CLIENT-SIDE COMPOSING/WEIGHTING OF ADS</li>
+                        <li>	Zoom for Annotatable Margins</li>
+                        <li>	Connected Gaming</li>
+                        <li>	User-created Trade Cards</li>
+                        <li>	Trade Card Services</li>
+                        <li>	Integrating Ads with Media</li>
+                        <li>	Magic Wand</li>
+                        <li>	Non-Media Centric Packaging of Content</li>
+                        <li>	Accounting For Behavioral Variability In Web Search</li>
+                        <li>	Mining Implicit Behavior</li>
+                        <li>	Automatic Configuration of Devices Based on Biometric Data</li>
+                        <li>	Face Recognition Using Discriminatively Trained Orthogonal Tensor Projections</li>
+                        <li>	Image Organization Based on Image Content</li>
+                        <li>	Persistent Spatial Collaboration</li>
+                        <li>	Persistent Collaborative Framework for Interactive Web Applications</li>
+                        <li>	Dynamic Thumbnails For Document Navigation</li>
+                        <li>	Representing Animation As A Static Image On A Graphical User Interface</li>
+                        <li>	Flow Computing</li>
+                        <li>	Digital Image Browser</li>
+                        <li>	Graphical Web Browser History Toolbar</li>
+                        <li>	Automatic Layout of Items Along an Embedded One-Manifold Path</li>
+                        <li>	A Presentation Viewing Tool Designed For The Viewer</li>
+                        <li>	Manipulating Association of a Data with a Physical Object</li>
+                        <li>	Rapid Visual Sorting of Digital Files and Data</li>
+                        <li>	Using Physical Objects to Adjust Attributes of an Interactive Display Application</li>
+                        <li>	Using a Physical Object to Control an Attribute of an Interactive Display Application</li>
+                        <li>	Mediacube</li>
+                        <li>	A System And Process For Controlling A Shared Display Given Inputs From Multiple Users Using Multiple Input Modalities</li>
+                        <li>	Interactive Media Frame Display</li>
+                        <li>	Relationship View</li>
+                        <li>	Media Frame Object Visualization System</li>
+                        <li>	Rapid Media Group Annotation</li>
+                        <li>	Random Access Editing Of Media</li>
+                        <li>	Media Variations Browser</li>
+                        <li>	System and Method to Provide a Spectator Experience for Network Gaming</li>
+                        <li>	Transportable Identifier and System and Method to Facilitate Access to Broadcast Data</li>
+                        <li>	Shared and Private Object Stores for a Networked Computer Application Communication Environment</li>
+                        <li>	System and Method for Content Retrieval</li>
+                        <li>	System and Method for Identifying Audio/Visual Programs to b e Recorded</li>
+                        <li>	System and Method to Facilitate Selection and Programming of an Associated Audio/Visual System</li>
+                        <li>	System and Method for Providing Program Criteria Representing Audio and/or Visual Programming</li>
+                        <li>	Improved Visualizations for Collaborative Information</li>
+                        <li>	Social Dilemma Software for Evaluating Online Interactive Societies</li>
+                        <li>	High Density Visualizations for Threaded Information</li>
+                        <li>	View Dependent Tiled Textures</li>
+                        <li>	Dynamic Inheritance Of Software Object Services</li>
+                        <li>	Distributed Object Oriented Multi-User Domain with Multimedi a Presentations</li>
+                        <li>	Software Object Security Mechanism</li>
+                        <li>	Virtual Environment Bystander Updating in Client Server Arch itecture</li>
+                        <li>	Compression of Graphic Data Normals</li>
+                    </ol>
+            </div>
+              <div className="clear"></div>
+                </section>   
+            </div>
             </div>
         )
     }

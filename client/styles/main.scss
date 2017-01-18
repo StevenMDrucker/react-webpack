@@ -355,6 +355,11 @@ b {
   color: #444;
 }
 
+#mainArea h4 {
+  margin-left: 30px;
+  font-size: 0.8em;
+  color: #444;
+}
 #headshot {
 	width: 12.5%;
 	float: left;
@@ -609,6 +614,20 @@ section:last-child {
 
 .instaFade {
     -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in;
+	
+	-moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-timing-function: ease-in;
+	
+	animation-name: reset, fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.quickFade {
+    -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
 	
@@ -618,20 +637,6 @@ section:last-child {
 	
 	animation-name: reset, fade-in;
     animation-duration: 1.5s;
-    animation-timing-function: ease-in;
-}
-
-.quickFade {
-    -webkit-animation-name: reset, fade-in;
-    -webkit-animation-duration: 2.5s;
-    -webkit-animation-timing-function: ease-in;
-	
-	-moz-animation-name: reset, fade-in;
-    -moz-animation-duration: 2.5s;
-    -moz-animation-timing-function: ease-in;
-	
-	animation-name: reset, fade-in;
-    animation-duration: 2.5s;
     animation-timing-function: ease-in;
 }
  
