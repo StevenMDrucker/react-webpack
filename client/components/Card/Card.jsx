@@ -35,12 +35,12 @@ class CardComponent extends Component {
                         <Row  style={{textAlign: "left", margin: 5}}>
                             <Button bsStyle="primary" href={val.pdf}>Paper</Button>
                             <span width="5"> </span>
-                            <Button bsStyle="primary" href={val.video}>Video</Button>
+                            {val.video != '' ? <Button bsStyle="primary" href={val.video}>Video</Button> : null}
                         </Row>
                         </Col>
                         <Col lg={10} sm={10} md={10}>
                         <div className="DCaption"> {val.caption} </div>
-                        <div className="DReference"> {val.reference}</div>
+                        <div className="DReference"> {ReactHtmlParser(val.bibEntry)}</div>
                         <div className="DAbstract"> {val.abstract}</div>
                         </Col>
                     </Row>
@@ -53,7 +53,7 @@ class CardComponent extends Component {
                 key={"i"+val.id}>
                 <Row> 
                 <Col lg={12} sm={12} md={12}>
-                    <span> <a href={val.pdf}> PDF: </a> </span> <span className="DReference"> {ReactHtmlParser(val.bibEntry)}</span>
+                    <span style={{display: "block", float:"left", marginRight:"5px"}}> <a href={val.pdf}> PDF: </a> </span> <span className="DReference"> {ReactHtmlParser(val.bibEntry)}</span>
                 </Col>
                 </Row>
             </div>;

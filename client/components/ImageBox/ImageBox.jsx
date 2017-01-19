@@ -30,7 +30,7 @@ class MyPopop extends Component {
             <div className="center">
                 <RB.Button bsStyle="primary" href={this.state.item.pdf}>Paper</RB.Button>
                 <span width="5"> </span>
-                <RB.Button bsStyle="primary" href={this.state.item.video}>Video</RB.Button>
+                {this.state.item.video != '' ? <RB.Button bsStyle="primary" href={this.state.item.video}>Video</RB.Button> : null}
             </div>
             <RB.Modal.Body>  
                 <h6 style={{textAlign:"left"}} >Reference: {ReactHtmlParser(this.state.item.bibEntry)} </h6>
